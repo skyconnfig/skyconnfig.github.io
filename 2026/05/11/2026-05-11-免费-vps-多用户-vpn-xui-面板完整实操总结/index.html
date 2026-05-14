@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <title>📌 免费 VPS + 多用户 VPN + XUI 面板完整实操总结 | AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</title>
+  <meta name="description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
+  <meta name="keywords" content="AI工具教程,Vercel部署,Markdown知识库,Vue开发,SEO优化,前端教程,程序员博客,AI工具">
+  <meta name="author" content="skyconnfig">
+  <meta name="google-site-verification" content="2bx3xsZWUkueuU4vpoYX5ppMAdlkoVKbGSqI-xuFZKk" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="📌 免费 VPS + 多用户 VPN + XUI 面板完整实操总结">
+  <meta property="og:description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.lxs.best/2026/05/11/2026-05-11-%E5%85%8D%E8%B4%B9-vps-%E5%A4%9A%E7%94%A8%E6%88%B7-vpn-xui-%E9%9D%A2%E6%9D%BF%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%80%BB%E7%BB%93/">
+  <meta property="og:site_name" content="AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.lxs.best/2026/05/11/2026-05-11-%E5%85%8D%E8%B4%B9-vps-%E5%A4%9A%E7%94%A8%E6%88%B7-vpn-xui-%E9%9D%A2%E6%9D%BF%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%80%BB%E7%BB%93/">
+
+  <!-- RSS -->
+  
+
+  <!-- Sitemap -->
+  <link rel="sitemap" href="https://www.lxs.best/sitemap.xml" type="application/xml">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1581640229756872" crossorigin="anonymous"></script>
+  
+
+  
+
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C14WM0EJ0C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C14WM0EJ0C');
+  </script>
+  
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+
+
+<div class="site-wrapper">
+  <header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="/" title="AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="main-nav">
+      <ul>
+        
+        <li>
+          <a href="/" title="首页 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >首页</a>
+        </li>
+        
+        <li>
+          <a href="/archives" title="归档 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >归档</a>
+        </li>
+        
+        <li>
+          <a href="/categories" title="分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >分类</a>
+        </li>
+        
+        <li>
+          <a href="/tags" title="标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >标签</a>
+        </li>
+        
+        <li>
+          <a href="/about" title="关于 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >关于</a>
+        </li>
+        
+        <li>
+          <a href="/privacy-policy" title="隐私 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >隐私</a>
+        </li>
+        
+        <li>
+          <a href="/pinecone-discord" title="Discord - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >Discord</a>
+        </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Scroll Progress Bar (article pages) -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <main class="main-content">
+    <div class="container post-page">
+  <div class="content-area">
+    <article class="post-article">
+      <header class="post-header">
+        <h1 class="post-title">📌 免费 VPS + 多用户 VPN + XUI 面板完整实操总结</h1>
+        <div class="post-meta">
+          <time>2026-05-11</time>
+          
+          <span class="sep">·</span>
+          
+          <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-link" title="教程 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+          
+          
+          
+          <span class="sep">·</span>
+          <span>更新于 2026-05-11</span>
+          
+        </div>
+
+        
+        <div class="post-tags">
+          
+          <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+          
+        </div>
+        
+      </header>
+
+      <!-- Top Ad -->
+      
+
+      <!-- Article Content -->
+      <div class="post-content">
+        <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 📌 免费 VPS + 多用户 VPN + XUI 面板完整实操总结（可长期复用）</span></span><br><span class="line"></span><br><span class="line"><span class="quote">&gt; 目标：  </span></span><br><span class="line">搭建一个<span class="strong">**可管理多用户、可限流、可扩展的 VPN 系统**</span>  </span><br><span class="line">核心组件：  </span><br><span class="line"><span class="bullet">-</span> VPS（免费或低价）  </span><br><span class="line"><span class="bullet">-</span> XUI 面板（用户 + 流量管理）  </span><br><span class="line"><span class="bullet">-</span> VPN协议（WireGuard / Xray）  </span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section"># 1️⃣ 整体架构（先理解逻辑）</span></span><br><span class="line"></span><br><span class="line">在动手前必须理解系统结构：</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>用户设备（手机&#x2F;电脑）<br>↓<br>VPN客户端（WireGuard &#x2F; V2Ray &#x2F; Xray）<br>↓<br>VPS服务器（免费&#x2F;低价云服务器）<br>↓<br>XUI管理面板（用户 + 流量控制）<br>↓<br>多用户管理系统（限速&#x2F;到期&#x2F;流量统计）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">👉 本质就是：  </span><br><span class="line">用 VPS 承载 VPN，用 XUI 管理所有用户。</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"># 2️⃣ VPS选择（重点：是否需要信用卡）</span><br><span class="line"></span><br><span class="line">## 🟢 方案A：无需信用卡（推荐入门）</span><br><span class="line"></span><br><span class="line">### 🌐 Fly.io（最简单）</span><br><span class="line">👉 官网：https://fly.io</span><br><span class="line"></span><br><span class="line">### ✔ 优点：</span><br><span class="line">- 不需要信用卡</span><br><span class="line">- 可免费运行小型服务</span><br><span class="line">- 注册只需 GitHub</span><br><span class="line">- 每月约160GB流量</span><br><span class="line"></span><br><span class="line">### ❌ 缺点：</span><br><span class="line">- 内存小（256MB）</span><br><span class="line">- 不适合重型 VPN</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">## 🚀 Fly.io部署步骤</span><br><span class="line"></span><br><span class="line">### ① 注册账号</span><br><span class="line">1. 打开 https://fly.io</span><br><span class="line">2. 点击 GitHub 登录</span><br><span class="line">3. 授权即可</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">### ② 安装工具</span><br><span class="line">```bash</span><br><span class="line">npm install -g flyctl</span><br><span class="line">fly auth login</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="③-创建项目"><a href="#③-创建项目" class="headerlink" title="③ 创建项目"></a>③ 创建项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fly launch</span><br></pre></td></tr></table></figure>
+
+<p>选择：</p>
+<ul>
+<li>App name（随便填）</li>
+<li>Region（选 Asia &#x2F; Singapore）</li>
+</ul>
+<hr>
+<h3 id="④-部署项目"><a href="#④-部署项目" class="headerlink" title="④ 部署项目"></a>④ 部署项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fly deploy</span><br></pre></td></tr></table></figure>
+
+<p>👉 适合：</p>
+<ul>
+<li>XUI前端</li>
+<li>API服务</li>
+<li>小型控制面板</li>
+</ul>
+<hr>
+<h2 id="🟡-方案B：Oracle-Cloud（最强免费VPS）"><a href="#🟡-方案B：Oracle-Cloud（最强免费VPS）" class="headerlink" title="🟡 方案B：Oracle Cloud（最强免费VPS）"></a>🟡 方案B：Oracle Cloud（最强免费VPS）</h2><p>👉 官网：<a target="_blank" rel="noopener" href="https://www.oracle.com/cloud/free/">https://www.oracle.com/cloud/free/</a></p>
+<hr>
+<h3 id="❗前提问题"><a href="#❗前提问题" class="headerlink" title="❗前提问题"></a>❗前提问题</h3><ul>
+<li>❌ Wise不能用（中国不支持虚拟卡）</li>
+<li>❌ 必须信用卡验证</li>
+</ul>
+<hr>
+<h2 id="🚀-Oracle完整申请步骤"><a href="#🚀-Oracle完整申请步骤" class="headerlink" title="🚀 Oracle完整申请步骤"></a>🚀 Oracle完整申请步骤</h2><hr>
+<h3 id="①-注册账号"><a href="#①-注册账号" class="headerlink" title="① 注册账号"></a>① 注册账号</h3><ol>
+<li>进入官网</li>
+<li>点击 Start for free</li>
+<li>填邮箱 + 密码</li>
+</ol>
+<hr>
+<h3 id="②-验证邮箱"><a href="#②-验证邮箱" class="headerlink" title="② 验证邮箱"></a>② 验证邮箱</h3><ul>
+<li>打开邮件</li>
+<li>点击验证链接</li>
+</ul>
+<hr>
+<h3 id="③-填写个人信息"><a href="#③-填写个人信息" class="headerlink" title="③ 填写个人信息"></a>③ 填写个人信息</h3><ul>
+<li>国家 &#x2F; 地址 &#x2F; 电话（真实）</li>
+<li>建议填稳定地区（Singapore &#x2F; Netherlands）</li>
+</ul>
+<hr>
+<h3 id="④-信用卡验证"><a href="#④-信用卡验证" class="headerlink" title="④ 信用卡验证"></a>④ 信用卡验证</h3><p>支持：</p>
+<ul>
+<li>Visa</li>
+<li>Mastercard</li>
+</ul>
+<p>👉 注意：</p>
+<ul>
+<li>会冻结 $1（不会扣款）</li>
+</ul>
+<hr>
+<h3 id="⑤-创建-VPS"><a href="#⑤-创建-VPS" class="headerlink" title="⑤ 创建 VPS"></a>⑤ 创建 VPS</h3><p>进入控制台：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Compute → Instances → Create Instance</span><br></pre></td></tr></table></figure>
+
+<p>配置：</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>设置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>系统</td>
+<td>Ubuntu 22.04</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>1 Core（Always Free）</td>
+</tr>
+<tr>
+<td>内存</td>
+<td>1GB</td>
+</tr>
+<tr>
+<td>存储</td>
+<td>50GB</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="⑥-获取IP"><a href="#⑥-获取IP" class="headerlink" title="⑥ 获取IP"></a>⑥ 获取IP</h3><p>创建完成后：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Public IP = VPS地址</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="⑦-SSH连接"><a href="#⑦-SSH连接" class="headerlink" title="⑦ SSH连接"></a>⑦ SSH连接</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh ubuntu@你的IP</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="⑧-更新系统"><a href="#⑧-更新系统" class="headerlink" title="⑧ 更新系统"></a>⑧ 更新系统</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt update &amp;&amp; <span class="built_in">sudo</span> apt upgrade -y</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="🟢-Oracle优势总结"><a href="#🟢-Oracle优势总结" class="headerlink" title="🟢 Oracle优势总结"></a>🟢 Oracle优势总结</h2><ul>
+<li>永久免费</li>
+<li>50GB存储</li>
+<li>每月500GB流量</li>
+<li>稳定适合VPN</li>
+</ul>
+<hr>
+<h1 id="3️⃣-XUI面板安装（核心系统）"><a href="#3️⃣-XUI面板安装（核心系统）" class="headerlink" title="3️⃣ XUI面板安装（核心系统）"></a>3️⃣ XUI面板安装（核心系统）</h1><p>👉 作用：</p>
+<ul>
+<li>管理用户</li>
+<li>限流</li>
+<li>到期控制</li>
+<li>多节点管理</li>
+</ul>
+<hr>
+<h2 id="🚀-一键安装"><a href="#🚀-一键安装" class="headerlink" title="🚀 一键安装"></a>🚀 一键安装</h2><p>在 VPS 执行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="📌-安装完成后"><a href="#📌-安装完成后" class="headerlink" title="📌 安装完成后"></a>📌 安装完成后</h2><p>会显示：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">访问地址: http://IP:54321</span><br><span class="line">用户名: admin</span><br><span class="line">密码: admin</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="🔐-登录后台"><a href="#🔐-登录后台" class="headerlink" title="🔐 登录后台"></a>🔐 登录后台</h2><p>浏览器打开：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://你的IP:54321</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="4️⃣-创建用户（流量管理）"><a href="#4️⃣-创建用户（流量管理）" class="headerlink" title="4️⃣ 创建用户（流量管理）"></a>4️⃣ 创建用户（流量管理）</h1><p>进入后台：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户管理 → 添加用户</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="📊-配置建议"><a href="#📊-配置建议" class="headerlink" title="📊 配置建议"></a>📊 配置建议</h2><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>流量限制</td>
+<td>50GB</td>
+</tr>
+<tr>
+<td>有效期</td>
+<td>30天</td>
+</tr>
+<tr>
+<td>协议</td>
+<td>VLESS &#x2F; VMess &#x2F; WireGuard</td>
+</tr>
+<tr>
+<td>状态</td>
+<td>启用</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="⛔-超流量规则"><a href="#⛔-超流量规则" class="headerlink" title="⛔ 超流量规则"></a>⛔ 超流量规则</h2><p>XUI支持：</p>
+<ul>
+<li>自动断网</li>
+<li>自动限速</li>
+<li>到期停用</li>
+</ul>
+<hr>
+<h1 id="5️⃣-VPN节点使用方式"><a href="#5️⃣-VPN节点使用方式" class="headerlink" title="5️⃣ VPN节点使用方式"></a>5️⃣ VPN节点使用方式</h1><p>用户获取配置后：</p>
+<h3 id="WireGuard："><a href="#WireGuard：" class="headerlink" title="WireGuard："></a>WireGuard：</h3><ul>
+<li>扫描二维码</li>
+<li>导入配置</li>
+</ul>
+<h3 id="Xray："><a href="#Xray：" class="headerlink" title="Xray："></a>Xray：</h3><ul>
+<li>vmess:&#x2F;&#x2F; &#x2F; vless:&#x2F;&#x2F; 链接</li>
+<li>导入客户端</li>
+</ul>
+<hr>
+<h1 id="6️⃣-免费方案组合推荐"><a href="#6️⃣-免费方案组合推荐" class="headerlink" title="6️⃣ 免费方案组合推荐"></a>6️⃣ 免费方案组合推荐</h1><h2 id="🟢-无信用卡方案（推荐）"><a href="#🟢-无信用卡方案（推荐）" class="headerlink" title="🟢 无信用卡方案（推荐）"></a>🟢 无信用卡方案（推荐）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Fly.io VPS</span><br><span class="line">   ↓</span><br><span class="line">XUI面板（轻量）</span><br><span class="line">   ↓</span><br><span class="line">Xray / WireGuard节点</span><br><span class="line">   ↓</span><br><span class="line">小规模用户VPN</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="🟡-强力稳定方案"><a href="#🟡-强力稳定方案" class="headerlink" title="🟡 强力稳定方案"></a>🟡 强力稳定方案</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Oracle Cloud VPS</span><br><span class="line">   ↓</span><br><span class="line">XUI面板</span><br><span class="line">   ↓</span><br><span class="line">WireGuard（高性能）</span><br><span class="line">   ↓</span><br><span class="line">多用户流量管理系统</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="7️⃣-常见问题（非常重要）"><a href="#7️⃣-常见问题（非常重要）" class="headerlink" title="7️⃣ 常见问题（非常重要）"></a>7️⃣ 常见问题（非常重要）</h1><h2 id="❌-Wise为什么不能用？"><a href="#❌-Wise为什么不能用？" class="headerlink" title="❌ Wise为什么不能用？"></a>❌ Wise为什么不能用？</h2><ul>
+<li>中国不支持虚拟卡功能</li>
+<li>只能收钱不能发卡</li>
+</ul>
+<hr>
+<h2 id="❌-Oracle为什么注册失败？"><a href="#❌-Oracle为什么注册失败？" class="headerlink" title="❌ Oracle为什么注册失败？"></a>❌ Oracle为什么注册失败？</h2><ul>
+<li>没有国际信用卡</li>
+<li>地址&#x2F;地区不真实</li>
+<li>IP风控</li>
+</ul>
+<hr>
+<h2 id="❌-免费VPS能不能做VPN？"><a href="#❌-免费VPS能不能做VPN？" class="headerlink" title="❌ 免费VPS能不能做VPN？"></a>❌ 免费VPS能不能做VPN？</h2><p>可以，但要注意：</p>
+<ul>
+<li>流量有限</li>
+<li>不适合商业用途</li>
+<li>用户不能太多</li>
+</ul>
+<hr>
+<h1 id="📌-最终总结（一句话）"><a href="#📌-最终总结（一句话）" class="headerlink" title="📌 最终总结（一句话）"></a>📌 最终总结（一句话）</h1><p>👉 没信用卡：用 Fly.io<br>👉 有信用卡：用 Oracle Cloud<br>👉 管理系统：XUI 免费面板<br>👉 VPN核心：WireGuard &#x2F; Xray</p>
+<hr>
+
+      </div>
+
+      <!-- Bottom Ad -->
+      
+
+      <!-- Share -->
+      
+      <div class="post-share">
+        <h3>分享文章</h3>
+        <div class="share-links">
+          <a href="javascript:;" class="copy-link" data-url="https://www.lxs.best/2026/05/11/2026-05-11-%E5%85%8D%E8%B4%B9-vps-%E5%A4%9A%E7%94%A8%E6%88%B7-vpn-xui-%E9%9D%A2%E6%9D%BF%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%80%BB%E7%BB%93/">复制链接</a>
+        </div>
+      </div>
+      
+    </article>
+
+    <!-- Post Navigation -->
+    
+    <nav class="post-nav">
+      
+      <a href="/2026/05/11/2026-05-11-wise-%E4%B8%AD%E5%9B%BD%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E7%89%88/" class="post-nav-prev" title="上一篇: Wise 中国用户注册与实名认证完整实操指南（一步一步版）">
+        <span class="nav-label">← 上一篇</span>
+        <span class="nav-title">Wise 中国用户注册与实名认证完整实操指南（一步一步版）</span>
+      </a>
+      
+      
+      <a href="/2026/05/11/2026-05-11-google-adsense-%E7%BD%91%E7%AB%99%E6%8A%95%E6%94%BE%E4%B8%8E%E5%AE%A1%E6%A0%B8%E5%85%A8%E6%B5%81%E7%A8%8B%E5%8F%AF%E5%A4%8D%E7%94%A8%E7%89%88/" class="post-nav-next" title="下一篇: Google AdSense 网站投放与审核全流程（可复用版）">
+        <span class="nav-label">下一篇 →</span>
+        <span class="nav-title">Google AdSense 网站投放与审核全流程（可复用版）</span>
+      </a>
+      
+    </nav>
+    
+  </div>
+
+  
+  <aside class="sidebar">
+  
+
+  
+  <!-- TOC -->
+  <div class="sidebar-section toc-wrapper" id="toc-wrapper">
+    <h3>目录</h3>
+    <nav class="toc" id="toc">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A2-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE"><span class="toc-number">1.</span> <span class="toc-text">③ 创建项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A3-%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE"><span class="toc-number">2.</span> <span class="toc-text">④ 部署项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9F%A1-%E6%96%B9%E6%A1%88B%EF%BC%9AOracle-Cloud%EF%BC%88%E6%9C%80%E5%BC%BA%E5%85%8D%E8%B4%B9VPS%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">🟡 方案B：Oracle Cloud（最强免费VPS）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%9D%97%E5%89%8D%E6%8F%90%E9%97%AE%E9%A2%98"><span class="toc-number">3.1.</span> <span class="toc-text">❗前提问题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9A%80-Oracle%E5%AE%8C%E6%95%B4%E7%94%B3%E8%AF%B7%E6%AD%A5%E9%AA%A4"><span class="toc-number">4.</span> <span class="toc-text">🚀 Oracle完整申请步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A0-%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7"><span class="toc-number">4.1.</span> <span class="toc-text">① 注册账号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A1-%E9%AA%8C%E8%AF%81%E9%82%AE%E7%AE%B1"><span class="toc-number">4.2.</span> <span class="toc-text">② 验证邮箱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A2-%E5%A1%AB%E5%86%99%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF"><span class="toc-number">4.3.</span> <span class="toc-text">③ 填写个人信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A3-%E4%BF%A1%E7%94%A8%E5%8D%A1%E9%AA%8C%E8%AF%81"><span class="toc-number">4.4.</span> <span class="toc-text">④ 信用卡验证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A4-%E5%88%9B%E5%BB%BA-VPS"><span class="toc-number">4.5.</span> <span class="toc-text">⑤ 创建 VPS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A5-%E8%8E%B7%E5%8F%96IP"><span class="toc-number">4.6.</span> <span class="toc-text">⑥ 获取IP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A6-SSH%E8%BF%9E%E6%8E%A5"><span class="toc-number">4.7.</span> <span class="toc-text">⑦ SSH连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A7-%E6%9B%B4%E6%96%B0%E7%B3%BB%E7%BB%9F"><span class="toc-number">4.8.</span> <span class="toc-text">⑧ 更新系统</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9F%A2-Oracle%E4%BC%98%E5%8A%BF%E6%80%BB%E7%BB%93"><span class="toc-number">5.</span> <span class="toc-text">🟢 Oracle优势总结</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3%EF%B8%8F%E2%83%A3-XUI%E9%9D%A2%E6%9D%BF%E5%AE%89%E8%A3%85%EF%BC%88%E6%A0%B8%E5%BF%83%E7%B3%BB%E7%BB%9F%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">3️⃣ XUI面板安装（核心系统）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9A%80-%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85"><span class="toc-number">6.1.</span> <span class="toc-text">🚀 一键安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%8C-%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90%E5%90%8E"><span class="toc-number">6.2.</span> <span class="toc-text">📌 安装完成后</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%94%90-%E7%99%BB%E5%BD%95%E5%90%8E%E5%8F%B0"><span class="toc-number">6.3.</span> <span class="toc-text">🔐 登录后台</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4%EF%B8%8F%E2%83%A3-%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7%EF%BC%88%E6%B5%81%E9%87%8F%E7%AE%A1%E7%90%86%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">4️⃣ 创建用户（流量管理）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%93%8A-%E9%85%8D%E7%BD%AE%E5%BB%BA%E8%AE%AE"><span class="toc-number">7.1.</span> <span class="toc-text">📊 配置建议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9B%94-%E8%B6%85%E6%B5%81%E9%87%8F%E8%A7%84%E5%88%99"><span class="toc-number">7.2.</span> <span class="toc-text">⛔ 超流量规则</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5%EF%B8%8F%E2%83%A3-VPN%E8%8A%82%E7%82%B9%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F"><span class="toc-number">8.</span> <span class="toc-text">5️⃣ VPN节点使用方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#WireGuard%EF%BC%9A"><span class="toc-number">8.1.</span> <span class="toc-text">WireGuard：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Xray%EF%BC%9A"><span class="toc-number">8.2.</span> <span class="toc-text">Xray：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6%EF%B8%8F%E2%83%A3-%E5%85%8D%E8%B4%B9%E6%96%B9%E6%A1%88%E7%BB%84%E5%90%88%E6%8E%A8%E8%8D%90"><span class="toc-number">9.</span> <span class="toc-text">6️⃣ 免费方案组合推荐</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9F%A2-%E6%97%A0%E4%BF%A1%E7%94%A8%E5%8D%A1%E6%96%B9%E6%A1%88%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">9.1.</span> <span class="toc-text">🟢 无信用卡方案（推荐）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9F%A1-%E5%BC%BA%E5%8A%9B%E7%A8%B3%E5%AE%9A%E6%96%B9%E6%A1%88"><span class="toc-number">9.2.</span> <span class="toc-text">🟡 强力稳定方案</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7%EF%B8%8F%E2%83%A3-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%EF%BC%88%E9%9D%9E%E5%B8%B8%E9%87%8D%E8%A6%81%EF%BC%89"><span class="toc-number">10.</span> <span class="toc-text">7️⃣ 常见问题（非常重要）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9D%8C-Wise%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E7%94%A8%EF%BC%9F"><span class="toc-number">10.1.</span> <span class="toc-text">❌ Wise为什么不能用？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9D%8C-Oracle%E4%B8%BA%E4%BB%80%E4%B9%88%E6%B3%A8%E5%86%8C%E5%A4%B1%E8%B4%A5%EF%BC%9F"><span class="toc-number">10.2.</span> <span class="toc-text">❌ Oracle为什么注册失败？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%9D%8C-%E5%85%8D%E8%B4%B9VPS%E8%83%BD%E4%B8%8D%E8%83%BD%E5%81%9AVPN%EF%BC%9F"><span class="toc-number">10.3.</span> <span class="toc-text">❌ 免费VPS能不能做VPN？</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%93%8C-%E6%9C%80%E7%BB%88%E6%80%BB%E7%BB%93%EF%BC%88%E4%B8%80%E5%8F%A5%E8%AF%9D%EF%BC%89"><span class="toc-number">11.</span> <span class="toc-text">📌 最终总结（一句话）</span></a></li></ol>
+    </nav>
+  </div>
+  
+
+  <!-- Categories -->
+  
+  <div class="sidebar-section">
+    <h3>分类</h3>
+    <ul class="sidebar-categories">
+      
+      <li>
+        <a href="/categories/%E6%95%99%E7%A8%8B/" title="教程 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程 <span class="count">(9)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91/" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发 <span class="count">(3)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" title="开发部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署 <span class="count">(1)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E6%8F%90%E7%A4%BA%E8%AF%8D/" title="提示词 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词 <span class="count">(3)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E9%83%A8%E7%BD%B2/" title="部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署 <span class="count">(1)</span></a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+  <!-- Tags -->
+  
+  <div class="sidebar-section">
+    <h3>标签</h3>
+    <div class="sidebar-tags">
+      
+      <a href="/tags/JavaScript/" class="tag-item" title="JavaScript 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">JavaScript</a>
+      
+      <a href="/tags/Python/" class="tag-item" title="Python 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Python</a>
+      
+      <a href="/tags/%E5%85%A5%E9%97%A8/" class="tag-item" title="入门 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">入门</a>
+      
+      <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+      
+      <a href="/tags/Markdown/" class="tag-item" title="Markdown 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Markdown</a>
+      
+      <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-item" title="博客 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">博客</a>
+      
+      <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+      
+      <a href="/tags/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" class="tag-item" title="开发部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署</a>
+      
+      <a href="/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/" class="tag-item" title="提示词 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词</a>
+      
+      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+      
+    </div>
+  </div>
+  
+
+  <!-- Recent Posts -->
+  
+  <div class="sidebar-section">
+    <h3>最近文章</h3>
+    <ul class="sidebar-recent">
+      
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E4%B8%80%E4%BD%93%E5%8C%96%E6%8E%A8%E8%AE%AD%E5%B9%B3%E5%8F%B0/" title="一体化推训平台 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">一体化推训平台</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E5%AE%8C%E6%95%B4-5s-%E8%A7%84%E5%88%99%E4%BB%A5%E5%8F%8A6a/" title="完整 5S 规则以及6A - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">完整 5S 规则以及6A</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" title="免费博客搭建GitHub - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">免费博客搭建GitHub</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/11/2026-05-11-creem-wise-%E6%94%B6%E6%AC%BE%E7%BB%91%E5%AE%9A%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E5%8F%AF%E5%A4%8D%E7%94%A8/" title="Creem + Wise 收款绑定完整实操指南（一步一步可复用） - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Creem + Wise 收款绑定完整实操指南（一步一步可复用）</a>
+        <time>2026-05-11</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" title="总有适合你的服务器推荐 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">总有适合你的服务器推荐</a>
+        <time>2026-05-07</time>
+      </li>
+      
+    </ul>
+  </div>
+  
+</aside>
+
+  
+</div>
+
+<script>
+  document.querySelector('.copy-link')?.addEventListener('click', function() {
+    navigator.clipboard.writeText(this.dataset.url).then(function() {
+      alert('链接已复制到剪贴板');
+    });
+  });
+</script>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <span>&copy; 2026 <a href="/" title="skyconnfig - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">skyconnfig</a></span>
+      <span class="sep">·</span>
+      <a href="/privacy-policy" title="隐私政策 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">隐私政策</a>
+      
+    </div>
+    <div class="footer-powered">
+      <span>请联系作者WX:viplxs123 <!--a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a--></span>
+      <span class="sep">·</span>
+      <span>语雀风格主题</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+<!-- Site-wide scripts -->
+<script>
+(function() {
+  'use strict';
+
+  // Mobile menu toggle
+  document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+    document.querySelector('.main-nav').classList.toggle('show');
+  });
+
+  // Header shadow on scroll
+  var header = document.querySelector('.site-header');
+  var ticking = false;
+  function updateHeaderShadow() {
+    if (window.scrollY > 10) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    ticking = false;
+  }
+
+  // Scroll progress bar
+  var progressBar = document.getElementById('scrollProgress');
+  function updateProgress() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight > 0) {
+      var progress = Math.min(scrollTop / docHeight * 100, 100);
+      if (progressBar) progressBar.style.width = progress + '%';
+    }
+  }
+
+  // Back to top
+  var backBtn = document.getElementById('backToTop');
+  function updateBackBtn() {
+    if (window.scrollY > 300) {
+      backBtn.classList.add('visible');
+    } else {
+      backBtn.classList.remove('visible');
+    }
+  }
+
+  backBtn?.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Unified scroll handler with rAF throttling
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        if (header) updateHeaderShadow();
+        updateProgress();
+        updateBackBtn();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Initial state
+  if (header) updateHeaderShadow();
+  updateProgress();
+  updateBackBtn();
+
+  // TOC scroll spy
+  var toc = document.getElementById('toc');
+  if (toc) {
+    var links = toc.querySelectorAll('a');
+    if (links.length) {
+      var headings = [];
+      links.forEach(function(link) {
+        var id = link.getAttribute('href')?.slice(1);
+        if (id) headings.push(document.getElementById(id));
+      });
+
+      function updateToc() {
+        var scrollY = window.scrollY + 100;
+        var active = null;
+        headings.forEach(function(h, i) {
+          if (h && h.offsetTop <= scrollY) active = i;
+        });
+        links.forEach(function(link, i) {
+          link.classList.toggle('active', i === active);
+        });
+      }
+
+      window.addEventListener('scroll', updateToc, { passive: true });
+      updateToc();
+    }
+  }
+})();
+</script>
+
+</body>
+</html>

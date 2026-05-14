@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <title>cc-connect 安装以及配置微信 | AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</title>
+  <meta name="description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
+  <meta name="keywords" content="AI工具教程,Vercel部署,Markdown知识库,Vue开发,SEO优化,前端教程,程序员博客,AI工具">
+  <meta name="author" content="skyconnfig">
+  <meta name="google-site-verification" content="2bx3xsZWUkueuU4vpoYX5ppMAdlkoVKbGSqI-xuFZKk" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="cc-connect 安装以及配置微信">
+  <meta property="og:description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.lxs.best/2026/05/14/2026-05-14-cc-connect-%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E5%BE%AE%E4%BF%A1/">
+  <meta property="og:site_name" content="AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.lxs.best/2026/05/14/2026-05-14-cc-connect-%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E5%BE%AE%E4%BF%A1/">
+
+  <!-- RSS -->
+  
+
+  <!-- Sitemap -->
+  <link rel="sitemap" href="https://www.lxs.best/sitemap.xml" type="application/xml">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1581640229756872" crossorigin="anonymous"></script>
+  
+
+  
+
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C14WM0EJ0C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C14WM0EJ0C');
+  </script>
+  
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+
+
+<div class="site-wrapper">
+  <header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="/" title="AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="main-nav">
+      <ul>
+        
+        <li>
+          <a href="/" title="首页 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >首页</a>
+        </li>
+        
+        <li>
+          <a href="/archives" title="归档 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >归档</a>
+        </li>
+        
+        <li>
+          <a href="/categories" title="分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >分类</a>
+        </li>
+        
+        <li>
+          <a href="/tags" title="标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >标签</a>
+        </li>
+        
+        <li>
+          <a href="/about" title="关于 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >关于</a>
+        </li>
+        
+        <li>
+          <a href="/privacy-policy" title="隐私 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >隐私</a>
+        </li>
+        
+        <li>
+          <a href="/pinecone-discord" title="Discord - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >Discord</a>
+        </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Scroll Progress Bar (article pages) -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <main class="main-content">
+    <div class="container post-page">
+  <div class="content-area">
+    <article class="post-article">
+      <header class="post-header">
+        <h1 class="post-title">cc-connect 安装以及配置微信</h1>
+        <div class="post-meta">
+          <time>2026-05-14</time>
+          
+          <span class="sep">·</span>
+          
+          <a href="/categories/%E9%83%A8%E7%BD%B2/" class="category-link" title="部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+          
+          
+          
+          <span class="sep">·</span>
+          <span>更新于 2026-05-14</span>
+          
+        </div>
+
+        
+        <div class="post-tags">
+          
+          <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+          
+        </div>
+        
+      </header>
+
+      <!-- Top Ad -->
+      
+
+      <!-- Article Content -->
+      <div class="post-content">
+        <p>一、先安装基础环境</p>
+<ol>
+<li>安装 Node.js（必须）</li>
+</ol>
+<p>打开：</p>
+<p>Node.js 官网</p>
+<p>下载：</p>
+<p>LTS 版本<br>Windows x64 Installer (.msi)</p>
+<p>安装时：</p>
+<p>一路 Next<br>勾选：<br>Add to PATH</p>
+<p>安装完成后：</p>
+<p>打开 PowerShell：</p>
+<p>node -v<br>npm -v</p>
+<p>如果能看到版本号说明成功。</p>
+<p>例如：</p>
+<p>v22.x.x<br>10.x.x<br>二、安装 cc-connect</p>
+<p>官方支持 npm 全局安装。</p>
+<p>PowerShell 执行：</p>
+<p>npm install -g cc-connect</p>
+<p>安装完成后检查：</p>
+<p>cc-connect –version<br><img src="/images/image-1778745277932.png" alt="image"><br>如果连接微信不了是不是初始化<br>cc-connect init</p>
+<p>微信初始化<br>cc-connect weixin setup<br>截图<br><img src="/images/image-1778745366966.png" alt="image"></p>
+<p>配置deepseek<br>重启powershell后在终端输入cc-connect启动<br>访问<a target="_blank" rel="noopener" href="http://localhost:9820/login">http://localhost:9820/login</a><br><img src="/images/image-1778745848591.png" alt="image"><br>登入令牌在配置文件里面<br>config.toml<br><img src="/images/image-1778746005867.png" alt="image"></p>
+<p><img src="/images/image-1778745965089.png" alt="image"></p>
+
+      </div>
+
+      <!-- Bottom Ad -->
+      
+
+      <!-- Share -->
+      
+      <div class="post-share">
+        <h3>分享文章</h3>
+        <div class="share-links">
+          <a href="javascript:;" class="copy-link" data-url="https://www.lxs.best/2026/05/14/2026-05-14-cc-connect-%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E5%BE%AE%E4%BF%A1/">复制链接</a>
+        </div>
+      </div>
+      
+    </article>
+
+    <!-- Post Navigation -->
+    
+    <nav class="post-nav">
+      
+      
+      <a href="/2026/05/12/2026-05-12-github-oauth-%E7%99%BB%E5%BD%95%E5%9C%A8-vercel-%E9%83%A8%E7%BD%B2%E4%B8%8E%E8%B0%83%E8%AF%95%E5%85%A8%E6%94%BB%E7%95%A5/" class="post-nav-next" title="下一篇: GitHub OAuth 登录在 Vercel 部署与调试全攻略">
+        <span class="nav-label">下一篇 →</span>
+        <span class="nav-title">GitHub OAuth 登录在 Vercel 部署与调试全攻略</span>
+      </a>
+      
+    </nav>
+    
+  </div>
+
+  
+  <aside class="sidebar">
+  
+
+  
+  <!-- TOC -->
+  <div class="sidebar-section toc-wrapper" id="toc-wrapper">
+    <h3>目录</h3>
+    <nav class="toc" id="toc">
+      
+    </nav>
+  </div>
+  
+
+  <!-- Categories -->
+  
+  <div class="sidebar-section">
+    <h3>分类</h3>
+    <ul class="sidebar-categories">
+      
+      <li>
+        <a href="/categories/%E6%95%99%E7%A8%8B/" title="教程 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程 <span class="count">(9)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91/" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发 <span class="count">(3)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" title="开发部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署 <span class="count">(1)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E6%8F%90%E7%A4%BA%E8%AF%8D/" title="提示词 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词 <span class="count">(3)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E9%83%A8%E7%BD%B2/" title="部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署 <span class="count">(1)</span></a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+  <!-- Tags -->
+  
+  <div class="sidebar-section">
+    <h3>标签</h3>
+    <div class="sidebar-tags">
+      
+      <a href="/tags/JavaScript/" class="tag-item" title="JavaScript 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">JavaScript</a>
+      
+      <a href="/tags/Python/" class="tag-item" title="Python 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Python</a>
+      
+      <a href="/tags/%E5%85%A5%E9%97%A8/" class="tag-item" title="入门 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">入门</a>
+      
+      <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+      
+      <a href="/tags/Markdown/" class="tag-item" title="Markdown 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Markdown</a>
+      
+      <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-item" title="博客 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">博客</a>
+      
+      <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+      
+      <a href="/tags/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" class="tag-item" title="开发部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署</a>
+      
+      <a href="/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/" class="tag-item" title="提示词 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词</a>
+      
+      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+      
+    </div>
+  </div>
+  
+
+  <!-- Recent Posts -->
+  
+  <div class="sidebar-section">
+    <h3>最近文章</h3>
+    <ul class="sidebar-recent">
+      
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E4%B8%80%E4%BD%93%E5%8C%96%E6%8E%A8%E8%AE%AD%E5%B9%B3%E5%8F%B0/" title="一体化推训平台 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">一体化推训平台</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E5%AE%8C%E6%95%B4-5s-%E8%A7%84%E5%88%99%E4%BB%A5%E5%8F%8A6a/" title="完整 5S 规则以及6A - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">完整 5S 规则以及6A</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" title="免费博客搭建GitHub - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">免费博客搭建GitHub</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/11/2026-05-11-creem-wise-%E6%94%B6%E6%AC%BE%E7%BB%91%E5%AE%9A%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E5%8F%AF%E5%A4%8D%E7%94%A8/" title="Creem + Wise 收款绑定完整实操指南（一步一步可复用） - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Creem + Wise 收款绑定完整实操指南（一步一步可复用）</a>
+        <time>2026-05-11</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" title="总有适合你的服务器推荐 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">总有适合你的服务器推荐</a>
+        <time>2026-05-07</time>
+      </li>
+      
+    </ul>
+  </div>
+  
+</aside>
+
+  
+</div>
+
+<script>
+  document.querySelector('.copy-link')?.addEventListener('click', function() {
+    navigator.clipboard.writeText(this.dataset.url).then(function() {
+      alert('链接已复制到剪贴板');
+    });
+  });
+</script>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <span>&copy; 2026 <a href="/" title="skyconnfig - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">skyconnfig</a></span>
+      <span class="sep">·</span>
+      <a href="/privacy-policy" title="隐私政策 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">隐私政策</a>
+      
+    </div>
+    <div class="footer-powered">
+      <span>请联系作者WX:viplxs123 <!--a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a--></span>
+      <span class="sep">·</span>
+      <span>语雀风格主题</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+<!-- Site-wide scripts -->
+<script>
+(function() {
+  'use strict';
+
+  // Mobile menu toggle
+  document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+    document.querySelector('.main-nav').classList.toggle('show');
+  });
+
+  // Header shadow on scroll
+  var header = document.querySelector('.site-header');
+  var ticking = false;
+  function updateHeaderShadow() {
+    if (window.scrollY > 10) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    ticking = false;
+  }
+
+  // Scroll progress bar
+  var progressBar = document.getElementById('scrollProgress');
+  function updateProgress() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight > 0) {
+      var progress = Math.min(scrollTop / docHeight * 100, 100);
+      if (progressBar) progressBar.style.width = progress + '%';
+    }
+  }
+
+  // Back to top
+  var backBtn = document.getElementById('backToTop');
+  function updateBackBtn() {
+    if (window.scrollY > 300) {
+      backBtn.classList.add('visible');
+    } else {
+      backBtn.classList.remove('visible');
+    }
+  }
+
+  backBtn?.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Unified scroll handler with rAF throttling
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        if (header) updateHeaderShadow();
+        updateProgress();
+        updateBackBtn();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Initial state
+  if (header) updateHeaderShadow();
+  updateProgress();
+  updateBackBtn();
+
+  // TOC scroll spy
+  var toc = document.getElementById('toc');
+  if (toc) {
+    var links = toc.querySelectorAll('a');
+    if (links.length) {
+      var headings = [];
+      links.forEach(function(link) {
+        var id = link.getAttribute('href')?.slice(1);
+        if (id) headings.push(document.getElementById(id));
+      });
+
+      function updateToc() {
+        var scrollY = window.scrollY + 100;
+        var active = null;
+        headings.forEach(function(h, i) {
+          if (h && h.offsetTop <= scrollY) active = i;
+        });
+        links.forEach(function(link, i) {
+          link.classList.toggle('active', i === active);
+        });
+      }
+
+      window.addEventListener('scroll', updateToc, { passive: true });
+      updateToc();
+    }
+  }
+})();
+</script>
+
+</body>
+</html>

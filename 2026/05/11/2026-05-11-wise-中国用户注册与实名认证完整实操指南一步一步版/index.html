@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <title>Wise 中国用户注册与实名认证完整实操指南（一步一步版） | AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</title>
+  <meta name="description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
+  <meta name="keywords" content="AI工具教程,Vercel部署,Markdown知识库,Vue开发,SEO优化,前端教程,程序员博客,AI工具">
+  <meta name="author" content="skyconnfig">
+  <meta name="google-site-verification" content="2bx3xsZWUkueuU4vpoYX5ppMAdlkoVKbGSqI-xuFZKk" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Wise 中国用户注册与实名认证完整实操指南（一步一步版）">
+  <meta property="og:description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.lxs.best/2026/05/11/2026-05-11-wise-%E4%B8%AD%E5%9B%BD%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E7%89%88/">
+  <meta property="og:site_name" content="AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.lxs.best/2026/05/11/2026-05-11-wise-%E4%B8%AD%E5%9B%BD%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E7%89%88/">
+
+  <!-- RSS -->
+  
+
+  <!-- Sitemap -->
+  <link rel="sitemap" href="https://www.lxs.best/sitemap.xml" type="application/xml">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1581640229756872" crossorigin="anonymous"></script>
+  
+
+  
+
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C14WM0EJ0C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C14WM0EJ0C');
+  </script>
+  
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+
+
+<div class="site-wrapper">
+  <header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="/" title="AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="main-nav">
+      <ul>
+        
+        <li>
+          <a href="/" title="首页 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >首页</a>
+        </li>
+        
+        <li>
+          <a href="/archives" title="归档 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >归档</a>
+        </li>
+        
+        <li>
+          <a href="/categories" title="分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >分类</a>
+        </li>
+        
+        <li>
+          <a href="/tags" title="标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >标签</a>
+        </li>
+        
+        <li>
+          <a href="/about" title="关于 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >关于</a>
+        </li>
+        
+        <li>
+          <a href="/privacy-policy" title="隐私 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >隐私</a>
+        </li>
+        
+        <li>
+          <a href="/pinecone-discord" title="Discord - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >Discord</a>
+        </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Scroll Progress Bar (article pages) -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <main class="main-content">
+    <div class="container post-page">
+  <div class="content-area">
+    <article class="post-article">
+      <header class="post-header">
+        <h1 class="post-title">Wise 中国用户注册与实名认证完整实操指南（一步一步版）</h1>
+        <div class="post-meta">
+          <time>2026-05-11</time>
+          
+          <span class="sep">·</span>
+          
+          <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-link" title="教程 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+          
+          
+          
+          <span class="sep">·</span>
+          <span>更新于 2026-05-11</span>
+          
+        </div>
+
+        
+        <div class="post-tags">
+          
+          <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+          
+        </div>
+        
+      </header>
+
+      <!-- Top Ad -->
+      
+
+      <!-- Article Content -->
+      <div class="post-content">
+        <h1 id="Wise-中国用户注册与实名认证完整实操指南（一步一步版）"><a href="#Wise-中国用户注册与实名认证完整实操指南（一步一步版）" class="headerlink" title="Wise 中国用户注册与实名认证完整实操指南（一步一步版）"></a>Wise 中国用户注册与实名认证完整实操指南（一步一步版）</h1><p>本教程适用于中国用户注册 Wise（原 TransferWise）个人账户，目标是<strong>一次通过审核 + 可用于跨境收款&#x2F;转账</strong>。建议按步骤严格操作。</p>
+<hr>
+<h1 id="1️⃣-注册前准备（非常关键）"><a href="#1️⃣-注册前准备（非常关键）" class="headerlink" title="1️⃣ 注册前准备（非常关键）"></a>1️⃣ 注册前准备（非常关键）</h1><p>在开始注册前，请准备好以下材料，否则容易卡在验证环节：</p>
+<h3 id="✔-必备资料"><a href="#✔-必备资料" class="headerlink" title="✔ 必备资料"></a>✔ 必备资料</h3><ul>
+<li>中国护照（推荐优先）或中国居民身份证</li>
+<li>常用邮箱（Gmail &#x2F; Outlook &#x2F; QQ均可）</li>
+<li>可接收短信的手机号</li>
+<li>稳定网络环境（避免频繁切换IP）</li>
+</ul>
+<h3 id="✔-强烈建议"><a href="#✔-强烈建议" class="headerlink" title="✔ 强烈建议"></a>✔ 强烈建议</h3><ul>
+<li>使用护照（跨境通过率更高）</li>
+<li>提前准备清晰证件照片（避免现场拍模糊）</li>
+</ul>
+<hr>
+<h1 id="2️⃣-创建-Wise-账户"><a href="#2️⃣-创建-Wise-账户" class="headerlink" title="2️⃣ 创建 Wise 账户"></a>2️⃣ 创建 Wise 账户</h1><p>进入 :contentReference[oaicite:0]{index&#x3D;0} 官网：</p>
+<h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><ol>
+<li>打开官网 <a target="_blank" rel="noopener" href="https://wise.com/">https://wise.com</a>  </li>
+<li>点击 <strong>Sign up（注册）</strong></li>
+<li>选择账户类型：<ul>
+<li>Personal（个人账户）👉 选这个</li>
+<li>Business（企业账户）👉 不要选，除非公司用</li>
+</ul>
+</li>
+<li>输入邮箱 + 设置密码</li>
+<li>邮箱验证码验证完成</li>
+</ol>
+<hr>
+<h1 id="3️⃣-填写基础身份信息"><a href="#3️⃣-填写基础身份信息" class="headerlink" title="3️⃣ 填写基础身份信息"></a>3️⃣ 填写基础身份信息</h1><p>进入基础资料页面后：</p>
+<h3 id="必填内容"><a href="#必填内容" class="headerlink" title="必填内容"></a>必填内容</h3><ul>
+<li>姓名（必须与证件完全一致）</li>
+<li>出生日期（按证件填写）</li>
+<li>国家选择：中国（China）</li>
+</ul>
+<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><ul>
+<li>如果用护照：姓名按英文拼写</li>
+<li>如果用身份证：中文或系统要求格式填写</li>
+<li>不要随意简写或改名</li>
+</ul>
+<hr>
+<h1 id="4️⃣-选择身份验证方式（核心步骤）"><a href="#4️⃣-选择身份验证方式（核心步骤）" class="headerlink" title="4️⃣ 选择身份验证方式（核心步骤）"></a>4️⃣ 选择身份验证方式（核心步骤）</h1><p>进入“Verify your identity（身份验证）”时：</p>
+<h3 id="三种选项对比"><a href="#三种选项对比" class="headerlink" title="三种选项对比"></a>三种选项对比</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>是否推荐</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>护照 Passport</td>
+<td>⭐⭐⭐⭐⭐ 强烈推荐</td>
+<td>跨境转账成功率最高</td>
+</tr>
+<tr>
+<td>国民身份证 ID</td>
+<td>⭐⭐⭐</td>
+<td>可用，但部分功能受限</td>
+</tr>
+<tr>
+<td>难民文件</td>
+<td>❌ 不适用</td>
+<td>普通用户不要选</td>
+</tr>
+</tbody></table>
+<h3 id="推荐策略"><a href="#推荐策略" class="headerlink" title="推荐策略"></a>推荐策略</h3><p>👉 有护照：直接选护照<br>👉 没护照：再选身份证  </p>
+<hr>
+<h1 id="5️⃣-上传证件（最容易失败的地方）"><a href="#5️⃣-上传证件（最容易失败的地方）" class="headerlink" title="5️⃣ 上传证件（最容易失败的地方）"></a>5️⃣ 上传证件（最容易失败的地方）</h1><h3 id="护照上传要求"><a href="#护照上传要求" class="headerlink" title="护照上传要求"></a>护照上传要求</h3><ul>
+<li>首页信息页（含照片那页）</li>
+<li>信息必须完整清晰</li>
+<li>四角必须拍全</li>
+</ul>
+<h3 id="身份证上传要求"><a href="#身份证上传要求" class="headerlink" title="身份证上传要求"></a>身份证上传要求</h3><ul>
+<li>正反面都要上传</li>
+<li>不要反光、模糊</li>
+<li>不要裁剪边缘</li>
+</ul>
+<h3 id="拍摄技巧"><a href="#拍摄技巧" class="headerlink" title="拍摄技巧"></a>拍摄技巧</h3><ul>
+<li>用手机原相机</li>
+<li>白天自然光最好</li>
+<li>放在纯色背景上拍</li>
+</ul>
+<hr>
+<h1 id="6️⃣-人脸验证（如果系统要求）"><a href="#6️⃣-人脸验证（如果系统要求）" class="headerlink" title="6️⃣ 人脸验证（如果系统要求）"></a>6️⃣ 人脸验证（如果系统要求）</h1><p>系统可能会要求：</p>
+<ul>
+<li>眨眼 &#x2F; 转头</li>
+<li>自拍视频验证</li>
+<li>动作识别</li>
+</ul>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ul>
+<li>不要戴帽子&#x2F;眼镜（最好）</li>
+<li>光线要充足</li>
+<li>按提示操作即可</li>
+</ul>
+<hr>
+<h1 id="7️⃣-地址验证（部分用户会触发）"><a href="#7️⃣-地址验证（部分用户会触发）" class="headerlink" title="7️⃣ 地址验证（部分用户会触发）"></a>7️⃣ 地址验证（部分用户会触发）</h1><p>可能需要提供：</p>
+<ul>
+<li>银行账单</li>
+<li>水电煤账单</li>
+<li>信用卡账单</li>
+</ul>
+<h3 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h3><ul>
+<li>地址必须与注册信息一致</li>
+<li>文件需在近3个月内</li>
+</ul>
+<hr>
+<h1 id="8️⃣-账户激活与功能检查"><a href="#8️⃣-账户激活与功能检查" class="headerlink" title="8️⃣ 账户激活与功能检查"></a>8️⃣ 账户激活与功能检查</h1><p>审核通过后：</p>
+<h3 id="你会获得"><a href="#你会获得" class="headerlink" title="你会获得"></a>你会获得</h3><ul>
+<li>Wise 收款账户（多币种）</li>
+<li>国际银行账户信息</li>
+<li>转账功能开启</li>
+</ul>
+<h3 id="建议操作"><a href="#建议操作" class="headerlink" title="建议操作"></a>建议操作</h3><ol>
+<li>登录账户</li>
+<li>检查 USD &#x2F; EUR &#x2F; GBP 收款信息</li>
+<li>尝试小额充值测试</li>
+<li>绑定银行卡（可选）</li>
+</ol>
+<hr>
+<h1 id="9️⃣-常见失败原因（一定要避开）"><a href="#9️⃣-常见失败原因（一定要避开）" class="headerlink" title="9️⃣ 常见失败原因（一定要避开）"></a>9️⃣ 常见失败原因（一定要避开）</h1><p>❌ 证件模糊 &#x2F; 反光<br>❌ 姓名与证件不一致<br>❌ IP频繁切换（触发风控）<br>❌ 使用虚假地址<br>❌ 上传截图而不是照片  </p>
+<hr>
+<h1 id="🔟-最优成功策略总结"><a href="#🔟-最优成功策略总结" class="headerlink" title="🔟 最优成功策略总结"></a>🔟 最优成功策略总结</h1><p>👉 最稳方案如下：</p>
+<ol>
+<li>用护照注册（优先）</li>
+<li>使用真实中文姓名 + 英文拼写一致</li>
+<li>一次性上传清晰证件</li>
+<li>不要频繁刷新页面</li>
+<li>完成后再绑定银行卡</li>
+</ol>
+<hr>
+<h1 id="🚀-一句话总结"><a href="#🚀-一句话总结" class="headerlink" title="🚀 一句话总结"></a>🚀 一句话总结</h1><p>Wise 注册成功的核心不是操作复杂，而是：</p>
+<blockquote>
+<p><strong>“资料真实 + 证件清晰 + 信息一致”</strong></p>
+</blockquote>
+<hr>
+<p>如果你需要，我可以帮你再做一份：</p>
+<p>👉《Wise + PayPal + 虚拟卡 + 海外收款完整资金系统搭建方案（一步一步）》</p>
+
+      </div>
+
+      <!-- Bottom Ad -->
+      
+
+      <!-- Share -->
+      
+      <div class="post-share">
+        <h3>分享文章</h3>
+        <div class="share-links">
+          <a href="javascript:;" class="copy-link" data-url="https://www.lxs.best/2026/05/11/2026-05-11-wise-%E4%B8%AD%E5%9B%BD%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E7%89%88/">复制链接</a>
+        </div>
+      </div>
+      
+    </article>
+
+    <!-- Post Navigation -->
+    
+    <nav class="post-nav">
+      
+      <a href="/2026/05/11/2026-05-11-path-of-exile-2-seo-%E5%86%85%E5%AE%B9%E7%94%9F%E4%BA%A7%E5%AE%8C%E6%95%B4%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4mvp-adsense-%E6%94%B6%E7%9B%8A%E7%89%88/" class="post-nav-prev" title="上一篇: Path of Exile 2 SEO 内容生产完整操作步骤（MVP → Adsense 收益版）">
+        <span class="nav-label">← 上一篇</span>
+        <span class="nav-title">Path of Exile 2 SEO 内容生产完整操作步骤（MVP → Adsense 收益版）</span>
+      </a>
+      
+      
+      <a href="/2026/05/11/2026-05-11-%E5%85%8D%E8%B4%B9-vps-%E5%A4%9A%E7%94%A8%E6%88%B7-vpn-xui-%E9%9D%A2%E6%9D%BF%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%80%BB%E7%BB%93/" class="post-nav-next" title="下一篇: 📌 免费 VPS + 多用户 VPN + XUI 面板完整实操总结">
+        <span class="nav-label">下一篇 →</span>
+        <span class="nav-title">📌 免费 VPS + 多用户 VPN + XUI 面板完整实操总结</span>
+      </a>
+      
+    </nav>
+    
+  </div>
+
+  
+  <aside class="sidebar">
+  
+
+  
+  <!-- TOC -->
+  <div class="sidebar-section toc-wrapper" id="toc-wrapper">
+    <h3>目录</h3>
+    <nav class="toc" id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Wise-%E4%B8%AD%E5%9B%BD%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%AE%9E%E5%90%8D%E8%AE%A4%E8%AF%81%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%EF%BC%88%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E7%89%88%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">Wise 中国用户注册与实名认证完整实操指南（一步一步版）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1%EF%B8%8F%E2%83%A3-%E6%B3%A8%E5%86%8C%E5%89%8D%E5%87%86%E5%A4%87%EF%BC%88%E9%9D%9E%E5%B8%B8%E5%85%B3%E9%94%AE%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">1️⃣ 注册前准备（非常关键）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%9C%94-%E5%BF%85%E5%A4%87%E8%B5%84%E6%96%99"><span class="toc-number">2.1.</span> <span class="toc-text">✔ 必备资料</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%9C%94-%E5%BC%BA%E7%83%88%E5%BB%BA%E8%AE%AE"><span class="toc-number">2.2.</span> <span class="toc-text">✔ 强烈建议</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2%EF%B8%8F%E2%83%A3-%E5%88%9B%E5%BB%BA-Wise-%E8%B4%A6%E6%88%B7"><span class="toc-number">3.</span> <span class="toc-text">2️⃣ 创建 Wise 账户</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4"><span class="toc-number">3.1.</span> <span class="toc-text">操作步骤</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3%EF%B8%8F%E2%83%A3-%E5%A1%AB%E5%86%99%E5%9F%BA%E7%A1%80%E8%BA%AB%E4%BB%BD%E4%BF%A1%E6%81%AF"><span class="toc-number">4.</span> <span class="toc-text">3️⃣ 填写基础身份信息</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%85%E5%A1%AB%E5%86%85%E5%AE%B9"><span class="toc-number">4.1.</span> <span class="toc-text">必填内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="toc-number">4.2.</span> <span class="toc-text">注意点</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4%EF%B8%8F%E2%83%A3-%E9%80%89%E6%8B%A9%E8%BA%AB%E4%BB%BD%E9%AA%8C%E8%AF%81%E6%96%B9%E5%BC%8F%EF%BC%88%E6%A0%B8%E5%BF%83%E6%AD%A5%E9%AA%A4%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">4️⃣ 选择身份验证方式（核心步骤）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E9%80%89%E9%A1%B9%E5%AF%B9%E6%AF%94"><span class="toc-number">5.1.</span> <span class="toc-text">三种选项对比</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E8%8D%90%E7%AD%96%E7%95%A5"><span class="toc-number">5.2.</span> <span class="toc-text">推荐策略</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5%EF%B8%8F%E2%83%A3-%E4%B8%8A%E4%BC%A0%E8%AF%81%E4%BB%B6%EF%BC%88%E6%9C%80%E5%AE%B9%E6%98%93%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">5️⃣ 上传证件（最容易失败的地方）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%A4%E7%85%A7%E4%B8%8A%E4%BC%A0%E8%A6%81%E6%B1%82"><span class="toc-number">6.1.</span> <span class="toc-text">护照上传要求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BA%AB%E4%BB%BD%E8%AF%81%E4%B8%8A%E4%BC%A0%E8%A6%81%E6%B1%82"><span class="toc-number">6.2.</span> <span class="toc-text">身份证上传要求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%8D%E6%91%84%E6%8A%80%E5%B7%A7"><span class="toc-number">6.3.</span> <span class="toc-text">拍摄技巧</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6%EF%B8%8F%E2%83%A3-%E4%BA%BA%E8%84%B8%E9%AA%8C%E8%AF%81%EF%BC%88%E5%A6%82%E6%9E%9C%E7%B3%BB%E7%BB%9F%E8%A6%81%E6%B1%82%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">6️⃣ 人脸验证（如果系统要求）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F"><span class="toc-number">7.1.</span> <span class="toc-text">注意</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7%EF%B8%8F%E2%83%A3-%E5%9C%B0%E5%9D%80%E9%AA%8C%E8%AF%81%EF%BC%88%E9%83%A8%E5%88%86%E7%94%A8%E6%88%B7%E4%BC%9A%E8%A7%A6%E5%8F%91%EF%BC%89"><span class="toc-number">8.</span> <span class="toc-text">7️⃣ 地址验证（部分用户会触发）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A6%81%E6%B1%82"><span class="toc-number">8.1.</span> <span class="toc-text">要求</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8%EF%B8%8F%E2%83%A3-%E8%B4%A6%E6%88%B7%E6%BF%80%E6%B4%BB%E4%B8%8E%E5%8A%9F%E8%83%BD%E6%A3%80%E6%9F%A5"><span class="toc-number">9.</span> <span class="toc-text">8️⃣ 账户激活与功能检查</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%A0%E4%BC%9A%E8%8E%B7%E5%BE%97"><span class="toc-number">9.1.</span> <span class="toc-text">你会获得</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BB%BA%E8%AE%AE%E6%93%8D%E4%BD%9C"><span class="toc-number">9.2.</span> <span class="toc-text">建议操作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#9%EF%B8%8F%E2%83%A3-%E5%B8%B8%E8%A7%81%E5%A4%B1%E8%B4%A5%E5%8E%9F%E5%9B%A0%EF%BC%88%E4%B8%80%E5%AE%9A%E8%A6%81%E9%81%BF%E5%BC%80%EF%BC%89"><span class="toc-number">10.</span> <span class="toc-text">9️⃣ 常见失败原因（一定要避开）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%94%9F-%E6%9C%80%E4%BC%98%E6%88%90%E5%8A%9F%E7%AD%96%E7%95%A5%E6%80%BB%E7%BB%93"><span class="toc-number">11.</span> <span class="toc-text">🔟 最优成功策略总结</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%9A%80-%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%80%BB%E7%BB%93"><span class="toc-number">12.</span> <span class="toc-text">🚀 一句话总结</span></a></li></ol>
+    </nav>
+  </div>
+  
+
+  <!-- Categories -->
+  
+  <div class="sidebar-section">
+    <h3>分类</h3>
+    <ul class="sidebar-categories">
+      
+      <li>
+        <a href="/categories/%E6%95%99%E7%A8%8B/" title="教程 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程 <span class="count">(9)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91/" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发 <span class="count">(3)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" title="开发部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署 <span class="count">(1)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E6%8F%90%E7%A4%BA%E8%AF%8D/" title="提示词 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词 <span class="count">(3)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E9%83%A8%E7%BD%B2/" title="部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署 <span class="count">(1)</span></a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+  <!-- Tags -->
+  
+  <div class="sidebar-section">
+    <h3>标签</h3>
+    <div class="sidebar-tags">
+      
+      <a href="/tags/JavaScript/" class="tag-item" title="JavaScript 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">JavaScript</a>
+      
+      <a href="/tags/Python/" class="tag-item" title="Python 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Python</a>
+      
+      <a href="/tags/%E5%85%A5%E9%97%A8/" class="tag-item" title="入门 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">入门</a>
+      
+      <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+      
+      <a href="/tags/Markdown/" class="tag-item" title="Markdown 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Markdown</a>
+      
+      <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-item" title="博客 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">博客</a>
+      
+      <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+      
+      <a href="/tags/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" class="tag-item" title="开发部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署</a>
+      
+      <a href="/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/" class="tag-item" title="提示词 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词</a>
+      
+      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+      
+    </div>
+  </div>
+  
+
+  <!-- Recent Posts -->
+  
+  <div class="sidebar-section">
+    <h3>最近文章</h3>
+    <ul class="sidebar-recent">
+      
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E4%B8%80%E4%BD%93%E5%8C%96%E6%8E%A8%E8%AE%AD%E5%B9%B3%E5%8F%B0/" title="一体化推训平台 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">一体化推训平台</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E5%AE%8C%E6%95%B4-5s-%E8%A7%84%E5%88%99%E4%BB%A5%E5%8F%8A6a/" title="完整 5S 规则以及6A - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">完整 5S 规则以及6A</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" title="免费博客搭建GitHub - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">免费博客搭建GitHub</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/11/2026-05-11-creem-wise-%E6%94%B6%E6%AC%BE%E7%BB%91%E5%AE%9A%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E5%8F%AF%E5%A4%8D%E7%94%A8/" title="Creem + Wise 收款绑定完整实操指南（一步一步可复用） - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Creem + Wise 收款绑定完整实操指南（一步一步可复用）</a>
+        <time>2026-05-11</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" title="总有适合你的服务器推荐 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">总有适合你的服务器推荐</a>
+        <time>2026-05-07</time>
+      </li>
+      
+    </ul>
+  </div>
+  
+</aside>
+
+  
+</div>
+
+<script>
+  document.querySelector('.copy-link')?.addEventListener('click', function() {
+    navigator.clipboard.writeText(this.dataset.url).then(function() {
+      alert('链接已复制到剪贴板');
+    });
+  });
+</script>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <span>&copy; 2026 <a href="/" title="skyconnfig - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">skyconnfig</a></span>
+      <span class="sep">·</span>
+      <a href="/privacy-policy" title="隐私政策 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">隐私政策</a>
+      
+    </div>
+    <div class="footer-powered">
+      <span>请联系作者WX:viplxs123 <!--a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a--></span>
+      <span class="sep">·</span>
+      <span>语雀风格主题</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+<!-- Site-wide scripts -->
+<script>
+(function() {
+  'use strict';
+
+  // Mobile menu toggle
+  document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+    document.querySelector('.main-nav').classList.toggle('show');
+  });
+
+  // Header shadow on scroll
+  var header = document.querySelector('.site-header');
+  var ticking = false;
+  function updateHeaderShadow() {
+    if (window.scrollY > 10) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    ticking = false;
+  }
+
+  // Scroll progress bar
+  var progressBar = document.getElementById('scrollProgress');
+  function updateProgress() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight > 0) {
+      var progress = Math.min(scrollTop / docHeight * 100, 100);
+      if (progressBar) progressBar.style.width = progress + '%';
+    }
+  }
+
+  // Back to top
+  var backBtn = document.getElementById('backToTop');
+  function updateBackBtn() {
+    if (window.scrollY > 300) {
+      backBtn.classList.add('visible');
+    } else {
+      backBtn.classList.remove('visible');
+    }
+  }
+
+  backBtn?.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Unified scroll handler with rAF throttling
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        if (header) updateHeaderShadow();
+        updateProgress();
+        updateBackBtn();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Initial state
+  if (header) updateHeaderShadow();
+  updateProgress();
+  updateBackBtn();
+
+  // TOC scroll spy
+  var toc = document.getElementById('toc');
+  if (toc) {
+    var links = toc.querySelectorAll('a');
+    if (links.length) {
+      var headings = [];
+      links.forEach(function(link) {
+        var id = link.getAttribute('href')?.slice(1);
+        if (id) headings.push(document.getElementById(id));
+      });
+
+      function updateToc() {
+        var scrollY = window.scrollY + 100;
+        var active = null;
+        headings.forEach(function(h, i) {
+          if (h && h.offsetTop <= scrollY) active = i;
+        });
+        links.forEach(function(link, i) {
+          link.classList.toggle('active', i === active);
+        });
+      }
+
+      window.addEventListener('scroll', updateToc, { passive: true });
+      updateToc();
+    }
+  }
+})();
+</script>
+
+</body>
+</html>

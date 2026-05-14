@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <title>整个 GitHub Pages + Cloudflare + 自定义域名 + HTTPS 流程总结🚀 | AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</title>
+  <meta name="description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
+  <meta name="keywords" content="AI工具教程,Vercel部署,Markdown知识库,Vue开发,SEO优化,前端教程,程序员博客,AI工具">
+  <meta name="author" content="skyconnfig">
+  <meta name="google-site-verification" content="2bx3xsZWUkueuU4vpoYX5ppMAdlkoVKbGSqI-xuFZKk" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="整个 GitHub Pages + Cloudflare + 自定义域名 + HTTPS 流程总结🚀">
+  <meta property="og:description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.lxs.best/2026/05/08/2026-05-08-%E6%95%B4%E4%B8%AA-github-pages-cloudflare-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D-https-%E6%B5%81%E7%A8%8B%E6%80%BB%E7%BB%93/">
+  <meta property="og:site_name" content="AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.lxs.best/2026/05/08/2026-05-08-%E6%95%B4%E4%B8%AA-github-pages-cloudflare-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D-https-%E6%B5%81%E7%A8%8B%E6%80%BB%E7%BB%93/">
+
+  <!-- RSS -->
+  
+
+  <!-- Sitemap -->
+  <link rel="sitemap" href="https://www.lxs.best/sitemap.xml" type="application/xml">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1581640229756872" crossorigin="anonymous"></script>
+  
+
+  
+
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C14WM0EJ0C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C14WM0EJ0C');
+  </script>
+  
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+
+
+<div class="site-wrapper">
+  <header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="/" title="AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="main-nav">
+      <ul>
+        
+        <li>
+          <a href="/" title="首页 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >首页</a>
+        </li>
+        
+        <li>
+          <a href="/archives" title="归档 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >归档</a>
+        </li>
+        
+        <li>
+          <a href="/categories" title="分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >分类</a>
+        </li>
+        
+        <li>
+          <a href="/tags" title="标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >标签</a>
+        </li>
+        
+        <li>
+          <a href="/about" title="关于 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >关于</a>
+        </li>
+        
+        <li>
+          <a href="/privacy-policy" title="隐私 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >隐私</a>
+        </li>
+        
+        <li>
+          <a href="/pinecone-discord" title="Discord - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >Discord</a>
+        </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Scroll Progress Bar (article pages) -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <main class="main-content">
+    <div class="container post-page">
+  <div class="content-area">
+    <article class="post-article">
+      <header class="post-header">
+        <h1 class="post-title">整个 GitHub Pages + Cloudflare + 自定义域名 + HTTPS 流程总结🚀</h1>
+        <div class="post-meta">
+          <time>2026-05-08</time>
+          
+          <span class="sep">·</span>
+          
+          <a href="/categories/%E5%BC%80%E5%8F%91/" class="category-link" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+          
+          
+          
+          <span class="sep">·</span>
+          <span>更新于 2026-05-08</span>
+          
+        </div>
+
+        
+        <div class="post-tags">
+          
+          <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+          
+        </div>
+        
+      </header>
+
+      <!-- Top Ad -->
+      
+
+      <!-- Article Content -->
+      <div class="post-content">
+        <hr>
+<h1 id="🌟-GitHub-Pages-自定义域名-HTTPS-标准流程（复用版）"><a href="#🌟-GitHub-Pages-自定义域名-HTTPS-标准流程（复用版）" class="headerlink" title="🌟 GitHub Pages 自定义域名 + HTTPS 标准流程（复用版）"></a>🌟 GitHub Pages 自定义域名 + HTTPS 标准流程（复用版）</h1><h2 id="1️⃣-前提条件"><a href="#1️⃣-前提条件" class="headerlink" title="1️⃣ 前提条件"></a>1️⃣ 前提条件</h2><ul>
+<li>已注册 GitHub 账号</li>
+<li>已创建仓库 <code>用户名.github.io</code>（公开）</li>
+<li>已购买或使用免费二级域名（支持修改 DNS）</li>
+</ul>
+<hr>
+<h2 id="2️⃣-配置域名-DNS（Cloudflare）"><a href="#2️⃣-配置域名-DNS（Cloudflare）" class="headerlink" title="2️⃣ 配置域名 DNS（Cloudflare）"></a>2️⃣ 配置域名 DNS（Cloudflare）</h2><h3 id="二级域名（推荐）"><a href="#二级域名（推荐）" class="headerlink" title="二级域名（推荐）"></a>二级域名（推荐）</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>Name &#x2F; 主机</th>
+<th>Target &#x2F; 值</th>
+<th>Proxy 状态</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CNAME</td>
+<td>lixinsi</td>
+<td>用户名.github.io</td>
+<td>DNS only（灰色）</td>
+</tr>
+</tbody></table>
+<h3 id="根域名（裸域）"><a href="#根域名（裸域）" class="headerlink" title="根域名（裸域）"></a>根域名（裸域）</h3><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>Name</th>
+<th>Target &#x2F; 值</th>
+<th>Proxy 状态</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>@</td>
+<td>185.199.108.153</td>
+<td>DNS only</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>185.199.109.153</td>
+<td>DNS only</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>185.199.110.153</td>
+<td>DNS only</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>185.199.111.153</td>
+<td>DNS only</td>
+</tr>
+</tbody></table>
+<p>⚠️ 注意：初期 GitHub 检测 DNS 时必须灰色云（DNS only），代理开启（橙色云）可等 HTTPS 生效后再打开加速</p>
+<img src="https://cdn.nlark.com/yuque/0/2026/png/12952984/1778221008438-44c30abe-d162-4e20-9556-674409d5b607.png" width="1701.3333333333333" title="" crop="0,0,1,1" id="u1de6ce71" class="ne-image">
+
+<hr>
+<h2 id="3️⃣-GitHub-Pages-设置"><a href="#3️⃣-GitHub-Pages-设置" class="headerlink" title="3️⃣ GitHub Pages 设置"></a>3️⃣ GitHub Pages 设置</h2><ol>
+<li>仓库 → Settings → Pages</li>
+<li>Source：<code>main</code> &#x2F; <code>docs</code> 分支（根据你项目）</li>
+<li>Custom domain：填写完整域名，例如 <code>lixinsi.qzz.io</code></li>
+<li>勾选：<code>Enforce HTTPS</code></li>
+<li>保存，等待几分钟</li>
+<li><img src="https://cdn.nlark.com/yuque/0/2026/png/12952984/1778221034470-7df46158-86b7-4297-b2e1-a5e0e91b2938.png" width="1461.3333333333333" title="" crop="0,0,1,1" id="u6e354342" class="ne-image"></li>
+</ol>
+<hr>
+<h2 id="4️⃣-验证生效"><a href="#4️⃣-验证生效" class="headerlink" title="4️⃣ 验证生效"></a>4️⃣ 验证生效</h2><ul>
+<li>命令行验证：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nslookup lixinsi.qzz.io</span><br><span class="line"><span class="comment"># 输出应为: skyconnfig.github.io（CNAME）</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>浏览器访问：<code>https://lixinsi.qzz.io</code></li>
+<li>HTTPS 小锁出现 → 成功</li>
+</ul>
+<hr>
+<h2 id="5️⃣-GitHub-Pages-Hexo-部署快速复用命令"><a href="#5️⃣-GitHub-Pages-Hexo-部署快速复用命令" class="headerlink" title="5️⃣ GitHub Pages + Hexo 部署快速复用命令"></a>5️⃣ GitHub Pages + Hexo 部署快速复用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 初始化博客</span></span><br><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 部署工具</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置 _config.yml</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/用户名/用户名.github.io.git</span><br><span class="line">  branch: main</span><br><span class="line"></span><br><span class="line"><span class="comment"># 发布</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="6️⃣-提示-复用技巧"><a href="#6️⃣-提示-复用技巧" class="headerlink" title="6️⃣ 提示 &amp; 复用技巧"></a>6️⃣ 提示 &amp; 复用技巧</h2><ul>
+<li><strong>二级域名首选 CNAME</strong> → 简单可靠</li>
+<li><strong>裸域 A记录</strong> → 备用</li>
+<li><strong>灰色云 DNS only</strong> → 初期通过 GitHub DNS 检查</li>
+<li><strong>HTTPS 生效后可以开启 Cloudflare CDN</strong> → 加速 + 防护</li>
+<li><strong>免费域名</strong> → 流量大可能不稳定，生产建议买 <code>.xyz</code> &#x2F; <code>.site</code></li>
+<li><strong>复用模板</strong> → 以后换博客只需修改 CNAME + GitHub 仓库即可</li>
+</ul>
+<hr>
+
+      </div>
+
+      <!-- Bottom Ad -->
+      
+
+      <!-- Share -->
+      
+      <div class="post-share">
+        <h3>分享文章</h3>
+        <div class="share-links">
+          <a href="javascript:;" class="copy-link" data-url="https://www.lxs.best/2026/05/08/2026-05-08-%E6%95%B4%E4%B8%AA-github-pages-cloudflare-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D-https-%E6%B5%81%E7%A8%8B%E6%80%BB%E7%BB%93/">复制链接</a>
+        </div>
+      </div>
+      
+    </article>
+
+    <!-- Post Navigation -->
+    
+    <nav class="post-nav">
+      
+      <a href="/2026/05/11/2026-05-11-google-adsense-%E7%BD%91%E7%AB%99%E6%8A%95%E6%94%BE%E4%B8%8E%E5%AE%A1%E6%A0%B8%E5%85%A8%E6%B5%81%E7%A8%8B%E5%8F%AF%E5%A4%8D%E7%94%A8%E7%89%88/" class="post-nav-prev" title="上一篇: Google AdSense 网站投放与审核全流程（可复用版）">
+        <span class="nav-label">← 上一篇</span>
+        <span class="nav-title">Google AdSense 网站投放与审核全流程（可复用版）</span>
+      </a>
+      
+      
+      <a href="/2026/05/08/2026-05-08-hexo-github-pages-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D-adsense-%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/" class="post-nav-next" title="下一篇: Hexo + GitHub Pages + 自定义域名 + AdSense 排查指南">
+        <span class="nav-label">下一篇 →</span>
+        <span class="nav-title">Hexo + GitHub Pages + 自定义域名 + AdSense 排查指南</span>
+      </a>
+      
+    </nav>
+    
+  </div>
+
+  
+  <aside class="sidebar">
+  
+
+  
+  <!-- TOC -->
+  <div class="sidebar-section toc-wrapper" id="toc-wrapper">
+    <h3>目录</h3>
+    <nav class="toc" id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%8C%9F-GitHub-Pages-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D-HTTPS-%E6%A0%87%E5%87%86%E6%B5%81%E7%A8%8B%EF%BC%88%E5%A4%8D%E7%94%A8%E7%89%88%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">🌟 GitHub Pages 自定义域名 + HTTPS 标准流程（复用版）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%EF%B8%8F%E2%83%A3-%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="toc-number">1.1.</span> <span class="toc-text">1️⃣ 前提条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%EF%B8%8F%E2%83%A3-%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D-DNS%EF%BC%88Cloudflare%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">2️⃣ 配置域名 DNS（Cloudflare）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.2.1.</span> <span class="toc-text">二级域名（推荐）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B9%E5%9F%9F%E5%90%8D%EF%BC%88%E8%A3%B8%E5%9F%9F%EF%BC%89"><span class="toc-number">1.2.2.</span> <span class="toc-text">根域名（裸域）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%EF%B8%8F%E2%83%A3-GitHub-Pages-%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.3.</span> <span class="toc-text">3️⃣ GitHub Pages 设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%EF%B8%8F%E2%83%A3-%E9%AA%8C%E8%AF%81%E7%94%9F%E6%95%88"><span class="toc-number">1.4.</span> <span class="toc-text">4️⃣ 验证生效</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%EF%B8%8F%E2%83%A3-GitHub-Pages-Hexo-%E9%83%A8%E7%BD%B2%E5%BF%AB%E9%80%9F%E5%A4%8D%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.5.</span> <span class="toc-text">5️⃣ GitHub Pages + Hexo 部署快速复用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%EF%B8%8F%E2%83%A3-%E6%8F%90%E7%A4%BA-%E5%A4%8D%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="toc-number">1.6.</span> <span class="toc-text">6️⃣ 提示 &amp; 复用技巧</span></a></li></ol></li></ol>
+    </nav>
+  </div>
+  
+
+  <!-- Categories -->
+  
+  <div class="sidebar-section">
+    <h3>分类</h3>
+    <ul class="sidebar-categories">
+      
+      <li>
+        <a href="/categories/%E6%95%99%E7%A8%8B/" title="教程 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程 <span class="count">(9)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91/" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发 <span class="count">(3)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" title="开发部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署 <span class="count">(1)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E6%8F%90%E7%A4%BA%E8%AF%8D/" title="提示词 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词 <span class="count">(3)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E9%83%A8%E7%BD%B2/" title="部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署 <span class="count">(1)</span></a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+  <!-- Tags -->
+  
+  <div class="sidebar-section">
+    <h3>标签</h3>
+    <div class="sidebar-tags">
+      
+      <a href="/tags/JavaScript/" class="tag-item" title="JavaScript 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">JavaScript</a>
+      
+      <a href="/tags/Python/" class="tag-item" title="Python 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Python</a>
+      
+      <a href="/tags/%E5%85%A5%E9%97%A8/" class="tag-item" title="入门 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">入门</a>
+      
+      <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+      
+      <a href="/tags/Markdown/" class="tag-item" title="Markdown 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Markdown</a>
+      
+      <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-item" title="博客 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">博客</a>
+      
+      <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+      
+      <a href="/tags/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" class="tag-item" title="开发部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署</a>
+      
+      <a href="/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/" class="tag-item" title="提示词 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词</a>
+      
+      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+      
+    </div>
+  </div>
+  
+
+  <!-- Recent Posts -->
+  
+  <div class="sidebar-section">
+    <h3>最近文章</h3>
+    <ul class="sidebar-recent">
+      
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E4%B8%80%E4%BD%93%E5%8C%96%E6%8E%A8%E8%AE%AD%E5%B9%B3%E5%8F%B0/" title="一体化推训平台 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">一体化推训平台</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E5%AE%8C%E6%95%B4-5s-%E8%A7%84%E5%88%99%E4%BB%A5%E5%8F%8A6a/" title="完整 5S 规则以及6A - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">完整 5S 规则以及6A</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" title="免费博客搭建GitHub - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">免费博客搭建GitHub</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/11/2026-05-11-creem-wise-%E6%94%B6%E6%AC%BE%E7%BB%91%E5%AE%9A%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E5%8F%AF%E5%A4%8D%E7%94%A8/" title="Creem + Wise 收款绑定完整实操指南（一步一步可复用） - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Creem + Wise 收款绑定完整实操指南（一步一步可复用）</a>
+        <time>2026-05-11</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" title="总有适合你的服务器推荐 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">总有适合你的服务器推荐</a>
+        <time>2026-05-07</time>
+      </li>
+      
+    </ul>
+  </div>
+  
+</aside>
+
+  
+</div>
+
+<script>
+  document.querySelector('.copy-link')?.addEventListener('click', function() {
+    navigator.clipboard.writeText(this.dataset.url).then(function() {
+      alert('链接已复制到剪贴板');
+    });
+  });
+</script>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <span>&copy; 2026 <a href="/" title="skyconnfig - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">skyconnfig</a></span>
+      <span class="sep">·</span>
+      <a href="/privacy-policy" title="隐私政策 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">隐私政策</a>
+      
+    </div>
+    <div class="footer-powered">
+      <span>请联系作者WX:viplxs123 <!--a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a--></span>
+      <span class="sep">·</span>
+      <span>语雀风格主题</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+<!-- Site-wide scripts -->
+<script>
+(function() {
+  'use strict';
+
+  // Mobile menu toggle
+  document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+    document.querySelector('.main-nav').classList.toggle('show');
+  });
+
+  // Header shadow on scroll
+  var header = document.querySelector('.site-header');
+  var ticking = false;
+  function updateHeaderShadow() {
+    if (window.scrollY > 10) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    ticking = false;
+  }
+
+  // Scroll progress bar
+  var progressBar = document.getElementById('scrollProgress');
+  function updateProgress() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight > 0) {
+      var progress = Math.min(scrollTop / docHeight * 100, 100);
+      if (progressBar) progressBar.style.width = progress + '%';
+    }
+  }
+
+  // Back to top
+  var backBtn = document.getElementById('backToTop');
+  function updateBackBtn() {
+    if (window.scrollY > 300) {
+      backBtn.classList.add('visible');
+    } else {
+      backBtn.classList.remove('visible');
+    }
+  }
+
+  backBtn?.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Unified scroll handler with rAF throttling
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        if (header) updateHeaderShadow();
+        updateProgress();
+        updateBackBtn();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Initial state
+  if (header) updateHeaderShadow();
+  updateProgress();
+  updateBackBtn();
+
+  // TOC scroll spy
+  var toc = document.getElementById('toc');
+  if (toc) {
+    var links = toc.querySelectorAll('a');
+    if (links.length) {
+      var headings = [];
+      links.forEach(function(link) {
+        var id = link.getAttribute('href')?.slice(1);
+        if (id) headings.push(document.getElementById(id));
+      });
+
+      function updateToc() {
+        var scrollY = window.scrollY + 100;
+        var active = null;
+        headings.forEach(function(h, i) {
+          if (h && h.offsetTop <= scrollY) active = i;
+        });
+        links.forEach(function(link, i) {
+          link.classList.toggle('active', i === active);
+        });
+      }
+
+      window.addEventListener('scroll', updateToc, { passive: true });
+      updateToc();
+    }
+  }
+})();
+</script>
+
+</body>
+</html>

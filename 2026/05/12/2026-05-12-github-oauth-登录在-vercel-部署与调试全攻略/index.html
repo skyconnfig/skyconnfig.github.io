@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <title>GitHub OAuth 登录在 Vercel 部署与调试全攻略 | AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</title>
+  <meta name="description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
+  <meta name="keywords" content="AI工具教程,Vercel部署,Markdown知识库,Vue开发,SEO优化,前端教程,程序员博客,AI工具">
+  <meta name="author" content="skyconnfig">
+  <meta name="google-site-verification" content="2bx3xsZWUkueuU4vpoYX5ppMAdlkoVKbGSqI-xuFZKk" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="GitHub OAuth 登录在 Vercel 部署与调试全攻略">
+  <meta property="og:description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.lxs.best/2026/05/12/2026-05-12-github-oauth-%E7%99%BB%E5%BD%95%E5%9C%A8-vercel-%E9%83%A8%E7%BD%B2%E4%B8%8E%E8%B0%83%E8%AF%95%E5%85%A8%E6%94%BB%E7%95%A5/">
+  <meta property="og:site_name" content="AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">
+  
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.lxs.best/2026/05/12/2026-05-12-github-oauth-%E7%99%BB%E5%BD%95%E5%9C%A8-vercel-%E9%83%A8%E7%BD%B2%E4%B8%8E%E8%B0%83%E8%AF%95%E5%85%A8%E6%94%BB%E7%95%A5/">
+
+  <!-- RSS -->
+  
+
+  <!-- Sitemap -->
+  <link rel="sitemap" href="https://www.lxs.best/sitemap.xml" type="application/xml">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1581640229756872" crossorigin="anonymous"></script>
+  
+
+  
+
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C14WM0EJ0C"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C14WM0EJ0C');
+  </script>
+  
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+
+
+<div class="site-wrapper">
+  <header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <a href="/" title="AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="main-nav">
+      <ul>
+        
+        <li>
+          <a href="/" title="首页 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >首页</a>
+        </li>
+        
+        <li>
+          <a href="/archives" title="归档 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >归档</a>
+        </li>
+        
+        <li>
+          <a href="/categories" title="分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >分类</a>
+        </li>
+        
+        <li>
+          <a href="/tags" title="标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >标签</a>
+        </li>
+        
+        <li>
+          <a href="/about" title="关于 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >关于</a>
+        </li>
+        
+        <li>
+          <a href="/privacy-policy" title="隐私 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >隐私</a>
+        </li>
+        
+        <li>
+          <a href="/pinecone-discord" title="Discord - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog" >Discord</a>
+        </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Scroll Progress Bar (article pages) -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <main class="main-content">
+    <div class="container post-page">
+  <div class="content-area">
+    <article class="post-article">
+      <header class="post-header">
+        <h1 class="post-title">GitHub OAuth 登录在 Vercel 部署与调试全攻略</h1>
+        <div class="post-meta">
+          <time>2026-05-12</time>
+          
+          <span class="sep">·</span>
+          
+          <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-link" title="教程 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+          
+          
+          
+          <span class="sep">·</span>
+          <span>更新于 2026-05-12</span>
+          
+        </div>
+
+        
+        <div class="post-tags">
+          
+          <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+          
+        </div>
+        
+      </header>
+
+      <!-- Top Ad -->
+      
+
+      <!-- Article Content -->
+      <div class="post-content">
+        <h1 id="GitHub-OAuth-登录在-Vercel-部署与调试全攻略"><a href="#GitHub-OAuth-登录在-Vercel-部署与调试全攻略" class="headerlink" title="GitHub OAuth 登录在 Vercel 部署与调试全攻略"></a>GitHub OAuth 登录在 Vercel 部署与调试全攻略</h1><p>在现代 Web 应用中，使用 <strong>GitHub OAuth</strong> 登录是一种常见的用户认证方案。本文将详细讲解如何在 <strong>Vercel</strong> 上部署和调试 GitHub OAuth 登录，解决常见的 <code>incorrect_client_credentials</code> 和 <code>CallbackRouteError</code> 错误，并保证部署后的应用稳定运行。</p>
+<p>我们将覆盖从环境变量配置、GitHub 应用设置，到 Next.js &#x2F; Auth.js 配置，再到 Vercel 在线修改和调试的完整流程。</p>
+<hr>
+<h2 id="H2-为什么-GitHub-OAuth-登录会失败"><a href="#H2-为什么-GitHub-OAuth-登录会失败" class="headerlink" title="H2: 为什么 GitHub OAuth 登录会失败"></a>H2: 为什么 GitHub OAuth 登录会失败</h2><p>在 Vercel 或其他云平台部署 GitHub OAuth 登录时，最常见的错误是：</p>
+<ul>
+<li><code>incorrect_client_credentials</code>：客户端 ID 或 Secret 配置错误  </li>
+<li><code>CallbackRouteError</code>：回调路由异常，导致无法获取 Access Token</li>
+</ul>
+<p>这些问题通常源于：</p>
+<ol>
+<li><strong>GitHub OAuth 应用的 Client Secret 未正确复制</strong>  </li>
+<li><strong><code>.env</code> 环境变量未正确设置或未生效</strong>  </li>
+<li><strong>回调 URL 与 GitHub OAuth App 配置不一致</strong>  </li>
+<li><strong>服务端部署未重启，导致新配置未生效</strong></li>
+</ol>
+<blockquote>
+<p>LSI 关键词：GitHub 登录错误、OAuth 调试、NextAuth Secret、Vercel 环境变量</p>
+</blockquote>
+<hr>
+<h2 id="H2-第一步：在-GitHub-创建和配置-OAuth-应用"><a href="#H2-第一步：在-GitHub-创建和配置-OAuth-应用" class="headerlink" title="H2: 第一步：在 GitHub 创建和配置 OAuth 应用"></a>H2: 第一步：在 GitHub 创建和配置 OAuth 应用</h2><ol>
+<li><p>登录 <a target="_blank" rel="noopener" href="https://github.com/settings/developers">GitHub Developer Settings</a>  </p>
+</li>
+<li><p>点击 <strong>OAuth Apps → New OAuth App</strong>  </p>
+</li>
+<li><p>填写信息：</p>
+<ul>
+<li><strong>Application Name</strong>：应用名，例如 <code>smart-content</code></li>
+<li><strong>Homepage URL</strong>：应用主页，例如 <code>https://ai.lxs.best</code></li>
+<li><strong>Authorization callback URL</strong>：回调地址，例如 <code>https://ai.lxs.best/api/auth/callback/github</code>  <blockquote>
+<p>⚠️ 回调 URL 必须和应用实际部署域名一致，包括 <code>https</code> 协议</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>点击 <strong>Register Application</strong>  </p>
+</li>
+<li><p>生成 <strong>Client Secret</strong> 并立即复制，保存到安全地方（Secret 只显示一次）</p>
+</li>
+</ol>
+<blockquote>
+<p>外部参考：<a target="_blank" rel="noopener" href="https://docs.github.com/en/developers/apps/building-oauth-apps/authorizing-oauth-apps">GitHub OAuth 文档</a></p>
+</blockquote>
+<hr>
+<h2 id="H2-第二步：配置-Vercel-环境变量"><a href="#H2-第二步：配置-Vercel-环境变量" class="headerlink" title="H2: 第二步：配置 Vercel 环境变量"></a>H2: 第二步：配置 Vercel 环境变量</h2><p>Vercel 部署的 Next.js 项目不直接读取本地 <code>.env</code> 文件，需要在 <strong>Vercel Dashboard</strong> 添加环境变量。</p>
+<h3 id="H3-操作步骤"><a href="#H3-操作步骤" class="headerlink" title="H3: 操作步骤"></a>H3: 操作步骤</h3><ol>
+<li><p>登录 <a target="_blank" rel="noopener" href="https://vercel.com/dashboard">Vercel Dashboard</a>  </p>
+</li>
+<li><p>进入你的项目，例如 <code>ai.lxs.best</code>  </p>
+</li>
+<li><p>点击左侧菜单 <strong>Settings → Environment Variables</strong>  </p>
+</li>
+<li><p>添加或修改变量：</p>
+<ul>
+<li><strong>AUTH_GITHUB_ID</strong>：你的 GitHub Client ID  </li>
+<li><strong>AUTH_GITHUB_SECRET</strong>：最新生成的 GitHub Secret  </li>
+<li><strong>AUTH_SECRET</strong>：随机生成的字符串，例如 <code>fee9b292-b950-433c-b449-9bb9bef5c424</code>  </li>
+<li><strong>AUTH_URL</strong>：应用根 URL，例如 <code>https://ai.lxs.best</code></li>
+</ul>
+</li>
+<li><p>点击 <strong>Save</strong> 并选择适用环境：<code>Production</code> 和 <code>Preview</code>  </p>
+</li>
+<li><p><strong>Redeploy</strong> 项目，确保新环境变量生效</p>
+</li>
+</ol>
+<blockquote>
+<p>LSI 关键词：Vercel 部署、环境变量设置、Next.js OAuth 配置</p>
+</blockquote>
+<hr>
+<h2 id="H2-第三步：Next-js-Auth-js-配置示例"><a href="#H2-第三步：Next-js-Auth-js-配置示例" class="headerlink" title="H2: 第三步：Next.js + Auth.js 配置示例"></a>H2: 第三步：Next.js + Auth.js 配置示例</h2><p>在 Next.js（或 App Router）中，使用 <strong>Auth.js（NextAuth v5）</strong> 配置 GitHub Provider：</p>
+<pre><code class="language-ts">import NextAuth from &quot;next-auth&quot;;
+import GitHubProvider from &quot;next-auth/providers/github&quot;;
+
+export const authOptions = {
+  providers: [
+    GitHubProvider({
+      clientId: process.env.AUTH_GITHUB_ID!,
+      clientSecret: process.env.AUTH_GITHUB_SECRET!,
+    }),
+  ],
+  secret: process.env.AUTH_SECRET,
+};
+
+export default NextAuth(authOptions);
+
+✅ 注意事项：
+
+process.env 变量名必须与 Vercel 配置一致
+secret 必须存在，否则服务端会报 Server configuration error
+不要在前端暴露 clientSecret
+
+内部链接示例：Next.js 项目结构最佳实践
+
+H2: 第四步：调试常见错误
+H3: 1. incorrect_client_credentials
+原因：Client Secret 不正确或旧 secret 未更新
+解决方法：
+重新生成 GitHub Secret
+更新 Vercel 环境变量
+Redeploy 项目
+H3: 2. CallbackRouteError
+原因：回调路由与 GitHub OAuth App 配置不一致
+解决方法：
+确认回调 URL 完全匹配，包括协议、域名、路径
+清理浏览器缓存，确保 OAuth cookie 生效
+H3: 3. access_token property must be a string
+原因：服务端返回的 JSON 不是正常 token（多因 Client Secret 错误导致）
+解决方法：
+确保 GitHub Secret 正确
+确保 .env 生效并重启部署
+
+外部参考：Auth.js 错误排查文档
+
+H2: 第五步：测试登录
+打开浏览器访问：
+https://ai.lxs.best/api/auth/signin/github
+页面跳转至 GitHub 登录
+授权后回到应用，确认用户信息已登录
+如果依然报错：
+打开 Vercel Runtime Logs 查看详细错误
+确认环境变量是否生效
+检查回调 URL 是否匹配
+H2: 总结
+
+通过上述步骤，你可以：
+
+正确配置 GitHub OAuth 应用
+在 Vercel 上在线管理环境变量
+避免常见的 incorrect_client_credentials、CallbackRouteError
+快速调试 Next.js / Auth.js GitHub 登录
+
+LSI 关键词总结：OAuth 调试流程、GitHub 登录配置、Vercel 部署技巧、NextAuth Secret 设置
+
+外部链接：
+
+GitHub OAuth 官方文档
+Auth.js 官方文档
+
+内部链接：
+
+Next.js 项目结构最佳实践
+Vercel 部署指南
+
+通过本文的完整操作步骤，开发者可以轻松复用 GitHub OAuth 登录方案，在 Vercel 上稳定部署 Web 应用，减少常见错误，提高开发效率。
+</code></pre>
+
+      </div>
+
+      <!-- Bottom Ad -->
+      
+
+      <!-- Share -->
+      
+      <div class="post-share">
+        <h3>分享文章</h3>
+        <div class="share-links">
+          <a href="javascript:;" class="copy-link" data-url="https://www.lxs.best/2026/05/12/2026-05-12-github-oauth-%E7%99%BB%E5%BD%95%E5%9C%A8-vercel-%E9%83%A8%E7%BD%B2%E4%B8%8E%E8%B0%83%E8%AF%95%E5%85%A8%E6%94%BB%E7%95%A5/">复制链接</a>
+        </div>
+      </div>
+      
+    </article>
+
+    <!-- Post Navigation -->
+    
+    <nav class="post-nav">
+      
+      <a href="/2026/05/14/2026-05-14-cc-connect-%E5%AE%89%E8%A3%85%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE%E5%BE%AE%E4%BF%A1/" class="post-nav-prev" title="上一篇: cc-connect 安装以及配置微信">
+        <span class="nav-label">← 上一篇</span>
+        <span class="nav-title">cc-connect 安装以及配置微信</span>
+      </a>
+      
+      
+      <a href="/2026/05/12/2026-05-12-%E6%80%BB%E7%BB%93%E6%8F%90%E7%A4%BA%E8%AF%8D/" class="post-nav-next" title="下一篇: 总结提示词">
+        <span class="nav-label">下一篇 →</span>
+        <span class="nav-title">总结提示词</span>
+      </a>
+      
+    </nav>
+    
+  </div>
+
+  
+  <aside class="sidebar">
+  
+
+  
+  <!-- TOC -->
+  <div class="sidebar-section toc-wrapper" id="toc-wrapper">
+    <h3>目录</h3>
+    <nav class="toc" id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GitHub-OAuth-%E7%99%BB%E5%BD%95%E5%9C%A8-Vercel-%E9%83%A8%E7%BD%B2%E4%B8%8E%E8%B0%83%E8%AF%95%E5%85%A8%E6%94%BB%E7%95%A5"><span class="toc-number">1.</span> <span class="toc-text">GitHub OAuth 登录在 Vercel 部署与调试全攻略</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#H2-%E4%B8%BA%E4%BB%80%E4%B9%88-GitHub-OAuth-%E7%99%BB%E5%BD%95%E4%BC%9A%E5%A4%B1%E8%B4%A5"><span class="toc-number">1.1.</span> <span class="toc-text">H2: 为什么 GitHub OAuth 登录会失败</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#H2-%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E5%9C%A8-GitHub-%E5%88%9B%E5%BB%BA%E5%92%8C%E9%85%8D%E7%BD%AE-OAuth-%E5%BA%94%E7%94%A8"><span class="toc-number">1.2.</span> <span class="toc-text">H2: 第一步：在 GitHub 创建和配置 OAuth 应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#H2-%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E9%85%8D%E7%BD%AE-Vercel-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">1.3.</span> <span class="toc-text">H2: 第二步：配置 Vercel 环境变量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#H3-%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4"><span class="toc-number">1.3.1.</span> <span class="toc-text">H3: 操作步骤</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#H2-%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9ANext-js-Auth-js-%E9%85%8D%E7%BD%AE%E7%A4%BA%E4%BE%8B"><span class="toc-number">1.4.</span> <span class="toc-text">H2: 第三步：Next.js + Auth.js 配置示例</span></a></li></ol></li></ol>
+    </nav>
+  </div>
+  
+
+  <!-- Categories -->
+  
+  <div class="sidebar-section">
+    <h3>分类</h3>
+    <ul class="sidebar-categories">
+      
+      <li>
+        <a href="/categories/%E6%95%99%E7%A8%8B/" title="教程 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程 <span class="count">(9)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91/" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发 <span class="count">(3)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" title="开发部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署 <span class="count">(1)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E6%8F%90%E7%A4%BA%E8%AF%8D/" title="提示词 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词 <span class="count">(3)</span></a>
+      </li>
+      
+      <li>
+        <a href="/categories/%E9%83%A8%E7%BD%B2/" title="部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署 <span class="count">(1)</span></a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+  <!-- Tags -->
+  
+  <div class="sidebar-section">
+    <h3>标签</h3>
+    <div class="sidebar-tags">
+      
+      <a href="/tags/JavaScript/" class="tag-item" title="JavaScript 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">JavaScript</a>
+      
+      <a href="/tags/Python/" class="tag-item" title="Python 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Python</a>
+      
+      <a href="/tags/%E5%85%A5%E9%97%A8/" class="tag-item" title="入门 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">入门</a>
+      
+      <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+      
+      <a href="/tags/Markdown/" class="tag-item" title="Markdown 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Markdown</a>
+      
+      <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-item" title="博客 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">博客</a>
+      
+      <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+      
+      <a href="/tags/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" class="tag-item" title="开发部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署</a>
+      
+      <a href="/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/" class="tag-item" title="提示词 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词</a>
+      
+      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+      
+    </div>
+  </div>
+  
+
+  <!-- Recent Posts -->
+  
+  <div class="sidebar-section">
+    <h3>最近文章</h3>
+    <ul class="sidebar-recent">
+      
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E4%B8%80%E4%BD%93%E5%8C%96%E6%8E%A8%E8%AE%AD%E5%B9%B3%E5%8F%B0/" title="一体化推训平台 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">一体化推训平台</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E5%AE%8C%E6%95%B4-5s-%E8%A7%84%E5%88%99%E4%BB%A5%E5%8F%8A6a/" title="完整 5S 规则以及6A - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">完整 5S 规则以及6A</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" title="免费博客搭建GitHub - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">免费博客搭建GitHub</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/11/2026-05-11-creem-wise-%E6%94%B6%E6%AC%BE%E7%BB%91%E5%AE%9A%E5%AE%8C%E6%95%B4%E5%AE%9E%E6%93%8D%E6%8C%87%E5%8D%97%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E5%8F%AF%E5%A4%8D%E7%94%A8/" title="Creem + Wise 收款绑定完整实操指南（一步一步可复用） - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Creem + Wise 收款绑定完整实操指南（一步一步可复用）</a>
+        <time>2026-05-11</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" title="总有适合你的服务器推荐 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">总有适合你的服务器推荐</a>
+        <time>2026-05-07</time>
+      </li>
+      
+    </ul>
+  </div>
+  
+</aside>
+
+  
+</div>
+
+<script>
+  document.querySelector('.copy-link')?.addEventListener('click', function() {
+    navigator.clipboard.writeText(this.dataset.url).then(function() {
+      alert('链接已复制到剪贴板');
+    });
+  });
+</script>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-info">
+      <span>&copy; 2026 <a href="/" title="skyconnfig - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">skyconnfig</a></span>
+      <span class="sep">·</span>
+      <a href="/privacy-policy" title="隐私政策 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">隐私政策</a>
+      
+    </div>
+    <div class="footer-powered">
+      <span>请联系作者WX:viplxs123 <!--a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a--></span>
+      <span class="sep">·</span>
+      <span>语雀风格主题</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+<!-- Site-wide scripts -->
+<script>
+(function() {
+  'use strict';
+
+  // Mobile menu toggle
+  document.querySelector('.menu-toggle')?.addEventListener('click', function() {
+    document.querySelector('.main-nav').classList.toggle('show');
+  });
+
+  // Header shadow on scroll
+  var header = document.querySelector('.site-header');
+  var ticking = false;
+  function updateHeaderShadow() {
+    if (window.scrollY > 10) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+    ticking = false;
+  }
+
+  // Scroll progress bar
+  var progressBar = document.getElementById('scrollProgress');
+  function updateProgress() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    if (docHeight > 0) {
+      var progress = Math.min(scrollTop / docHeight * 100, 100);
+      if (progressBar) progressBar.style.width = progress + '%';
+    }
+  }
+
+  // Back to top
+  var backBtn = document.getElementById('backToTop');
+  function updateBackBtn() {
+    if (window.scrollY > 300) {
+      backBtn.classList.add('visible');
+    } else {
+      backBtn.classList.remove('visible');
+    }
+  }
+
+  backBtn?.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Unified scroll handler with rAF throttling
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        if (header) updateHeaderShadow();
+        updateProgress();
+        updateBackBtn();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Initial state
+  if (header) updateHeaderShadow();
+  updateProgress();
+  updateBackBtn();
+
+  // TOC scroll spy
+  var toc = document.getElementById('toc');
+  if (toc) {
+    var links = toc.querySelectorAll('a');
+    if (links.length) {
+      var headings = [];
+      links.forEach(function(link) {
+        var id = link.getAttribute('href')?.slice(1);
+        if (id) headings.push(document.getElementById(id));
+      });
+
+      function updateToc() {
+        var scrollY = window.scrollY + 100;
+        var active = null;
+        headings.forEach(function(h, i) {
+          if (h && h.offsetTop <= scrollY) active = i;
+        });
+        links.forEach(function(link, i) {
+          link.classList.toggle('active', i === active);
+        });
+      }
+
+      window.addEventListener('scroll', updateToc, { passive: true });
+      updateToc();
+    }
+  }
+})();
+</script>
+
+</body>
+</html>
