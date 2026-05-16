@@ -218,7 +218,7 @@
   </url>
   
   <url>
-    <loc>https://www.lxs.best/tags/index.html</loc>
+    <loc>https://www.lxs.best/categories/index.html</loc>
     
     <lastmod>2026-05-07</lastmod>
     
@@ -227,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://www.lxs.best/categories/index.html</loc>
+    <loc>https://www.lxs.best/tags/index.html</loc>
     
     <lastmod>2026-05-07</lastmod>
     
@@ -270,20 +270,6 @@
   </url>
   
   <url>
-    <loc>https://www.lxs.best/tags/Python/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.lxs.best/tags/%E5%85%A5%E9%97%A8/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.lxs.best/tags/Markdown/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -298,14 +284,35 @@
   </url>
   
   <url>
-    <loc>https://www.lxs.best/tags/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/</loc>
+    <loc>https://www.lxs.best/tags/%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.lxs.best/tags/%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://www.lxs.best/tags/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.lxs.best/tags/Python/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.lxs.best/tags/%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.lxs.best/tags/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -333,13 +340,6 @@
   </url>
   
   <url>
-    <loc>https://www.lxs.best/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.lxs.best/tags/AdSense/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -361,14 +361,14 @@
   </url>
   
   <url>
-    <loc>https://www.lxs.best/tags/%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>https://www.lxs.best/tags/English/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.lxs.best/tags/English/</loc>
+    <loc>https://www.lxs.best/tags/%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
