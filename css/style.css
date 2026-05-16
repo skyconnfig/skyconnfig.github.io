@@ -1643,6 +1643,42 @@ img {
 }
 
 /* ================================
+   不蒜子 Page View Counter
+   ================================ */
+#busuanzi_container_page_pv {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.post-meta #busuanzi_container_page_pv::before {
+  content: "👁️ ";
+  font-size: 12px;
+}
+
+/* Sidebar site stats */
+.site-stats .stats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.site-stats .stats-list span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.site-stats .stats-list #busuanzi_value_site_pv,
+.site-stats .stats-list #busuanzi_value_site_uv {
+  font-weight: 600;
+  color: var(--color-accent);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ================================
    Empty / Placeholder
    ================================ */
 .empty {
