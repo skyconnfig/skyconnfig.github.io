@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- SEO -->
-  <title>整个 GitHub Pages + Cloudflare + 自定义域名 + HTTPS 流程总结🚀 | AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</title>
+  <title>GitHub Pages + Cloudflare + 自定义域名 + HTTPS 完整流程总结 🚀 | AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</title>
   <meta name="description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
   <meta name="keywords" content="AI工具教程,Vercel部署,Markdown知识库,Vue开发,SEO优化,前端教程,程序员博客,AI工具">
   <meta name="author" content="skyconnfig">
   <meta name="google-site-verification" content="2bx3xsZWUkueuU4vpoYX5ppMAdlkoVKbGSqI-xuFZKk" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="整个 GitHub Pages + Cloudflare + 自定义域名 + HTTPS 流程总结🚀">
+  <meta property="og:title" content="GitHub Pages + Cloudflare + 自定义域名 + HTTPS 完整流程总结 🚀">
   <meta property="og:description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.lxs.best/2026/05/08/2026-05-08-%E6%95%B4%E4%B8%AA-github-pages-cloudflare-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D-https-%E6%B5%81%E7%A8%8B%E6%80%BB%E7%BB%93/">
@@ -124,7 +124,7 @@
   <div class="content-area">
     <article class="post-article">
       <header class="post-header">
-        <h1 class="post-title">整个 GitHub Pages + Cloudflare + 自定义域名 + HTTPS 流程总结🚀</h1>
+        <h1 class="post-title">GitHub Pages + Cloudflare + 自定义域名 + HTTPS 完整流程总结 🚀</h1>
         <div class="post-meta">
           <time>2026-05-08</time>
           
@@ -132,10 +132,12 @@
           
           <a href="/categories/%E5%BC%80%E5%8F%91/" class="category-link" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
           
+          <a href="/categories/%E5%BC%80%E5%8F%91/%E9%83%A8%E7%BD%B2/" class="category-link" title="部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+          
           
           
           <span class="sep">·</span>
-          <span>更新于 2026-05-08</span>
+          <span>更新于 2026-05-16</span>
           
         </div>
 
@@ -143,6 +145,12 @@
         <div class="post-tags">
           
           <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+          
+          <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+          
+          <a href="/tags/GitHub-Pages/" class="tag-item" title="GitHub Pages 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">GitHub Pages</a>
+          
+          <a href="/tags/Cloudflare/" class="tag-item" title="Cloudflare 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Cloudflare</a>
           
         </div>
         
@@ -153,98 +161,157 @@
 
       <!-- Article Content -->
       <div class="post-content">
-        <hr>
-<h1 id="🌟-GitHub-Pages-自定义域名-HTTPS-标准流程（复用版）"><a href="#🌟-GitHub-Pages-自定义域名-HTTPS-标准流程（复用版）" class="headerlink" title="🌟 GitHub Pages 自定义域名 + HTTPS 标准流程（复用版）"></a>🌟 GitHub Pages 自定义域名 + HTTPS 标准流程（复用版）</h1><h2 id="1️⃣-前提条件"><a href="#1️⃣-前提条件" class="headerlink" title="1️⃣ 前提条件"></a>1️⃣ 前提条件</h2><ul>
-<li>已注册 GitHub 账号</li>
-<li>已创建仓库 <code>用户名.github.io</code>（公开）</li>
-<li>已购买或使用免费二级域名（支持修改 DNS）</li>
-</ul>
+        <h1 id="GitHub-Pages-自定义域名-HTTPS-标准流程（可复用版）"><a href="#GitHub-Pages-自定义域名-HTTPS-标准流程（可复用版）" class="headerlink" title="GitHub Pages 自定义域名 + HTTPS 标准流程（可复用版）"></a>GitHub Pages 自定义域名 + HTTPS 标准流程（可复用版）</h1><p>本文基于本站 <code>lxs.best</code> 的实际部署经验整理。无论你是用 Hexo、Hugo、Jekyll 还是纯静态页面，这套流程都适用。</p>
 <hr>
-<h2 id="2️⃣-配置域名-DNS（Cloudflare）"><a href="#2️⃣-配置域名-DNS（Cloudflare）" class="headerlink" title="2️⃣ 配置域名 DNS（Cloudflare）"></a>2️⃣ 配置域名 DNS（Cloudflare）</h2><h3 id="二级域名（推荐）"><a href="#二级域名（推荐）" class="headerlink" title="二级域名（推荐）"></a>二级域名（推荐）</h3><table>
+<h2 id="1️⃣-前提条件"><a href="#1️⃣-前提条件" class="headerlink" title="1️⃣ 前提条件"></a>1️⃣ 前提条件</h2><p>在开始之前，确保你已准备好：</p>
+<ul>
+<li><input disabled="" type="checkbox"> 已注册 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 账号</li>
+<li><input disabled="" type="checkbox"> 已创建仓库 <code>用户名.github.io</code>（<strong>必须设为公开</strong>）</li>
+<li><input disabled="" type="checkbox"> 已购买域名（如 <code>example.com</code>）或有可用的免费域名（如 <code>eu.org</code>）</li>
+<li><input disabled="" type="checkbox"> 域名 DNS 托管在 <a target="_blank" rel="noopener" href="https://cloudflare.com/">Cloudflare</a>（免费版即可）</li>
+</ul>
+<blockquote>
+<p><strong>为什么用 Cloudflare？</strong> 免费提供 CDN 加速、DDoS 防护、SSL 证书自动管理，而且配置简单。</p>
+</blockquote>
+<hr>
+<h2 id="2️⃣-配置域名-DNS（Cloudflare）"><a href="#2️⃣-配置域名-DNS（Cloudflare）" class="headerlink" title="2️⃣ 配置域名 DNS（Cloudflare）"></a>2️⃣ 配置域名 DNS（Cloudflare）</h2><p>登录 Cloudflare 控制台，选择你的域名，进入 DNS 设置页面。</p>
+<h3 id="二级域名（推荐）"><a href="#二级域名（推荐）" class="headerlink" title="二级域名（推荐）"></a>二级域名（推荐）</h3><p>如果你的网站以 <code>www.example.com</code> 或 <code>blog.example.com</code> 形式访问：</p>
+<table>
 <thead>
 <tr>
 <th>类型</th>
-<th>Name &#x2F; 主机</th>
-<th>Target &#x2F; 值</th>
+<th>名称（Name）</th>
+<th>目标（Target）</th>
 <th>Proxy 状态</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>CNAME</td>
-<td>lixinsi</td>
-<td>用户名.github.io</td>
-<td>DNS only（灰色）</td>
+<td>www</td>
+<td><code>用户名.github.io</code></td>
+<td><strong>DNS only</strong>（灰色云）</td>
 </tr>
 </tbody></table>
-<h3 id="根域名（裸域）"><a href="#根域名（裸域）" class="headerlink" title="根域名（裸域）"></a>根域名（裸域）</h3><table>
+<h3 id="根域名-裸域"><a href="#根域名-裸域" class="headerlink" title="根域名&#x2F;裸域"></a>根域名&#x2F;裸域</h3><p>如果用 <code>example.com</code> 不带 www：</p>
+<table>
 <thead>
 <tr>
 <th>类型</th>
-<th>Name</th>
-<th>Target &#x2F; 值</th>
+<th>名称</th>
+<th>目标（Target）</th>
 <th>Proxy 状态</th>
 </tr>
 </thead>
 <tbody><tr>
 <td>A</td>
 <td>@</td>
-<td>185.199.108.153</td>
-<td>DNS only</td>
+<td><code>185.199.108.153</code></td>
+<td><strong>DNS only</strong></td>
 </tr>
 <tr>
 <td>A</td>
 <td>@</td>
-<td>185.199.109.153</td>
-<td>DNS only</td>
+<td><code>185.199.109.153</code></td>
+<td><strong>DNS only</strong></td>
 </tr>
 <tr>
 <td>A</td>
 <td>@</td>
-<td>185.199.110.153</td>
-<td>DNS only</td>
+<td><code>185.199.110.153</code></td>
+<td><strong>DNS only</strong></td>
 </tr>
 <tr>
 <td>A</td>
 <td>@</td>
-<td>185.199.111.153</td>
-<td>DNS only</td>
+<td><code>185.199.111.153</code></td>
+<td><strong>DNS only</strong></td>
 </tr>
 </tbody></table>
-<p>⚠️ 注意：初期 GitHub 检测 DNS 时必须灰色云（DNS only），代理开启（橙色云）可等 HTTPS 生效后再打开加速</p>
-<img src="https://cdn.nlark.com/yuque/0/2026/png/12952984/1778221008438-44c30abe-d162-4e20-9556-674409d5b607.png" width="1701.3333333333333" title="" crop="0,0,1,1" id="u1de6ce71" class="ne-image">
-
-<hr>
-<h2 id="3️⃣-GitHub-Pages-设置"><a href="#3️⃣-GitHub-Pages-设置" class="headerlink" title="3️⃣ GitHub Pages 设置"></a>3️⃣ GitHub Pages 设置</h2><ol>
-<li>仓库 → Settings → Pages</li>
-<li>Source：<code>main</code> &#x2F; <code>docs</code> 分支（根据你项目）</li>
-<li>Custom domain：填写完整域名，例如 <code>lixinsi.qzz.io</code></li>
-<li>勾选：<code>Enforce HTTPS</code></li>
-<li>保存，等待几分钟</li>
-<li><img src="https://cdn.nlark.com/yuque/0/2026/png/12952984/1778221034470-7df46158-86b7-4297-b2e1-a5e0e91b2938.png" width="1461.3333333333333" title="" crop="0,0,1,1" id="u6e354342" class="ne-image"></li>
-</ol>
-<hr>
-<h2 id="4️⃣-验证生效"><a href="#4️⃣-验证生效" class="headerlink" title="4️⃣ 验证生效"></a>4️⃣ 验证生效</h2><ul>
-<li>命令行验证：</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nslookup lixinsi.qzz.io</span><br><span class="line"><span class="comment"># 输出应为: skyconnfig.github.io（CNAME）</span></span><br></pre></td></tr></table></figure>
-
+<p>这四个 IP 地址是 GitHub Pages 的固定服务器，<strong>长期有效</strong>。</p>
+<blockquote>
+<p><strong>⚠️ 关键注意事项</strong>：</p>
 <ul>
-<li>浏览器访问：<code>https://lixinsi.qzz.io</code></li>
-<li>HTTPS 小锁出现 → 成功</li>
+<li>初期 GitHub 检测 DNS 时 <strong>必须灰色云（DNS only）</strong>，代理开启（橙色云）会导致 GitHub 无法验证域名所有权</li>
+<li>等 HTTPS 生效并验证通过后，再回来把云朵打开橙色，开启 Cloudflare 的 CDN 加速和防护</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="3️⃣-GitHub-Pages-设置"><a href="#3️⃣-GitHub-Pages-设置" class="headerlink" title="3️⃣ GitHub Pages 设置"></a>3️⃣ GitHub Pages 设置</h2><p>设置步骤：</p>
+<ol>
+<li>进入你的仓库 → <strong>Settings</strong> → <strong>Pages</strong></li>
+<li><strong>Source</strong>：选择 <code>main</code> 分支（或 <code>docs</code> 文件夹，取决于你的项目结构）</li>
+<li><strong>Custom domain</strong>：填写你的完整域名，例如 <code>www.lxs.best</code></li>
+<li>勾选 <strong>Enforce HTTPS</strong>（强制 HTTPS 重定向）</li>
+<li>点击 <strong>Save</strong> 保存</li>
+</ol>
+<h3 id="关于-CNAME-文件"><a href="#关于-CNAME-文件" class="headerlink" title="关于 CNAME 文件"></a>关于 CNAME 文件</h3><p>当你保存自定义域名后，GitHub 会自动在仓库根目录生成一个 <code>CNAME</code> 文件。如果你用 Hexo 部署，需要在 <code>source/</code> 目录下手动创建这个文件以保留设置：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># source/CNAME</span><br><span class="line">www.lxs.best</span><br></pre></td></tr></table></figure>
+
+<p>这样每次 <code>hexo deploy</code> 后自定义域名配置不会丢失。</p>
+<hr>
+<h2 id="4️⃣-等待生效并验证"><a href="#4️⃣-等待生效并验证" class="headerlink" title="4️⃣ 等待生效并验证"></a>4️⃣ 等待生效并验证</h2><h3 id="DNS-生效检查"><a href="#DNS-生效检查" class="headerlink" title="DNS 生效检查"></a>DNS 生效检查</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Windows</span></span><br><span class="line">nslookup www.lxs.best</span><br><span class="line"></span><br><span class="line"><span class="comment"># macOS / Linux</span></span><br><span class="line">dig www.lxs.best +short</span><br></pre></td></tr></table></figure>
+
+<p>预期输出：你的 <code>用户名.github.io</code></p>
+<h3 id="GitHub-Pages-验证"><a href="#GitHub-Pages-验证" class="headerlink" title="GitHub Pages 验证"></a>GitHub Pages 验证</h3><p>GitHub 会在你保存自定义域名后自动验证 DNS 配置。这个过程可能需要 <strong>几分钟到几小时</strong>。</p>
+<h3 id="浏览器验证"><a href="#浏览器验证" class="headerlink" title="浏览器验证"></a>浏览器验证</h3><p>访问 <code>https://www.lxs.best</code>，检查：</p>
+<ul>
+<li>✅ 页面正常显示</li>
+<li>✅ 地址栏有 HTTPS 小锁图标</li>
+<li>✅ 点击小锁查看证书——颁发者应为 <strong>Cloudflare</strong> 或 <strong>Let’s Encrypt</strong></li>
+</ul>
+<h3 id="常见问题排查"><a href="#常见问题排查" class="headerlink" title="常见问题排查"></a>常见问题排查</h3><table>
+<thead>
+<tr>
+<th>现象</th>
+<th>原因</th>
+<th>解决方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>GitHub 提示”Domain not configured”</strong></td>
+<td>DNS 传播未完成</td>
+<td>等待 10~30 分钟后再试</td>
+</tr>
+<tr>
+<td><strong>浏览器显示”不安全”</strong></td>
+<td>HTTPS 证书未生效</td>
+<td>确认已勾选 Enforce HTTPS</td>
+</tr>
+<tr>
+<td><strong>页面样式丢失</strong></td>
+<td>资源引用了旧域名</td>
+<td>检查 <code>_config.yml</code> 中的 <code>url</code> 配置</td>
+</tr>
+<tr>
+<td><strong>Cloudflare 返回 521 错误</strong></td>
+<td>Cloudflare 无法连接源站</td>
+<td>确认 GitHub Pages 的 IP 没被封</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="5️⃣-开启-Cloudflare-CDN（可选但推荐）"><a href="#5️⃣-开启-Cloudflare-CDN（可选但推荐）" class="headerlink" title="5️⃣ 开启 Cloudflare CDN（可选但推荐）"></a>5️⃣ 开启 Cloudflare CDN（可选但推荐）</h2><p>等 GitHub Pages HTTPS 验证通过后（通常 1~2 小时），回 Cloudflare 把 DNS 记录的 Proxy 状态从灰色改为<strong>橙色云（Proxied）</strong>。</p>
+<p>这样 Cloudflare 会：</p>
+<ul>
+<li>缓存你的静态资源，全球加速访问</li>
+<li>隐藏你的真实服务器 IP，增强安全性</li>
+<li>自动优化图片和 JS&#x2F;CSS</li>
 </ul>
 <hr>
-<h2 id="5️⃣-GitHub-Pages-Hexo-部署快速复用命令"><a href="#5️⃣-GitHub-Pages-Hexo-部署快速复用命令" class="headerlink" title="5️⃣ GitHub Pages + Hexo 部署快速复用命令"></a>5️⃣ GitHub Pages + Hexo 部署快速复用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 初始化博客</span></span><br><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 部署工具</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置 _config.yml</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/用户名/用户名.github.io.git</span><br><span class="line">  branch: main</span><br><span class="line"></span><br><span class="line"><span class="comment"># 发布</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<h2 id="6️⃣-完整部署脚本"><a href="#6️⃣-完整部署脚本" class="headerlink" title="6️⃣ 完整部署脚本"></a>6️⃣ 完整部署脚本</h2><p>如果你用 Hexo，这是一键部署的完整流程：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 初始化</span></span><br><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 Git 部署插件</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置 _config.yml（请替换为你的信息）</span></span><br><span class="line">: <span class="string">&#x27;</span></span><br><span class="line"><span class="string">deploy:</span></span><br><span class="line"><span class="string">  type: git</span></span><br><span class="line"><span class="string">  repo: https://github.com/用户名/用户名.github.io.git</span></span><br><span class="line"><span class="string">  branch: main</span></span><br><span class="line"><span class="string">&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建 CNAME（自定义域名持久化）</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;www.lxs.best&quot;</span> &gt; <span class="built_in">source</span>/CNAME</span><br><span class="line"></span><br><span class="line"><span class="comment"># 构建并部署</span></span><br><span class="line">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h2 id="6️⃣-提示-复用技巧"><a href="#6️⃣-提示-复用技巧" class="headerlink" title="6️⃣ 提示 &amp; 复用技巧"></a>6️⃣ 提示 &amp; 复用技巧</h2><ul>
-<li><strong>二级域名首选 CNAME</strong> → 简单可靠</li>
-<li><strong>裸域 A记录</strong> → 备用</li>
-<li><strong>灰色云 DNS only</strong> → 初期通过 GitHub DNS 检查</li>
-<li><strong>HTTPS 生效后可以开启 Cloudflare CDN</strong> → 加速 + 防护</li>
-<li><strong>免费域名</strong> → 流量大可能不稳定，生产建议买 <code>.xyz</code> &#x2F; <code>.site</code></li>
-<li><strong>复用模板</strong> → 以后换博客只需修改 CNAME + GitHub 仓库即可</li>
-</ul>
-<hr>
+<h2 id="7️⃣-快速复用清单"><a href="#7️⃣-快速复用清单" class="headerlink" title="7️⃣ 快速复用清单"></a>7️⃣ 快速复用清单</h2><p>下次搭建新站时，按这个清单操作：</p>
+<ol>
+<li><input disabled="" type="checkbox"> 创建 GitHub 仓库 <code>xxx.github.io</code></li>
+<li><input disabled="" type="checkbox"> Cloudflare 添加域名，配置 DNS（CNAME 或 A 记录，灰色云）</li>
+<li><input disabled="" type="checkbox"> GitHub Pages 设置自定义域名 + 强制 HTTPS</li>
+<li><input disabled="" type="checkbox"> 等待 DNS 生效（10~30分钟）</li>
+<li><input disabled="" type="checkbox"> 验证 HTTPS 正常访问</li>
+<li><input disabled="" type="checkbox"> 开启 Cloudflare 橙色云加速</li>
+<li><input disabled="" type="checkbox"> 检查 sitemap 和 robots.txt</li>
+</ol>
+<p><strong>整个流程从开始到结束，约 1~2 小时</strong>。以后换域名只需重复第 2~4 步，修改 CNAME 文件即可。</p>
 
       </div>
 
@@ -272,9 +339,9 @@
       </a>
       
       
-      <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" class="post-nav-next" title="下一篇: 免费博客搭建GitHub">
+      <a href="/2026/05/07/2026-05-07-%E4%B8%80%E4%BD%93%E5%8C%96%E6%8E%A8%E8%AE%AD%E5%B9%B3%E5%8F%B0/" class="post-nav-next" title="下一篇: 一体化推训平台">
         <span class="nav-label">下一篇 →</span>
-        <span class="nav-title">免费博客搭建GitHub</span>
+        <span class="nav-title">一体化推训平台</span>
       </a>
       
     </nav>
@@ -290,7 +357,7 @@
   <div class="sidebar-section toc-wrapper" id="toc-wrapper">
     <h3>目录</h3>
     <nav class="toc" id="toc">
-      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%F0%9F%8C%9F-GitHub-Pages-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D-HTTPS-%E6%A0%87%E5%87%86%E6%B5%81%E7%A8%8B%EF%BC%88%E5%A4%8D%E7%94%A8%E7%89%88%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">🌟 GitHub Pages 自定义域名 + HTTPS 标准流程（复用版）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%EF%B8%8F%E2%83%A3-%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="toc-number">1.1.</span> <span class="toc-text">1️⃣ 前提条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%EF%B8%8F%E2%83%A3-%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D-DNS%EF%BC%88Cloudflare%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">2️⃣ 配置域名 DNS（Cloudflare）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.2.1.</span> <span class="toc-text">二级域名（推荐）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B9%E5%9F%9F%E5%90%8D%EF%BC%88%E8%A3%B8%E5%9F%9F%EF%BC%89"><span class="toc-number">1.2.2.</span> <span class="toc-text">根域名（裸域）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%EF%B8%8F%E2%83%A3-GitHub-Pages-%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.3.</span> <span class="toc-text">3️⃣ GitHub Pages 设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%EF%B8%8F%E2%83%A3-%E9%AA%8C%E8%AF%81%E7%94%9F%E6%95%88"><span class="toc-number">1.4.</span> <span class="toc-text">4️⃣ 验证生效</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%EF%B8%8F%E2%83%A3-GitHub-Pages-Hexo-%E9%83%A8%E7%BD%B2%E5%BF%AB%E9%80%9F%E5%A4%8D%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.5.</span> <span class="toc-text">5️⃣ GitHub Pages + Hexo 部署快速复用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%EF%B8%8F%E2%83%A3-%E6%8F%90%E7%A4%BA-%E5%A4%8D%E7%94%A8%E6%8A%80%E5%B7%A7"><span class="toc-number">1.6.</span> <span class="toc-text">6️⃣ 提示 &amp; 复用技巧</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GitHub-Pages-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D-HTTPS-%E6%A0%87%E5%87%86%E6%B5%81%E7%A8%8B%EF%BC%88%E5%8F%AF%E5%A4%8D%E7%94%A8%E7%89%88%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">GitHub Pages 自定义域名 + HTTPS 标准流程（可复用版）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%EF%B8%8F%E2%83%A3-%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="toc-number">1.1.</span> <span class="toc-text">1️⃣ 前提条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%EF%B8%8F%E2%83%A3-%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D-DNS%EF%BC%88Cloudflare%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">2️⃣ 配置域名 DNS（Cloudflare）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D%EF%BC%88%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.2.1.</span> <span class="toc-text">二级域名（推荐）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B9%E5%9F%9F%E5%90%8D-%E8%A3%B8%E5%9F%9F"><span class="toc-number">1.2.2.</span> <span class="toc-text">根域名&#x2F;裸域</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%EF%B8%8F%E2%83%A3-GitHub-Pages-%E8%AE%BE%E7%BD%AE"><span class="toc-number">1.3.</span> <span class="toc-text">3️⃣ GitHub Pages 设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E-CNAME-%E6%96%87%E4%BB%B6"><span class="toc-number">1.3.1.</span> <span class="toc-text">关于 CNAME 文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%EF%B8%8F%E2%83%A3-%E7%AD%89%E5%BE%85%E7%94%9F%E6%95%88%E5%B9%B6%E9%AA%8C%E8%AF%81"><span class="toc-number">1.4.</span> <span class="toc-text">4️⃣ 等待生效并验证</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DNS-%E7%94%9F%E6%95%88%E6%A3%80%E6%9F%A5"><span class="toc-number">1.4.1.</span> <span class="toc-text">DNS 生效检查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GitHub-Pages-%E9%AA%8C%E8%AF%81"><span class="toc-number">1.4.2.</span> <span class="toc-text">GitHub Pages 验证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E9%AA%8C%E8%AF%81"><span class="toc-number">1.4.3.</span> <span class="toc-text">浏览器验证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5"><span class="toc-number">1.4.4.</span> <span class="toc-text">常见问题排查</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%EF%B8%8F%E2%83%A3-%E5%BC%80%E5%90%AF-Cloudflare-CDN%EF%BC%88%E5%8F%AF%E9%80%89%E4%BD%86%E6%8E%A8%E8%8D%90%EF%BC%89"><span class="toc-number">1.5.</span> <span class="toc-text">5️⃣ 开启 Cloudflare CDN（可选但推荐）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%EF%B8%8F%E2%83%A3-%E5%AE%8C%E6%95%B4%E9%83%A8%E7%BD%B2%E8%84%9A%E6%9C%AC"><span class="toc-number">1.6.</span> <span class="toc-text">6️⃣ 完整部署脚本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%EF%B8%8F%E2%83%A3-%E5%BF%AB%E9%80%9F%E5%A4%8D%E7%94%A8%E6%B8%85%E5%8D%95"><span class="toc-number">1.7.</span> <span class="toc-text">7️⃣ 快速复用清单</span></a></li></ol></li></ol>
     </nav>
   </div>
   
@@ -306,11 +373,15 @@
       </li>
       
       <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91/" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发 <span class="count">(5)</span></a>
+      </li>
+      
+      <li>
         <a href="/categories/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" title="开发部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署 <span class="count">(1)</span></a>
       </li>
       
       <li>
-        <a href="/categories/%E5%BC%80%E5%8F%91/" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发 <span class="count">(5)</span></a>
+        <a href="/categories/%E5%BC%80%E5%8F%91/%E9%83%A8%E7%BD%B2/" title="部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署 <span class="count">(1)</span></a>
       </li>
       
       <li>
@@ -333,23 +404,35 @@
       
       <a href="/tags/JavaScript/" class="tag-item" title="JavaScript 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">JavaScript</a>
       
-      <a href="/tags/Markdown/" class="tag-item" title="Markdown 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Markdown</a>
-      
-      <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-item" title="博客 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">博客</a>
-      
       <a href="/tags/Python/" class="tag-item" title="Python 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Python</a>
       
       <a href="/tags/%E5%85%A5%E9%97%A8/" class="tag-item" title="入门 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">入门</a>
       
-      <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+      <a href="/tags/Markdown/" class="tag-item" title="Markdown 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Markdown</a>
+      
+      <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-item" title="博客 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">博客</a>
       
       <a href="/tags/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" class="tag-item" title="开发部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署</a>
       
+      <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+      
+      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+      
+      <a href="/tags/GitHub-Pages/" class="tag-item" title="GitHub Pages 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">GitHub Pages</a>
+      
+      <a href="/tags/Cloudflare/" class="tag-item" title="Cloudflare 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Cloudflare</a>
+      
       <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+      
+      <a href="/tags/AdSense/" class="tag-item" title="AdSense 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">AdSense</a>
+      
+      <a href="/tags/SEO/" class="tag-item" title="SEO 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">SEO</a>
       
       <a href="/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/" class="tag-item" title="提示词 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词</a>
       
-      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+      <a href="/tags/%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="tag-item" title="邮件服务器 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">邮件服务器</a>
+      
+      <a href="/tags/English/" class="tag-item" title="English 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">English</a>
       
     </div>
   </div>
@@ -363,17 +446,17 @@
       
       
       <li>
-        <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" title="免费博客搭建GitHub - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">免费博客搭建GitHub</a>
-        <time>2026-05-07</time>
-      </li>
-      
-      <li>
         <a href="/2026/05/07/2026-05-07-%E4%B8%80%E4%BD%93%E5%8C%96%E6%8E%A8%E8%AE%AD%E5%B9%B3%E5%8F%B0/" title="一体化推训平台 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">一体化推训平台</a>
         <time>2026-05-07</time>
       </li>
       
       <li>
-        <a href="/2026/05/07/2026-05-07-%E5%AE%8C%E6%95%B4-5s-%E8%A7%84%E5%88%99%E4%BB%A5%E5%8F%8A6a/" title="完整 5S 规则以及6A - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">完整 5S 规则以及6A</a>
+        <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" title="免费博客搭建GitHub - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">免费博客搭建GitHub</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" title="总有适合你的服务器推荐 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">总有适合你的服务器推荐</a>
         <time>2026-05-07</time>
       </li>
       
@@ -383,8 +466,8 @@
       </li>
       
       <li>
-        <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" title="总有适合你的服务器推荐 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">总有适合你的服务器推荐</a>
-        <time>2026-05-07</time>
+        <a href="/2026/05/08/2026-05-08-%E6%95%B4%E4%B8%AA-github-pages-cloudflare-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D-https-%E6%B5%81%E7%A8%8B%E6%80%BB%E7%BB%93/" title="GitHub Pages + Cloudflare + 自定义域名 + HTTPS 完整流程总结 🚀 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">GitHub Pages + Cloudflare + 自定义域名 + HTTPS 完整流程总结 🚀</a>
+        <time>2026-05-08</time>
       </li>
       
     </ul>

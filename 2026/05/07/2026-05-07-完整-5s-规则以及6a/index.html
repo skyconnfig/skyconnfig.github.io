@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- SEO -->
-  <title>完整 5S 规则以及6A | AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</title>
+  <title>5S 个人开发规则 + 6A 系统开发规则完整指南 | AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</title>
   <meta name="description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
   <meta name="keywords" content="AI工具教程,Vercel部署,Markdown知识库,Vue开发,SEO优化,前端教程,程序员博客,AI工具">
   <meta name="author" content="skyconnfig">
   <meta name="google-site-verification" content="2bx3xsZWUkueuU4vpoYX5ppMAdlkoVKbGSqI-xuFZKk" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="完整 5S 规则以及6A">
+  <meta property="og:title" content="5S 个人开发规则 + 6A 系统开发规则完整指南">
   <meta property="og:description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.lxs.best/2026/05/07/2026-05-07-%E5%AE%8C%E6%95%B4-5s-%E8%A7%84%E5%88%99%E4%BB%A5%E5%8F%8A6a/">
@@ -124,13 +124,13 @@
   <div class="content-area">
     <article class="post-article">
       <header class="post-header">
-        <h1 class="post-title">完整 5S 规则以及6A</h1>
+        <h1 class="post-title">5S 个人开发规则 + 6A 系统开发规则完整指南</h1>
         <div class="post-meta">
           <time>2026-05-07</time>
           
           
           <span class="sep">·</span>
-          <span>更新于 2026-05-08</span>
+          <span>更新于 2026-05-16</span>
           
         </div>
 
@@ -138,6 +138,8 @@
         <div class="post-tags">
           
           <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+          
+          <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
           
         </div>
         
@@ -148,75 +150,124 @@
 
       <!-- Article Content -->
       <div class="post-content">
-        <p><a target="_blank" rel="noopener" href="https://www.yuque.com/attachments/yuque/0/2026/md/12952984/1757136431852-945773db-4b75-4524-bed3-4dc12363d4df.md">5S个人开发规则_userules.md</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.yuque.com/attachments/yuque/0/2026/md/12952984/1757136438040-74f2f6d7-1cb8-416e-91a4-64b37360958a.md">6A系统开发规则_rules.md</a></p>
-<h3 id="user-rules-md"><a href="#user-rules-md" class="headerlink" title="user_rules.md"></a>user_rules.md</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">个性化设置说明（用户偏好）</span><br><span class="line">语言：全程使用中文沟通；</span><br><span class="line">系统环境：基于 Windows 配置开发环境；</span><br><span class="line">代码输出：默认包含完整注释，符合本规范；</span><br><span class="line">上下文保持：项目切换时保留个人设置，避免重复配置；</span><br><span class="line">交互优化：支持明确提问、风格调整、反馈迭代；</span><br><span class="line">可扩展性：允许在对话中提出个性化需求，动态优化输出体验。</span><br></pre></td></tr></table></figure>
+        <p>在 AI 辅助编程时代，有一套清晰的开发规则比以往任何时候都重要。本文整理了两套经实践验证的开发规范——<strong>5S 个人开发规则</strong> 和 <strong>6A 系统开发规则</strong>，帮助你在使用 AI 工具（如 DeepSeek、ChatGPT、Claude）进行编码时保持代码质量和项目可控性。</p>
+<hr>
+<h2 id="5S-个人开发规则"><a href="#5S-个人开发规则" class="headerlink" title="5S 个人开发规则"></a>5S 个人开发规则</h2><p>这五条规则来源于软件工程最佳实践，适用于个人开发者日常使用 AI 辅助编程的场景。</p>
+<h3 id="1-文档先行（Specification-First）"><a href="#1-文档先行（Specification-First）" class="headerlink" title="1. 文档先行（Specification First）"></a>1. 文档先行（Specification First）</h3><p><strong>规则</strong>：新项目启动时，必须先创建「说明文档.md」，作为项目的唯一知识入口和执行依据。</p>
+<p><strong>为什么</strong>：在没有文档的情况下让 AI 写代码，AI 会不断”猜测”你的意图，导致反复修改和代码不一致。先写文档再写代码，让 AI 从一开始就理解你的全貌。</p>
+<p><strong>说明文档模板</strong>：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 项目名称</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 项目规划</span></span><br><span class="line"><span class="bullet">-</span> 目标：XXX</span><br><span class="line"><span class="bullet">-</span> 技术选型：XXX</span><br><span class="line"><span class="bullet">-</span> 时间节点：XXX</span><br><span class="line"></span><br><span class="line"><span class="section">## 实施方案</span></span><br><span class="line"><span class="bullet">-</span> 架构设计：XXX</span><br><span class="line"><span class="bullet">-</span> 数据模型：XXX</span><br><span class="line"><span class="bullet">-</span> 接口协议：XXX</span><br><span class="line"></span><br><span class="line"><span class="section">## 进度记录</span></span><br><span class="line"><span class="bullet">-</span> [ ] 2026-05-01：初始化项目</span><br><span class="line"><span class="bullet">-</span> [ ] 2026-05-03：完成用户模块</span><br></pre></td></tr></table></figure>
 
-<h2 id="一、文档管理规范（核心基础）"><a href="#一、文档管理规范（核心基础）" class="headerlink" title="一、文档管理规范（核心基础）"></a>一、文档管理规范（核心基础）</h2><h3 id="1-1-文档创建时机"><a href="#1-1-文档创建时机" class="headerlink" title="1.1 文档创建时机"></a>1.1 文档创建时机</h3><p>新项目开发启动时，<strong>必须优先创建「说明文档.md」</strong>，作为项目唯一的知识入口与执行依据。</p>
-<h3 id="1-2-文档核心内容"><a href="#1-2-文档核心内容" class="headerlink" title="1.2 文档核心内容"></a>1.2 文档核心内容</h3><p>需包含 <strong>项目规划、实施方案、进度记录</strong> 三大模块，且内容需持续更新：</p>
-<ul>
-<li><strong>项目规划</strong>：目标定义、资源分配、时间节点、风险预判；</li>
-<li><strong>实施方案</strong>：技术选型、架构设计、接口协议、数据模型；</li>
-<li><strong>进度记录</strong>：每日&#x2F;每周任务完成情况、问题追踪、变更说明。</li>
-</ul>
-<h3 id="1-3-文档更新要求"><a href="#1-3-文档更新要求" class="headerlink" title="1.3 文档更新要求"></a>1.3 文档更新要求</h3><ul>
-<li>每次重新打开项目前，<strong>必须先阅读「说明文档.md」</strong>，确保理解当前状态；</li>
-<li>项目计划调整、进度节点变更时，<strong>需即时更新文档对应章节</strong>；</li>
-<li>每完成一项工作任务（如一个功能开发、一个 BUG 修复），<strong>必须在文档中补充“结果说明”</strong>，包括：<ul>
-<li>实现效果</li>
-<li>测试验证结果</li>
-<li>是否存在潜在问题</li>
-<li>后续建议</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="二、开发流程规范（过程管控）"><a href="#二、开发流程规范（过程管控）" class="headerlink" title="二、开发流程规范（过程管控）"></a>二、开发流程规范（过程管控）</h2><h3 id="2-1-任务管理逻辑"><a href="#2-1-任务管理逻辑" class="headerlink" title="2.1 任务管理逻辑"></a>2.1 任务管理逻辑</h3><p>采用顺序化思考分析需求，拆解为可执行的 ToDoList，明确每一步的输入、输出与依赖关系。  </p>
-<blockquote>
-<p>示例：开发“商品列表页” → 分解为【接口文档】→【单元测试】→【功能实现】</p>
-</blockquote>
-<h3 id="2-2-任务执行闭环"><a href="#2-2-任务执行闭环" class="headerlink" title="2.2 任务执行闭环"></a>2.2 任务执行闭环</h3><p>严格按 ToDoList 顺序执行，完成一项任务后，<strong>需在文档及代码中同步更新状态</strong>，形成闭环：</p>
-<ul>
-<li>✅ 完成后打勾标记；</li>
-<li>✅ 更新接口文档、设计文档等关联文件；</li>
-<li>✅ 提交代码时附带任务编号与说明；</li>
-<li>❌ 禁止“跳步开发”或同时修改多个文件导致混乱。</li>
-</ul>
-<hr>
-<h2 id="三、问题解决规范（技术支撑）"><a href="#三、问题解决规范（技术支撑）" class="headerlink" title="三、问题解决规范（技术支撑）"></a>三、问题解决规范（技术支撑）</h2><h3 id="3-1-问题处理优先级"><a href="#3-1-问题处理优先级" class="headerlink" title="3.1 问题处理优先级"></a>3.1 问题处理优先级</h3><p>开发中遇到技术问题时，<strong>必须查找对应编程语言的官方文档</strong>，确保解决方案的准确性与合规性。</p>
-<ul>
-<li>Python → <a target="_blank" rel="noopener" href="https://docs.python.org/">python.org</a></li>
-<li>Java → <a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/">Oracle Docs</a></li>
-<li>JavaScript → <a target="_blank" rel="noopener" href="https://developer.mozilla.org/">MDN Web Docs</a></li>
-<li>其他语言 → 官方文档优先于第三方教程</li>
-</ul>
-<blockquote>
-<p>⚠️ 严禁直接“百度一下复制粘贴”，所有非官方方案使用者需承担后续维护责任。</p>
-</blockquote>
-<hr>
-<h2 id="四、执行约束规范（硬性要求）"><a href="#四、执行约束规范（硬性要求）" class="headerlink" title="四、执行约束规范（硬性要求）"></a>四、执行约束规范（硬性要求）</h2><h3 id="4-1-三大“绝不允许”原则"><a href="#4-1-三大“绝不允许”原则" class="headerlink" title="4.1 三大“绝不允许”原则"></a>4.1 三大“绝不允许”原则</h3><ul>
-<li><strong>绝不允许项目延期</strong>：严格按文档规划的时间节点推进，提前3天识别风险，延期必须同步更新文档并说明原因；</li>
-<li><strong>绝不允许超出计划</strong>：新增功能或调整范围必须先修改规划文档，并评估对时间、资源的影响；</li>
-<li><strong>绝不允许出错</strong>：开发过程中需进行多轮自检，包括：<ul>
-<li>代码编译检查（无警告&#x2F;错误）</li>
-<li>单元测试通过（覆盖率 ≥80%）</li>
-<li>文档与代码一致性校验<blockquote>
-<p>任何一类错误未解决不得提交代码。</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h2 id="五、环境与输出规范（基础保障）"><a href="#五、环境与输出规范（基础保障）" class="headerlink" title="五、环境与输出规范（基础保障）"></a>五、环境与输出规范（基础保障）</h2><h3 id="5-1-开发环境统一"><a href="#5-1-开发环境统一" class="headerlink" title="5.1 开发环境统一"></a>5.1 开发环境统一</h3><p>根据团队约定的操作系统安装对应的依赖和软件包，避免跨系统兼容性问题：</p>
-<ul>
-<li>操作系统：统一使用 Windows（或 Linux&#x2F;macOS，依团队定）；</li>
-<li>依赖管理：使用 <code>package.json</code> &#x2F; <code>requirements.txt</code> &#x2F; <code>pom.xml</code> 锁定版本；</li>
-<li>IDE 插件：如 Prettier 版本固定为 2.8.0，确保格式一致。</li>
-</ul>
-<h3 id="5-2-代码输出标准"><a href="#5-2-代码输出标准" class="headerlink" title="5.2 代码输出标准"></a>5.2 代码输出标准</h3><p>所有函数必须添加函数级注释，格式如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">login</span>(<span class="params">username: <span class="built_in">str</span>, password: <span class="built_in">str</span></span>) -&gt; <span class="built_in">dict</span>:</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    用户登录接口</span></span><br><span class="line"><span class="string">    :param username: 用户名（长度6-20位）</span></span><br><span class="line"><span class="string">    :param password: 密码（包含大小写+数字）</span></span><br><span class="line"><span class="string">    :return: &#123;code:0,data:&#123;token:str,user:dict&#125;&#125;</span></span><br><span class="line"><span class="string">    :raises ValueError: 用户名或密码不符合规则</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-任务拆解（Small-Steps）"><a href="#2-任务拆解（Small-Steps）" class="headerlink" title="2. 任务拆解（Small Steps）"></a>2. 任务拆解（Small Steps）</h3><p><strong>规则</strong>：将需求拆解为可执行的 ToDoList，明确每一步的输入、输出与依赖关系。</p>
+<p><strong>实际案例</strong>：开发”商品列表页”，不要一次让 AI 生成全部代码。而是拆解为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Step 1: 编写接口文档 → AI 生成 API 接口定义</span><br><span class="line">Step 2: 单元测试     → AI 生成测试用例</span><br><span class="line">Step 3: 功能实现     → AI 生成核心逻辑</span><br><span class="line">Step 4: 集成测试     → AI 补充边界情况</span><br></pre></td></tr></table></figure>
 
+<p>每完成一步在文档中打勾记录状态。</p>
+<h3 id="3-官方文档优先（Official-First）"><a href="#3-官方文档优先（Official-First）" class="headerlink" title="3. 官方文档优先（Official First）"></a>3. 官方文档优先（Official First）</h3><p><strong>规则</strong>：遇到技术问题时，必须优先查阅对应语言的<strong>官方文档</strong>，而不是百度搜到的第三方博客。</p>
+<table>
+<thead>
+<tr>
+<th>语言</th>
+<th>官方文档</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Python</td>
+<td><a target="_blank" rel="noopener" href="https://docs.python.org/">docs.python.org</a></td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td><a target="_blank" rel="noopener" href="https://developer.mozilla.org/">developer.mozilla.org</a></td>
+</tr>
+<tr>
+<td>Java</td>
+<td><a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/">docs.oracle.com&#x2F;javase&#x2F;</a></td>
+</tr>
+<tr>
+<td>Go</td>
+<td><a target="_blank" rel="noopener" href="https://go.dev/doc/">go.dev&#x2F;doc&#x2F;</a></td>
+</tr>
+</tbody></table>
+<p><strong>为什么</strong>：第三方博客可能已经过时，或包含不安全的写法。让 AI 以官方文档为准绳，避免学到坏习惯。</p>
+<h3 id="4-闭环验证（Closed-Loop）"><a href="#4-闭环验证（Closed-Loop）" class="headerlink" title="4. 闭环验证（Closed Loop）"></a>4. 闭环验证（Closed Loop）</h3><p><strong>规则</strong>：每个功能完成后必须做三件事：</p>
+<ol>
+<li><strong>代码编译检查</strong>：无警告、无错误</li>
+<li><strong>单元测试通过</strong>：覆盖率 ≥ 80%</li>
+<li><strong>文档同步更新</strong>：记录实现效果和潜在问题</li>
+</ol>
+<p>示例闭环记录：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">## [2026-05-01] 完成用户登录模块</span></span><br><span class="line"><span class="bullet">-</span> ✅ 代码编译通过</span><br><span class="line"><span class="bullet">-</span> ✅ 单元测试 12/12 通过（覆盖率 85%）</span><br><span class="line"><span class="bullet">-</span> ✅ 文档已更新</span><br><span class="line"><span class="bullet">-</span> ⚠️ 待优化：Token 过期时间未做配置化</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-环境一致（Environment-Consistency）"><a href="#5-环境一致（Environment-Consistency）" class="headerlink" title="5. 环境一致（Environment Consistency）"></a>5. 环境一致（Environment Consistency）</h3><p><strong>规则</strong>：开发环境必须统一，依赖版本必须锁定。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 锁定依赖版本</span></span><br><span class="line">npm install          <span class="comment"># → package-lock.json</span></span><br><span class="line">pip freeze &gt; requirements.txt</span><br></pre></td></tr></table></figure>
+
+<p><strong>实际案例</strong>：团队中有人用 Prettier 2.8，有人用 3.0，格式化结果不同导致 Git diff 全是空格变更。解决方案是在项目根目录放 <code>.prettierrc</code> + <code>package.json</code> 中锁定版本。</p>
+<hr>
+<h2 id="6A-系统开发规则"><a href="#6A-系统开发规则" class="headerlink" title="6A 系统开发规则"></a>6A 系统开发规则</h2><p>6A 规则是 5S 的扩展版，适用于多人协作或复杂度更高的项目。</p>
+<h3 id="1-Analyze（需求分析）"><a href="#1-Analyze（需求分析）" class="headerlink" title="1. Analyze（需求分析）"></a>1. Analyze（需求分析）</h3><p>在原需求的基础上，用 AI 帮助你发现隐藏的需求点：</p>
+<blockquote>
+<p><strong>Prompt</strong>：”请分析这个需求，列出我可能遗漏的非功能性需求（性能、安全、可维护性）。”</p>
+</blockquote>
+<h3 id="2-Architect（架构设计）"><a href="#2-Architect（架构设计）" class="headerlink" title="2. Architect（架构设计）"></a>2. Architect（架构设计）</h3><p>在写代码之前，先让 AI 出架构图（Mermaid 格式）：</p>
+<blockquote>
+<p><strong>Prompt</strong>：”请用 Mermaid 画出这个系统的模块架构图，包含数据流向。”</p>
+</blockquote>
+<h3 id="3-Arrange（任务编排）"><a href="#3-Arrange（任务编排）" class="headerlink" title="3. Arrange（任务编排）"></a>3. Arrange（任务编排）</h3><p>将 AI 生成的代码按模块编排：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">src/</span><br><span class="line">├── api/         # 接口层</span><br><span class="line">├── models/      # 数据模型</span><br><span class="line">├── services/    # 业务逻辑</span><br><span class="line">└── utils/       # 工具函数</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-Assert（断言验证）"><a href="#4-Assert（断言验证）" class="headerlink" title="4. Assert（断言验证）"></a>4. Assert（断言验证）</h3><p>AI 生成的代码必须经过断言验证。让 AI <strong>自检</strong>自己的输出：</p>
+<blockquote>
+<p><strong>Prompt</strong>：”请检查你刚才生成的代码，列出所有可能的边界条件和错误处理场景。”</p>
+</blockquote>
+<h3 id="5-Adapt（适配调整）"><a href="#5-Adapt（适配调整）" class="headerlink" title="5. Adapt（适配调整）"></a>5. Adapt（适配调整）</h3><p>AI 的输出往往需要适配你的项目风格：</p>
+<ul>
+<li>是否有统一的错误处理方式？</li>
+<li>是否遵循了项目现有的命名规范？</li>
+<li>是否与已有的模块接口兼容？</li>
+</ul>
+<h3 id="6-Archive（归档沉淀）"><a href="#6-Archive（归档沉淀）" class="headerlink" title="6. Archive（归档沉淀）"></a>6. Archive（归档沉淀）</h3><p>每次完成的模块都应该归档到团队的<strong>知识库</strong>中，方便日后复用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/knowledge-base</span><br><span class="line">  /patterns     # 设计模式使用记录</span><br><span class="line">  /decisions    # 技术选型决策记录</span><br><span class="line">  /lessons      # 踩坑经验总结</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="实际工作流对比"><a href="#实际工作流对比" class="headerlink" title="实际工作流对比"></a>实际工作流对比</h2><table>
+<thead>
+<tr>
+<th>场景</th>
+<th>不用规则</th>
+<th>用 5S+6A 规则</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>新功能开发</strong></td>
+<td>AI 从头写到尾，反复改</td>
+<td>先写文档，拆步骤，逐个实现</td>
+</tr>
+<tr>
+<td><strong>Bug 修复</strong></td>
+<td>直接让 AI 猜原因</td>
+<td>先看官方文档，再让 AI 分析</td>
+</tr>
+<tr>
+<td><strong>代码质量</strong></td>
+<td>功能跑通就收工</td>
+<td>必须有测试 + 文档更新</td>
+</tr>
+<tr>
+<td><strong>项目交接</strong></td>
+<td>只有代码没文档</td>
+<td>有完整的说明文档和进度记录</td>
+</tr>
+<tr>
+<td><strong>踩坑复现</strong></td>
+<td>“我记得好像遇到过”</td>
+<td>有归档记录可直接查</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="快速开始模板"><a href="#快速开始模板" class="headerlink" title="快速开始模板"></a>快速开始模板</h2><p>把下面的模板复制到你的项目根目录作为 <code>说明文档.md</code> 的起点：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 项目说明文档</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 用户偏好</span></span><br><span class="line"><span class="bullet">-</span> 语言：中文</span><br><span class="line"><span class="bullet">-</span> 系统：Windows</span><br><span class="line"><span class="bullet">-</span> 代码风格：包含完整注释</span><br><span class="line"></span><br><span class="line"><span class="section">## 项目规划</span></span><br><span class="line"><span class="bullet">-</span> 目标：</span><br><span class="line"><span class="bullet">-</span> 时间节点：</span><br><span class="line"><span class="bullet">-</span> 风险预判：</span><br><span class="line"></span><br><span class="line"><span class="section">## 技术选型</span></span><br><span class="line"></span><br><span class="line"><span class="section">## 进度记录</span></span><br><span class="line">| 日期 | 任务 | 状态 | 备注 |</span><br><span class="line">|---|---|---|---|</span><br><span class="line">| | | | |</span><br><span class="line"></span><br><span class="line"><span class="section">## 踩坑记录</span></span><br><span class="line">| 日期 | 问题 | 原因 | 解决方案 |</span><br><span class="line">|---|---|---|---|</span><br><span class="line">| | | | |</span><br></pre></td></tr></table></figure>
+
+<p><strong>使用方法</strong>：每次打开项目时，先阅读这个文档，让 AI 加载上下文后再开始写代码。完成一个功能后，更新文档中的进度记录。</p>
 
       </div>
 
@@ -238,16 +289,11 @@
     
     <nav class="post-nav">
       
-      <a href="/2026/05/07/2026-05-07-%E4%B8%80%E4%BD%93%E5%8C%96%E6%8E%A8%E8%AE%AD%E5%B9%B3%E5%8F%B0/" class="post-nav-prev" title="上一篇: 一体化推训平台">
+      <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" class="post-nav-prev" title="上一篇: 总有适合你的服务器推荐">
         <span class="nav-label">← 上一篇</span>
-        <span class="nav-title">一体化推训平台</span>
-      </a>
-      
-      
-      <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" class="post-nav-next" title="下一篇: 总有适合你的服务器推荐">
-        <span class="nav-label">下一篇 →</span>
         <span class="nav-title">总有适合你的服务器推荐</span>
       </a>
+      
       
     </nav>
     
@@ -262,7 +308,7 @@
   <div class="sidebar-section toc-wrapper" id="toc-wrapper">
     <h3>目录</h3>
     <nav class="toc" id="toc">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#user-rules-md"><span class="toc-number">1.</span> <span class="toc-text">user_rules.md</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%96%87%E6%A1%A3%E7%AE%A1%E7%90%86%E8%A7%84%E8%8C%83%EF%BC%88%E6%A0%B8%E5%BF%83%E5%9F%BA%E7%A1%80%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">一、文档管理规范（核心基础）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E6%96%87%E6%A1%A3%E5%88%9B%E5%BB%BA%E6%97%B6%E6%9C%BA"><span class="toc-number">2.1.</span> <span class="toc-text">1.1 文档创建时机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E6%96%87%E6%A1%A3%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9"><span class="toc-number">2.2.</span> <span class="toc-text">1.2 文档核心内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E6%96%87%E6%A1%A3%E6%9B%B4%E6%96%B0%E8%A6%81%E6%B1%82"><span class="toc-number">2.3.</span> <span class="toc-text">1.3 文档更新要求</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B%E8%A7%84%E8%8C%83%EF%BC%88%E8%BF%87%E7%A8%8B%E7%AE%A1%E6%8E%A7%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">二、开发流程规范（过程管控）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E9%80%BB%E8%BE%91"><span class="toc-number">3.1.</span> <span class="toc-text">2.1 任务管理逻辑</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E4%BB%BB%E5%8A%A1%E6%89%A7%E8%A1%8C%E9%97%AD%E7%8E%AF"><span class="toc-number">3.2.</span> <span class="toc-text">2.2 任务执行闭环</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E8%A7%84%E8%8C%83%EF%BC%88%E6%8A%80%E6%9C%AF%E6%94%AF%E6%92%91%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">三、问题解决规范（技术支撑）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E9%97%AE%E9%A2%98%E5%A4%84%E7%90%86%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-number">4.1.</span> <span class="toc-text">3.1 问题处理优先级</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%89%A7%E8%A1%8C%E7%BA%A6%E6%9D%9F%E8%A7%84%E8%8C%83%EF%BC%88%E7%A1%AC%E6%80%A7%E8%A6%81%E6%B1%82%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">四、执行约束规范（硬性要求）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E4%B8%89%E5%A4%A7%E2%80%9C%E7%BB%9D%E4%B8%8D%E5%85%81%E8%AE%B8%E2%80%9D%E5%8E%9F%E5%88%99"><span class="toc-number">5.1.</span> <span class="toc-text">4.1 三大“绝不允许”原则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E7%8E%AF%E5%A2%83%E4%B8%8E%E8%BE%93%E5%87%BA%E8%A7%84%E8%8C%83%EF%BC%88%E5%9F%BA%E7%A1%80%E4%BF%9D%E9%9A%9C%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">五、环境与输出规范（基础保障）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%BB%9F%E4%B8%80"><span class="toc-number">6.1.</span> <span class="toc-text">5.1 开发环境统一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E4%BB%A3%E7%A0%81%E8%BE%93%E5%87%BA%E6%A0%87%E5%87%86"><span class="toc-number">6.2.</span> <span class="toc-text">5.2 代码输出标准</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#5S-%E4%B8%AA%E4%BA%BA%E5%BC%80%E5%8F%91%E8%A7%84%E5%88%99"><span class="toc-number">1.</span> <span class="toc-text">5S 个人开发规则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%96%87%E6%A1%A3%E5%85%88%E8%A1%8C%EF%BC%88Specification-First%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">1. 文档先行（Specification First）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E4%BB%BB%E5%8A%A1%E6%8B%86%E8%A7%A3%EF%BC%88Small-Steps%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">2. 任务拆解（Small Steps）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E4%BC%98%E5%85%88%EF%BC%88Official-First%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">3. 官方文档优先（Official First）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E9%97%AD%E7%8E%AF%E9%AA%8C%E8%AF%81%EF%BC%88Closed-Loop%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">4. 闭环验证（Closed Loop）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E7%8E%AF%E5%A2%83%E4%B8%80%E8%87%B4%EF%BC%88Environment-Consistency%EF%BC%89"><span class="toc-number">1.5.</span> <span class="toc-text">5. 环境一致（Environment Consistency）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6A-%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E8%A7%84%E5%88%99"><span class="toc-number">2.</span> <span class="toc-text">6A 系统开发规则</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Analyze%EF%BC%88%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%EF%BC%89"><span class="toc-number">2.1.</span> <span class="toc-text">1. Analyze（需求分析）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Architect%EF%BC%88%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">2. Architect（架构设计）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Arrange%EF%BC%88%E4%BB%BB%E5%8A%A1%E7%BC%96%E6%8E%92%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">3. Arrange（任务编排）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Assert%EF%BC%88%E6%96%AD%E8%A8%80%E9%AA%8C%E8%AF%81%EF%BC%89"><span class="toc-number">2.4.</span> <span class="toc-text">4. Assert（断言验证）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Adapt%EF%BC%88%E9%80%82%E9%85%8D%E8%B0%83%E6%95%B4%EF%BC%89"><span class="toc-number">2.5.</span> <span class="toc-text">5. Adapt（适配调整）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-Archive%EF%BC%88%E5%BD%92%E6%A1%A3%E6%B2%89%E6%B7%80%EF%BC%89"><span class="toc-number">2.6.</span> <span class="toc-text">6. Archive（归档沉淀）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%99%85%E5%B7%A5%E4%BD%9C%E6%B5%81%E5%AF%B9%E6%AF%94"><span class="toc-number">3.</span> <span class="toc-text">实际工作流对比</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B%E6%A8%A1%E6%9D%BF"><span class="toc-number">4.</span> <span class="toc-text">快速开始模板</span></a></li></ol>
     </nav>
   </div>
   
@@ -278,11 +324,15 @@
       </li>
       
       <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91/" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发 <span class="count">(5)</span></a>
+      </li>
+      
+      <li>
         <a href="/categories/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" title="开发部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署 <span class="count">(1)</span></a>
       </li>
       
       <li>
-        <a href="/categories/%E5%BC%80%E5%8F%91/" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发 <span class="count">(5)</span></a>
+        <a href="/categories/%E5%BC%80%E5%8F%91/%E9%83%A8%E7%BD%B2/" title="部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署 <span class="count">(1)</span></a>
       </li>
       
       <li>
@@ -305,23 +355,35 @@
       
       <a href="/tags/JavaScript/" class="tag-item" title="JavaScript 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">JavaScript</a>
       
-      <a href="/tags/Markdown/" class="tag-item" title="Markdown 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Markdown</a>
-      
-      <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-item" title="博客 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">博客</a>
-      
       <a href="/tags/Python/" class="tag-item" title="Python 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Python</a>
       
       <a href="/tags/%E5%85%A5%E9%97%A8/" class="tag-item" title="入门 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">入门</a>
       
-      <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+      <a href="/tags/Markdown/" class="tag-item" title="Markdown 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Markdown</a>
+      
+      <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-item" title="博客 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">博客</a>
       
       <a href="/tags/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" class="tag-item" title="开发部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署</a>
       
+      <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+      
+      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+      
+      <a href="/tags/GitHub-Pages/" class="tag-item" title="GitHub Pages 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">GitHub Pages</a>
+      
+      <a href="/tags/Cloudflare/" class="tag-item" title="Cloudflare 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Cloudflare</a>
+      
       <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+      
+      <a href="/tags/AdSense/" class="tag-item" title="AdSense 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">AdSense</a>
+      
+      <a href="/tags/SEO/" class="tag-item" title="SEO 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">SEO</a>
       
       <a href="/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/" class="tag-item" title="提示词 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词</a>
       
-      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+      <a href="/tags/%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="tag-item" title="邮件服务器 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">邮件服务器</a>
+      
+      <a href="/tags/English/" class="tag-item" title="English 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">English</a>
       
     </div>
   </div>
@@ -335,17 +397,17 @@
       
       
       <li>
-        <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" title="免费博客搭建GitHub - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">免费博客搭建GitHub</a>
-        <time>2026-05-07</time>
-      </li>
-      
-      <li>
         <a href="/2026/05/07/2026-05-07-%E4%B8%80%E4%BD%93%E5%8C%96%E6%8E%A8%E8%AE%AD%E5%B9%B3%E5%8F%B0/" title="一体化推训平台 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">一体化推训平台</a>
         <time>2026-05-07</time>
       </li>
       
       <li>
-        <a href="/2026/05/07/2026-05-07-%E5%AE%8C%E6%95%B4-5s-%E8%A7%84%E5%88%99%E4%BB%A5%E5%8F%8A6a/" title="完整 5S 规则以及6A - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">完整 5S 规则以及6A</a>
+        <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" title="免费博客搭建GitHub - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">免费博客搭建GitHub</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" title="总有适合你的服务器推荐 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">总有适合你的服务器推荐</a>
         <time>2026-05-07</time>
       </li>
       
@@ -355,8 +417,8 @@
       </li>
       
       <li>
-        <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" title="总有适合你的服务器推荐 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">总有适合你的服务器推荐</a>
-        <time>2026-05-07</time>
+        <a href="/2026/05/08/2026-05-08-%E6%95%B4%E4%B8%AA-github-pages-cloudflare-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D-https-%E6%B5%81%E7%A8%8B%E6%80%BB%E7%BB%93/" title="GitHub Pages + Cloudflare + 自定义域名 + HTTPS 完整流程总结 🚀 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">GitHub Pages + Cloudflare + 自定义域名 + HTTPS 完整流程总结 🚀</a>
+        <time>2026-05-08</time>
       </li>
       
     </ul>

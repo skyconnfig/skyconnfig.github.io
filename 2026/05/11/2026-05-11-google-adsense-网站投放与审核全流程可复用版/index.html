@@ -135,7 +135,7 @@
           
           
           <span class="sep">·</span>
-          <span>更新于 2026-05-11</span>
+          <span>更新于 2026-05-16</span>
           
         </div>
 
@@ -143,6 +143,10 @@
         <div class="post-tags">
           
           <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+          
+          <a href="/tags/AdSense/" class="tag-item" title="AdSense 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">AdSense</a>
+          
+          <a href="/tags/SEO/" class="tag-item" title="SEO 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">SEO</a>
           
         </div>
         
@@ -153,87 +157,206 @@
 
       <!-- Article Content -->
       <div class="post-content">
-        <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># Google AdSense 网站投放与审核全流程（可复用版）</span></span><br><span class="line"></span><br><span class="line">适用于：MVP网站 / 新域名 / 内容站 / 工具站（如 lxs.best）</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section"># 1️⃣ 网站上线前检查（必须完成）</span></span><br><span class="line"></span><br><span class="line">在提交 Google AdSense 之前，确保网站满足以下条件：</span><br><span class="line"></span><br><span class="line"><span class="section">## ✅ 1. 网站必须可正常访问</span></span><br><span class="line"><span class="bullet">-</span> 域名可打开（如 https://www.lxs.best/）</span><br><span class="line"><span class="bullet">-</span> 不出现：</span><br><span class="line"><span class="bullet">  -</span> “Preparing”</span><br><span class="line"><span class="bullet">  -</span> 404</span><br><span class="line"><span class="bullet">  -</span> 空白页</span><br><span class="line"><span class="bullet">-</span> HTTPS 正常（有小锁）</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section">## ✅ 2. 基础页面必须齐全</span></span><br><span class="line"></span><br><span class="line">至少包含：</span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> <span class="code">`/`</span></span><br><span class="line"><span class="bullet">-</span> <span class="code">`/about`</span>（关于我们）</span><br><span class="line"><span class="bullet">-</span> <span class="code">`/privacy-policy`</span>（隐私政策）</span><br><span class="line"><span class="bullet">-</span> <span class="code">`/contact`</span>（联系方式）</span><br><span class="line"></span><br><span class="line">👉 作用：提高 Google 信任度（非常关键）</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section">## ✅ 3. 内容要求（核心）</span></span><br><span class="line"></span><br><span class="line">Google 是否通过，80%看内容：</span><br><span class="line"></span><br><span class="line"><span class="section">### 最低标准：</span></span><br><span class="line"><span class="bullet">-</span> 至少 10~20 篇内容页面</span><br><span class="line"><span class="bullet">-</span> 每篇 ≥ 800 字</span><br><span class="line"><span class="bullet">-</span> 必须原创（不能复制）</span><br><span class="line"></span><br><span class="line"><span class="section">### 内容结构建议：</span></span><br><span class="line"><span class="bullet">-</span> 标题清晰（H1）</span><br><span class="line"><span class="bullet">-</span> 小标题（H2/H3）</span><br><span class="line"><span class="bullet">-</span> 图文结合更好</span><br><span class="line"><span class="bullet">-</span> 有分类（如 Game Guides / News）</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section">## 🚨 2️⃣ 网站稳定性检查（非常重要）</span></span><br><span class="line"></span><br><span class="line">在提交前必须确认：</span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> 网站加载速度正常</span><br><span class="line"><span class="bullet">-</span> 无持续“Preparing / Loading”</span><br><span class="line"><span class="bullet">-</span> 页面结构完整</span><br><span class="line"><span class="bullet">-</span> 无大量空页面</span><br><span class="line"></span><br><span class="line">👉 如果网站还在部署中：</span><br><span class="line">❌ 不要提交 AdSense  </span><br><span class="line">✔ 等完全稳定后再提交</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section"># 3️⃣ 提交 Google AdSense 流程</span></span><br><span class="line"></span><br><span class="line"><span class="section">## Step 1：注册 AdSense</span></span><br><span class="line">访问：</span><br><span class="line">https://www.google.com/adsense/</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section">## Step 2：添加网站</span></span><br><span class="line">输入你的域名：</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://www.lxs.best/">https://www.lxs.best/</a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">## Step 3：放置验证代码</span><br><span class="line">Google 会给你一段代码：</span><br><span class="line"></span><br><span class="line">```html</span><br><span class="line">&lt;script async src=&quot;...&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-<p>👉 放到网站 <code>&lt;head&gt;</code> 中</p>
+        <h1 id="Google-AdSense-网站投放与审核全流程"><a href="#Google-AdSense-网站投放与审核全流程" class="headerlink" title="Google AdSense 网站投放与审核全流程"></a>Google AdSense 网站投放与审核全流程</h1><p>适用于：MVP 网站 &#x2F; 新域名 &#x2F; 内容站 &#x2F; 工具站。本文基于多次 AdSense 审核通过的实战经验整理，帮你一次性通过审核，避免重复提交。</p>
 <hr>
-<h2 id="Step-4：等待审核"><a href="#Step-4：等待审核" class="headerlink" title="Step 4：等待审核"></a>Step 4：等待审核</h2><p>进入审核阶段：</p>
+<h2 id="1️⃣-网站上线前检查"><a href="#1️⃣-网站上线前检查" class="headerlink" title="1️⃣ 网站上线前检查"></a>1️⃣ 网站上线前检查</h2><p>在提交 Google AdSense 之前，务必确保以下条件全部满足。</p>
+<h3 id="✅-网站可正常访问"><a href="#✅-网站可正常访问" class="headerlink" title="✅ 网站可正常访问"></a>✅ 网站可正常访问</h3><ul>
+<li>域名可打开（如 <code>https://www.example.com/</code>）</li>
+<li>不能出现以下情况：<ul>
+<li>“Preparing”（页面正在加载中）</li>
+<li>404 错误</li>
+<li>空白页面</li>
+</ul>
+</li>
+<li>HTTPS 正常（地址栏有小锁图标）</li>
+</ul>
+<blockquote>
+<p><strong>为什么重要</strong>：Google 的审核机器人会模拟真实用户访问你的网站。如果它在首页看到的是 404 或者持续 loading，会直接判定网站不可用，拒绝审核。</p>
+</blockquote>
+<h3 id="✅-基础页面必须齐全"><a href="#✅-基础页面必须齐全" class="headerlink" title="✅ 基础页面必须齐全"></a>✅ 基础页面必须齐全</h3><p>至少包含这 4 个页面：</p>
 <table>
 <thead>
 <tr>
-<th>状态</th>
-<th>时间</th>
+<th>页面</th>
+<th>作用</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>快速审核</td>
-<td>6小时～24小时</td>
+<td><code>/</code> 首页</td>
+<td>展示网站主题和最新内容</td>
 </tr>
 <tr>
-<td>正常审核</td>
-<td>1～3天</td>
+<td><code>/about</code> 关于我们</td>
+<td>介绍网站定位和作者</td>
 </tr>
 <tr>
-<td>慢审核</td>
-<td>3～7天</td>
+<td><code>/privacy-policy</code> 隐私政策</td>
+<td>说明 Cookie 和广告数据收集（<strong>AdSense 强制要求</strong>）</td>
+</tr>
+<tr>
+<td><code>/contact</code> 联系方式</td>
+<td>增加网站可信度</td>
 </tr>
 </tbody></table>
-<hr>
-<h1 id="4️⃣-审核失败常见原因（必须避免）"><a href="#4️⃣-审核失败常见原因（必须避免）" class="headerlink" title="4️⃣ 审核失败常见原因（必须避免）"></a>4️⃣ 审核失败常见原因（必须避免）</h1><p>❌ 网站内容太少<br>❌ 页面空白 &#x2F; 未完成<br>❌ 没有隐私政策<br>❌ 网站无法访问<br>❌ 内容重复 &#x2F; AI垃圾内容<br>❌ 导航结构混乱</p>
-<hr>
-<h1 id="5️⃣-提高通过率的方法（关键优化）"><a href="#5️⃣-提高通过率的方法（关键优化）" class="headerlink" title="5️⃣ 提高通过率的方法（关键优化）"></a>5️⃣ 提高通过率的方法（关键优化）</h1><h2 id="🚀-提升通过率-3-个核心动作："><a href="#🚀-提升通过率-3-个核心动作：" class="headerlink" title="🚀 提升通过率 3 个核心动作："></a>🚀 提升通过率 3 个核心动作：</h2><h3 id="1-内容数量"><a href="#1-内容数量" class="headerlink" title="1. 内容数量"></a>1. 内容数量</h3><ul>
-<li>≥ 15篇文章（最低）</li>
+<p>新站上线第 1 天就搞定这些页面，不要等 AdSense 拒绝了再补。</p>
+<h3 id="✅-内容要求（核心）"><a href="#✅-内容要求（核心）" class="headerlink" title="✅ 内容要求（核心）"></a>✅ 内容要求（核心）</h3><p>Google 是否通过审核，<strong>80% 取决于内容质量</strong>。</p>
+<p><strong>最低标准</strong>：</p>
+<ul>
+<li>至少 15~20 篇内容页面</li>
+<li>每篇 ≥ 800 字（热门做法是 1000 字以上）</li>
+<li><strong>必须原创</strong>，不能从其他网站复制粘贴</li>
+<li>避免纯 AI 生成内容（需有人工编辑痕迹）</li>
 </ul>
-<h3 id="2-内容质量"><a href="#2-内容质量" class="headerlink" title="2. 内容质量"></a>2. 内容质量</h3><ul>
-<li>每篇 800~1500 字</li>
-<li>有真实信息（攻略&#x2F;教程&#x2F;分析）</li>
+<p><strong>内容结构建议</strong>：</p>
+<ul>
+<li>标题清晰（H1 层级）</li>
+<li>合理使用小标题（H2&#x2F;H3），方便 Google 抓取文章结构</li>
+<li>图文结合更好（每 500 字至少一张相关图片）</li>
+<li>有分类体系（如：教程 &#x2F; 工具 &#x2F; 评测）</li>
 </ul>
-<h3 id="3-网站结构"><a href="#3-网站结构" class="headerlink" title="3. 网站结构"></a>3. 网站结构</h3><ul>
-<li>首页 → 分类 → 文章</li>
-<li>有导航栏</li>
-</ul>
+<blockquote>
+<p>💡 <strong>判断标准</strong>：如果你的文章让别人读了觉得“这个网站有用”，Google 也会这么认为。</p>
+</blockquote>
 <hr>
-<h1 id="6️⃣-标准时间总结"><a href="#6️⃣-标准时间总结" class="headerlink" title="6️⃣ 标准时间总结"></a>6️⃣ 标准时间总结</h1><table>
+<h2 id="2️⃣-网站稳定性检查"><a href="#2️⃣-网站稳定性检查" class="headerlink" title="2️⃣ 网站稳定性检查"></a>2️⃣ 网站稳定性检查</h2><p>在提交前必须确认全站稳定运行至少 3~5 天：</p>
+<ul>
+<li><input disabled="" type="checkbox"> 网站加载速度正常（建议 &lt; 3 秒）</li>
+<li><input disabled="" type="checkbox"> 无持续 “Preparing &#x2F; Loading” 状态</li>
+<li><input disabled="" type="checkbox"> 页面结构完整，无大量空页面</li>
+<li><input disabled="" type="checkbox"> 所有导航链接可点击，不报 404</li>
+<li><input disabled="" type="checkbox"> 在不同浏览器上都能正常显示（Chrome &#x2F; Edge &#x2F; Safari）</li>
+</ul>
+<p><strong>重要</strong>：如果你还在部署阶段、频繁改版、或者 DNS 还没完全生效——先不要提交 AdSense。等网站完全稳定了再申请，一次过比反复提交省时间得多。</p>
+<hr>
+<h2 id="3️⃣-提交-AdSense-流程"><a href="#3️⃣-提交-AdSense-流程" class="headerlink" title="3️⃣ 提交 AdSense 流程"></a>3️⃣ 提交 AdSense 流程</h2><h3 id="Step-1：注册-AdSense"><a href="#Step-1：注册-AdSense" class="headerlink" title="Step 1：注册 AdSense"></a>Step 1：注册 AdSense</h3><p>访问 <a target="_blank" rel="noopener" href="https://www.google.com/adsense/">Google AdSense 官网</a>，用你的 Google 账号登录。</p>
+<h3 id="Step-2：添加网站网址"><a href="#Step-2：添加网站网址" class="headerlink" title="Step 2：添加网站网址"></a>Step 2：添加网站网址</h3><p>输入你的域名，例如 <code>https://www.example.com/</code>。注意写对协议（https:&#x2F;&#x2F;）和是否包含 www。</p>
+<h3 id="Step-3：放置验证代码"><a href="#Step-3：放置验证代码" class="headerlink" title="Step 3：放置验证代码"></a>Step 3：放置验证代码</h3><p>Google 会给你一段代码，类似：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">&quot;https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxx&quot;</span> <span class="attr">crossorigin</span>=<span class="string">&quot;anonymous&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>把这行代码放到网站的 <code>&lt;head&gt;</code> 标签中。如果你是 Hexo 博客，放在主题的 <code>head.njk</code> 或 <code>head.ejs</code> 中即可。</p>
+<h3 id="Step-4：等待审核"><a href="#Step-4：等待审核" class="headerlink" title="Step 4：等待审核"></a>Step 4：等待审核</h3><table>
+<thead>
+<tr>
+<th>审核速度</th>
+<th>预估时间</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>快速</td>
+<td>6 小时 ~ 24 小时</td>
+</tr>
+<tr>
+<td>正常</td>
+<td>1 ~ 3 天</td>
+</tr>
+<tr>
+<td>慢速</td>
+<td>3 ~ 7 天</td>
+</tr>
+</tbody></table>
+<p>提交后每天检查一次邮箱和 AdSense 后台即可，不需要重复提交。</p>
+<hr>
+<h2 id="4️⃣-审核失败常见原因"><a href="#4️⃣-审核失败常见原因" class="headerlink" title="4️⃣ 审核失败常见原因"></a>4️⃣ 审核失败常见原因</h2><table>
+<thead>
+<tr>
+<th>失败原因</th>
+<th>表现</th>
+<th>解决方案</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>内容太少</strong></td>
+<td>“您的网站尚未达到条件”</td>
+<td>发布 15+ 篇原创文章</td>
+</tr>
+<tr>
+<td><strong>页面空白&#x2F;未完成</strong></td>
+<td>审核机器人无法获取内容</td>
+<td>删掉所有空页面或加 noindex</td>
+</tr>
+<tr>
+<td><strong>没有隐私政策</strong></td>
+<td>直接被拒</td>
+<td>补充隐私政策页（含 Cookie 说明）</td>
+</tr>
+<tr>
+<td><strong>网站无法访问</strong></td>
+<td>域名打不开或跳转异常</td>
+<td>检查 DNS 和服务器状态</td>
+</tr>
+<tr>
+<td><strong>内容重复</strong></td>
+<td>“低质量内容”</td>
+<td>删除抄袭内容，只保留原创</td>
+</tr>
+<tr>
+<td><strong>导航混乱</strong></td>
+<td>无法通过菜单找到所有页面</td>
+<td>整理分类和导航结构</td>
+</tr>
+</tbody></table>
+<p><strong>最常见的被拒原因始终是同一个</strong>：内容不够多、不够好。</p>
+<hr>
+<h2 id="5️⃣-提高通过率的-3-个核心动作"><a href="#5️⃣-提高通过率的-3-个核心动作" class="headerlink" title="5️⃣ 提高通过率的 3 个核心动作"></a>5️⃣ 提高通过率的 3 个核心动作</h2><h3 id="1-内容数量-≥-15-篇"><a href="#1-内容数量-≥-15-篇" class="headerlink" title="1. 内容数量 ≥ 15 篇"></a>1. 内容数量 ≥ 15 篇</h3><p>新站至少 15 篇才有足够的内容深度让 Google 判断你的网站主题。只有 3~5 篇文章通过的概率极低。</p>
+<h3 id="2-每篇内容有真实价值"><a href="#2-每篇内容有真实价值" class="headerlink" title="2. 每篇内容有真实价值"></a>2. 每篇内容有真实价值</h3><p>不仅仅是”字数够”——你的文章要真的能帮到读者：</p>
+<ul>
+<li>教程类：步骤详细，有代码&#x2F;截图</li>
+<li>评测类：有真实对比数据</li>
+<li>经验分享：有具体的时间线和数字</li>
+</ul>
+<h3 id="3-网站结构清晰"><a href="#3-网站结构清晰" class="headerlink" title="3. 网站结构清晰"></a>3. 网站结构清晰</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">首页 → 分类页 → 文章详情</span><br></pre></td></tr></table></figure>
+
+<p>用户在 3 次点击内能从首页到达任何一篇文章，这是 Google 评估用户体验的基本标准。</p>
+<hr>
+<h2 id="6️⃣-时间线总结"><a href="#6️⃣-时间线总结" class="headerlink" title="6️⃣ 时间线总结"></a>6️⃣ 时间线总结</h2><table>
 <thead>
 <tr>
 <th>阶段</th>
-<th>时间</th>
+<th>耗时</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>网站部署</td>
-<td>10分钟～2小时</td>
+<td>网站搭建</td>
+<td>10 分钟 ~ 2 小时</td>
 </tr>
 <tr>
 <td>DNS 生效</td>
-<td>10分钟～24小时</td>
+<td>10 分钟 ~ 24 小时</td>
+</tr>
+<tr>
+<td>内容填充（15+ 篇）</td>
+<td>3 ~ 7 天</td>
 </tr>
 <tr>
 <td>AdSense 审核</td>
-<td>1～3天</td>
+<td>1 ~ 3 天</td>
 </tr>
 <tr>
 <td>极端情况</td>
-<td>7天</td>
+<td>7 天</td>
 </tr>
 </tbody></table>
+<p><strong>整体</strong>：从零到 AdSense 通过，约 1~2 周。</p>
 <hr>
-<h1 id="7️⃣-一句话执行流程（记住这个）"><a href="#7️⃣-一句话执行流程（记住这个）" class="headerlink" title="7️⃣ 一句话执行流程（记住这个）"></a>7️⃣ 一句话执行流程（记住这个）</h1><p>👉 网站稳定 → 内容够 → 页面齐 → 提交 AdSense → 等审核</p>
+<h2 id="7️⃣-一句话执行流程"><a href="#7️⃣-一句话执行流程" class="headerlink" title="7️⃣ 一句话执行流程"></a>7️⃣ 一句话执行流程</h2><blockquote>
+<p><strong>网站稳定 → 内容够（15+ 篇原创）→ 页面齐（含隐私政策）→ 提交 AdSense → 等审核</strong></p>
+</blockquote>
 <hr>
-<h1 id="8️⃣-可复用判断标准（很重要）"><a href="#8️⃣-可复用判断标准（很重要）" class="headerlink" title="8️⃣ 可复用判断标准（很重要）"></a>8️⃣ 可复用判断标准（很重要）</h1><p>如果满足以下条件，就可以提交：</p>
+<h2 id="8️⃣-可复用判断清单"><a href="#8️⃣-可复用判断清单" class="headerlink" title="8️⃣ 可复用判断清单"></a>8️⃣ 可复用判断清单</h2><p>提交前逐项打勾：</p>
 <ul>
-<li><input disabled="" type="checkbox"> 网站能稳定打开</li>
-<li><input disabled="" type="checkbox"> 没有 Preparing &#x2F; Loading</li>
-<li><input disabled="" type="checkbox"> 有 10+ 内容页面</li>
-<li><input disabled="" type="checkbox"> 有隐私政策</li>
-<li><input disabled="" type="checkbox"> HTTPS 正常</li>
+<li><input disabled="" type="checkbox"> 网站能稳定打开（连续 3 天无中断）</li>
+<li><input disabled="" type="checkbox"> 没有 Preparing &#x2F; Loading 状态</li>
+<li><input disabled="" type="checkbox"> 有 15+ 篇原创内容页面</li>
+<li><input disabled="" type="checkbox"> 有隐私政策页面（说明 Cookie 和广告）</li>
+<li><input disabled="" type="checkbox"> HTTPS 正常（小锁图标）</li>
+<li><input disabled="" type="checkbox"> 导航栏完整，所有链接可点</li>
+<li><input disabled="" type="checkbox"> 没有空白页或空目录</li>
 </ul>
-<p>✔ 全部满足 &#x3D; 可以提交<br>❌ 不满足 &#x3D; 继续优化</p>
-<hr>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>全部满足 &#x3D; 可以提交 | 任何一项不满足 &#x3D; 继续优化</strong></p>
+</blockquote>
+<p>如果不确定，宁愿多等一周补充内容再提交。一次通过比反复被拒快得多。</p>
+
       </div>
 
       <!-- Bottom Ad -->
@@ -278,7 +401,7 @@
   <div class="sidebar-section toc-wrapper" id="toc-wrapper">
     <h3>目录</h3>
     <nav class="toc" id="toc">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Step-4%EF%BC%9A%E7%AD%89%E5%BE%85%E5%AE%A1%E6%A0%B8"><span class="toc-number">1.</span> <span class="toc-text">Step 4：等待审核</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4%EF%B8%8F%E2%83%A3-%E5%AE%A1%E6%A0%B8%E5%A4%B1%E8%B4%A5%E5%B8%B8%E8%A7%81%E5%8E%9F%E5%9B%A0%EF%BC%88%E5%BF%85%E9%A1%BB%E9%81%BF%E5%85%8D%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">4️⃣ 审核失败常见原因（必须避免）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5%EF%B8%8F%E2%83%A3-%E6%8F%90%E9%AB%98%E9%80%9A%E8%BF%87%E7%8E%87%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%88%E5%85%B3%E9%94%AE%E4%BC%98%E5%8C%96%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">5️⃣ 提高通过率的方法（关键优化）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%F0%9F%9A%80-%E6%8F%90%E5%8D%87%E9%80%9A%E8%BF%87%E7%8E%87-3-%E4%B8%AA%E6%A0%B8%E5%BF%83%E5%8A%A8%E4%BD%9C%EF%BC%9A"><span class="toc-number">3.1.</span> <span class="toc-text">🚀 提升通过率 3 个核心动作：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%86%85%E5%AE%B9%E6%95%B0%E9%87%8F"><span class="toc-number">3.1.1.</span> <span class="toc-text">1. 内容数量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%86%85%E5%AE%B9%E8%B4%A8%E9%87%8F"><span class="toc-number">3.1.2.</span> <span class="toc-text">2. 内容质量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%BD%91%E7%AB%99%E7%BB%93%E6%9E%84"><span class="toc-number">3.1.3.</span> <span class="toc-text">3. 网站结构</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6%EF%B8%8F%E2%83%A3-%E6%A0%87%E5%87%86%E6%97%B6%E9%97%B4%E6%80%BB%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text">6️⃣ 标准时间总结</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7%EF%B8%8F%E2%83%A3-%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B%EF%BC%88%E8%AE%B0%E4%BD%8F%E8%BF%99%E4%B8%AA%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">7️⃣ 一句话执行流程（记住这个）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8%EF%B8%8F%E2%83%A3-%E5%8F%AF%E5%A4%8D%E7%94%A8%E5%88%A4%E6%96%AD%E6%A0%87%E5%87%86%EF%BC%88%E5%BE%88%E9%87%8D%E8%A6%81%EF%BC%89"><span class="toc-number">6.</span> <span class="toc-text">8️⃣ 可复用判断标准（很重要）</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Google-AdSense-%E7%BD%91%E7%AB%99%E6%8A%95%E6%94%BE%E4%B8%8E%E5%AE%A1%E6%A0%B8%E5%85%A8%E6%B5%81%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">Google AdSense 网站投放与审核全流程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%EF%B8%8F%E2%83%A3-%E7%BD%91%E7%AB%99%E4%B8%8A%E7%BA%BF%E5%89%8D%E6%A3%80%E6%9F%A5"><span class="toc-number">1.1.</span> <span class="toc-text">1️⃣ 网站上线前检查</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%9C%85-%E7%BD%91%E7%AB%99%E5%8F%AF%E6%AD%A3%E5%B8%B8%E8%AE%BF%E9%97%AE"><span class="toc-number">1.1.1.</span> <span class="toc-text">✅ 网站可正常访问</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%9C%85-%E5%9F%BA%E7%A1%80%E9%A1%B5%E9%9D%A2%E5%BF%85%E9%A1%BB%E9%BD%90%E5%85%A8"><span class="toc-number">1.1.2.</span> <span class="toc-text">✅ 基础页面必须齐全</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%9C%85-%E5%86%85%E5%AE%B9%E8%A6%81%E6%B1%82%EF%BC%88%E6%A0%B8%E5%BF%83%EF%BC%89"><span class="toc-number">1.1.3.</span> <span class="toc-text">✅ 内容要求（核心）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%EF%B8%8F%E2%83%A3-%E7%BD%91%E7%AB%99%E7%A8%B3%E5%AE%9A%E6%80%A7%E6%A3%80%E6%9F%A5"><span class="toc-number">1.2.</span> <span class="toc-text">2️⃣ 网站稳定性检查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%EF%B8%8F%E2%83%A3-%E6%8F%90%E4%BA%A4-AdSense-%E6%B5%81%E7%A8%8B"><span class="toc-number">1.3.</span> <span class="toc-text">3️⃣ 提交 AdSense 流程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-1%EF%BC%9A%E6%B3%A8%E5%86%8C-AdSense"><span class="toc-number">1.3.1.</span> <span class="toc-text">Step 1：注册 AdSense</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-2%EF%BC%9A%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E7%BD%91%E5%9D%80"><span class="toc-number">1.3.2.</span> <span class="toc-text">Step 2：添加网站网址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-3%EF%BC%9A%E6%94%BE%E7%BD%AE%E9%AA%8C%E8%AF%81%E4%BB%A3%E7%A0%81"><span class="toc-number">1.3.3.</span> <span class="toc-text">Step 3：放置验证代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-4%EF%BC%9A%E7%AD%89%E5%BE%85%E5%AE%A1%E6%A0%B8"><span class="toc-number">1.3.4.</span> <span class="toc-text">Step 4：等待审核</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%EF%B8%8F%E2%83%A3-%E5%AE%A1%E6%A0%B8%E5%A4%B1%E8%B4%A5%E5%B8%B8%E8%A7%81%E5%8E%9F%E5%9B%A0"><span class="toc-number">1.4.</span> <span class="toc-text">4️⃣ 审核失败常见原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%EF%B8%8F%E2%83%A3-%E6%8F%90%E9%AB%98%E9%80%9A%E8%BF%87%E7%8E%87%E7%9A%84-3-%E4%B8%AA%E6%A0%B8%E5%BF%83%E5%8A%A8%E4%BD%9C"><span class="toc-number">1.5.</span> <span class="toc-text">5️⃣ 提高通过率的 3 个核心动作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%86%85%E5%AE%B9%E6%95%B0%E9%87%8F-%E2%89%A5-15-%E7%AF%87"><span class="toc-number">1.5.1.</span> <span class="toc-text">1. 内容数量 ≥ 15 篇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%AF%8F%E7%AF%87%E5%86%85%E5%AE%B9%E6%9C%89%E7%9C%9F%E5%AE%9E%E4%BB%B7%E5%80%BC"><span class="toc-number">1.5.2.</span> <span class="toc-text">2. 每篇内容有真实价值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%BD%91%E7%AB%99%E7%BB%93%E6%9E%84%E6%B8%85%E6%99%B0"><span class="toc-number">1.5.3.</span> <span class="toc-text">3. 网站结构清晰</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%EF%B8%8F%E2%83%A3-%E6%97%B6%E9%97%B4%E7%BA%BF%E6%80%BB%E7%BB%93"><span class="toc-number">1.6.</span> <span class="toc-text">6️⃣ 时间线总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7%EF%B8%8F%E2%83%A3-%E4%B8%80%E5%8F%A5%E8%AF%9D%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B"><span class="toc-number">1.7.</span> <span class="toc-text">7️⃣ 一句话执行流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8%EF%B8%8F%E2%83%A3-%E5%8F%AF%E5%A4%8D%E7%94%A8%E5%88%A4%E6%96%AD%E6%B8%85%E5%8D%95"><span class="toc-number">1.8.</span> <span class="toc-text">8️⃣ 可复用判断清单</span></a></li></ol></li></ol>
     </nav>
   </div>
   
@@ -294,11 +417,15 @@
       </li>
       
       <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91/" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发 <span class="count">(5)</span></a>
+      </li>
+      
+      <li>
         <a href="/categories/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" title="开发部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署 <span class="count">(1)</span></a>
       </li>
       
       <li>
-        <a href="/categories/%E5%BC%80%E5%8F%91/" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发 <span class="count">(5)</span></a>
+        <a href="/categories/%E5%BC%80%E5%8F%91/%E9%83%A8%E7%BD%B2/" title="部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署 <span class="count">(1)</span></a>
       </li>
       
       <li>
@@ -321,23 +448,35 @@
       
       <a href="/tags/JavaScript/" class="tag-item" title="JavaScript 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">JavaScript</a>
       
-      <a href="/tags/Markdown/" class="tag-item" title="Markdown 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Markdown</a>
-      
-      <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-item" title="博客 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">博客</a>
-      
       <a href="/tags/Python/" class="tag-item" title="Python 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Python</a>
       
       <a href="/tags/%E5%85%A5%E9%97%A8/" class="tag-item" title="入门 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">入门</a>
       
-      <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+      <a href="/tags/Markdown/" class="tag-item" title="Markdown 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Markdown</a>
+      
+      <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-item" title="博客 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">博客</a>
       
       <a href="/tags/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" class="tag-item" title="开发部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署</a>
       
+      <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+      
+      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+      
+      <a href="/tags/GitHub-Pages/" class="tag-item" title="GitHub Pages 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">GitHub Pages</a>
+      
+      <a href="/tags/Cloudflare/" class="tag-item" title="Cloudflare 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Cloudflare</a>
+      
       <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+      
+      <a href="/tags/AdSense/" class="tag-item" title="AdSense 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">AdSense</a>
+      
+      <a href="/tags/SEO/" class="tag-item" title="SEO 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">SEO</a>
       
       <a href="/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/" class="tag-item" title="提示词 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词</a>
       
-      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+      <a href="/tags/%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="tag-item" title="邮件服务器 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">邮件服务器</a>
+      
+      <a href="/tags/English/" class="tag-item" title="English 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">English</a>
       
     </div>
   </div>
@@ -351,17 +490,17 @@
       
       
       <li>
-        <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" title="免费博客搭建GitHub - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">免费博客搭建GitHub</a>
-        <time>2026-05-07</time>
-      </li>
-      
-      <li>
         <a href="/2026/05/07/2026-05-07-%E4%B8%80%E4%BD%93%E5%8C%96%E6%8E%A8%E8%AE%AD%E5%B9%B3%E5%8F%B0/" title="一体化推训平台 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">一体化推训平台</a>
         <time>2026-05-07</time>
       </li>
       
       <li>
-        <a href="/2026/05/07/2026-05-07-%E5%AE%8C%E6%95%B4-5s-%E8%A7%84%E5%88%99%E4%BB%A5%E5%8F%8A6a/" title="完整 5S 规则以及6A - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">完整 5S 规则以及6A</a>
+        <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" title="免费博客搭建GitHub - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">免费博客搭建GitHub</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" title="总有适合你的服务器推荐 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">总有适合你的服务器推荐</a>
         <time>2026-05-07</time>
       </li>
       
@@ -371,8 +510,8 @@
       </li>
       
       <li>
-        <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" title="总有适合你的服务器推荐 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">总有适合你的服务器推荐</a>
-        <time>2026-05-07</time>
+        <a href="/2026/05/08/2026-05-08-%E6%95%B4%E4%B8%AA-github-pages-cloudflare-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D-https-%E6%B5%81%E7%A8%8B%E6%80%BB%E7%BB%93/" title="GitHub Pages + Cloudflare + 自定义域名 + HTTPS 完整流程总结 🚀 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">GitHub Pages + Cloudflare + 自定义域名 + HTTPS 完整流程总结 🚀</a>
+        <time>2026-05-08</time>
       </li>
       
     </ul>

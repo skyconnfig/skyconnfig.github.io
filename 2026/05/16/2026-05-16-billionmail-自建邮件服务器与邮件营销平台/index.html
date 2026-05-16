@@ -6,14 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- SEO -->
-  <title>BillionMail 自建邮件服务器与邮件营销平台 | AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</title>
+  <title>BillionMail 自建邮件服务器与邮件营销平台：从零部署完整指南 | AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog</title>
   <meta name="description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
   <meta name="keywords" content="AI工具教程,Vercel部署,Markdown知识库,Vue开发,SEO优化,前端教程,程序员博客,AI工具">
   <meta name="author" content="skyconnfig">
   <meta name="google-site-verification" content="2bx3xsZWUkueuU4vpoYX5ppMAdlkoVKbGSqI-xuFZKk" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BillionMail 自建邮件服务器与邮件营销平台">
+  <meta property="og:title" content="BillionMail 自建邮件服务器与邮件营销平台：从零部署完整指南">
   <meta property="og:description" content="SKYCONFIG Blog 提供 AI工具使用教程、Vercel部署指南、Markdown知识库搭建、Vue开发与SEO优化实战内容。">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.lxs.best/2026/05/16/2026-05-16-billionmail-%E8%87%AA%E5%BB%BA%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8E%E9%82%AE%E4%BB%B6%E8%90%A5%E9%94%80%E5%B9%B3%E5%8F%B0/">
@@ -124,7 +124,7 @@
   <div class="content-area">
     <article class="post-article">
       <header class="post-header">
-        <h1 class="post-title">BillionMail 自建邮件服务器与邮件营销平台</h1>
+        <h1 class="post-title">BillionMail 自建邮件服务器与邮件营销平台：从零部署完整指南</h1>
         <div class="post-meta">
           <time>2026-05-16</time>
           
@@ -144,6 +144,10 @@
           
           <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
           
+          <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+          
+          <a href="/tags/%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="tag-item" title="邮件服务器 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">邮件服务器</a>
+          
         </div>
         
       </header>
@@ -153,29 +157,204 @@
 
       <!-- Article Content -->
       <div class="post-content">
-        <p>这个仓库 <strong>BillionMail</strong> 是一个非常强悍的 <strong>开源自建邮件服务器与邮件营销平台（Email Marketing Platform）</strong>。它是由知名的服务器管理面板 <strong>aaPanel（宝塔面板国际版）团队</strong> 维护和开发的。</p>
-<p>简单来说，它的核心目的是帮助企业和个人摆脱像 Mailchimp、SendGrid 这种昂贵的第三方 SaaS 邮件营销服务的“月费绑架”，让你可以在自己的服务器上<strong>无限制、免费地发送商业推广、Newsletter（新闻通讯）或系统通知邮件</strong>。</p>
-<p>它的核心功能和亮点主要包括以下几个方面：</p>
-<h3 id="1-邮件服务器-营销系统一体化（All-in-One）"><a href="#1-邮件服务器-营销系统一体化（All-in-One）" class="headerlink" title="1. 邮件服务器 + 营销系统一体化（All-in-One）"></a>1. 邮件服务器 + 营销系统一体化（All-in-One）</h3><p>传统的方案你要么得自己用 Postfix&#x2F;Dovecot 痛苦地搭邮件服务器，要么得用 Mailchimp 去连外部 SMTP。而 BillionMail <strong>既是一个完整的邮件服务器，又带有一套极为现代化的可视化营销后台</strong>，还无缝集成了网页端邮箱（RoundCube WebMail），可以说是开箱即用。</p>
-<h3 id="2-八分钟极速部署"><a href="#2-八分钟极速部署" class="headerlink" title="2. 八分钟极速部署"></a>2. 八分钟极速部署</h3><p>官方主打的卖点之一就是“8 分钟从安装到发信成功”。它提供了极其简单的 Docker 部署方案和一键 Shell 脚本，还支持在 aaPanel 中一键鼠标点击安装。</p>
+        <h2 id="什么是-BillionMail？"><a href="#什么是-BillionMail？" class="headerlink" title="什么是 BillionMail？"></a>什么是 BillionMail？</h2><p><strong>BillionMail</strong> 是一个开源的<strong>全栈邮件服务器 + 邮件营销平台（Email Marketing Platform）</strong>，由知名服务器管理面板 <strong>aaPanel（宝塔面板国际版）团队</strong> 开发维护。</p>
+<p>它的核心价值：帮助企业和个人摆脱 Mailchimp、SendGrid 等第三方 SaaS 服务的”月费绑架”，在自己的服务器上<strong>免费、无限制地发送商业邮件</strong>。</p>
+<hr>
+<h2 id="核心功能一览"><a href="#核心功能一览" class="headerlink" title="核心功能一览"></a>核心功能一览</h2><h3 id="1-邮件服务器-营销系统一体化"><a href="#1-邮件服务器-营销系统一体化" class="headerlink" title="1. 邮件服务器 + 营销系统一体化"></a>1. 邮件服务器 + 营销系统一体化</h3><p>传统方案要么自己用 Postfix&#x2F;Dovecot 痛苦地搭建邮件服务器，要么用 Mailchimp 对接外部 SMTP。BillionMail <strong>同时包含邮件服务器 + 可视化营销后台 + 网页端邮箱（RoundCube WebMail）</strong>，开箱即用。</p>
+<h3 id="2-八分钟极速部署"><a href="#2-八分钟极速部署" class="headerlink" title="2. 八分钟极速部署"></a>2. 八分钟极速部署</h3><p>官方宣称从安装到发出第一封邮件仅需 8 分钟。支持：</p>
 <ul>
-<li><strong>域名连接超级简单：</strong> 你只需要把你的域名填进去，它会自动提示你需要在 DNS 处配置哪些记录（如 SPF、DKIM、DMARC 等，这对于防止邮件进垃圾箱至关重要），甚至能<strong>自动申请免费的 SSL 证书</strong>。</li>
+<li>Docker 一键部署方案</li>
+<li>Shell 脚本自动安装</li>
+<li>aaPanel 应用商店鼠标点击安装</li>
 </ul>
-<h3 id="3-无限制发送（Unlimited-Emails）"><a href="#3-无限制发送（Unlimited-Emails）" class="headerlink" title="3. 无限制发送（Unlimited Emails）"></a>3. 无限制发送（Unlimited Emails）</h3><p>因为是完全自托管（Self-Hosted）在你的自有服务器上，数据和控制权完全在你自己手里：</p>
-<ul>
-<li><strong>没有发信数量限制</strong>（发一亿封也由你决定，只要你的服务器带宽和 IP 撑得住）。</li>
-<li>没有隐藏月费，无厂商锁定（Vendor Lock-in），隐私性极高。</li>
-</ul>
-<h3 id="4-高级数据分析与客户管理"><a href="#4-高级数据分析与客户管理" class="headerlink" title="4. 高级数据分析与客户管理"></a>4. 高级数据分析与客户管理</h3><p>虽然是开源免费的，但它的后台面板颜值很高（毕竟是做面板出身的团队），功能对标商业软件：</p>
-<ul>
-<li><strong>可视化看板：</strong> 实时追踪邮件的发送量、送达率、退信原因、用户打开率（Open Rate）以及链接点击率（CTR）。</li>
-<li><strong>营销工具：</strong> 支持管理联系人列表与标签分类、可复用的邮件模板设计，还内置了 AI 智能辅助功能（例如用 AI 帮你写营销邮件、设计标题等）。</li>
+<h3 id="3-无限制发送"><a href="#3-无限制发送" class="headerlink" title="3. 无限制发送"></a>3. 无限制发送</h3><p>自托管（Self-Hosted）在自有服务器上，没有发信数量限制，没有隐藏月费，没有厂商锁定。</p>
+<h3 id="4-专业数据分析后台"><a href="#4-专业数据分析后台" class="headerlink" title="4. 专业数据分析后台"></a>4. 专业数据分析后台</h3><ul>
+<li>可视化看板：实时追踪发送量、送达率、退信原因、打开率（Open Rate）、链接点击率（CTR）</li>
+<li>联系人管理与标签分类</li>
+<li>可复用的邮件模板设计</li>
+<li>AI 智能辅助：用 AI 写营销邮件、优化标题</li>
 </ul>
 <hr>
-<h3 id="🚀-快速安装方法"><a href="#🚀-快速安装方法" class="headerlink" title="🚀 快速安装方法"></a>🚀 快速安装方法</h3><p>如果你有一个干净的 Linux 服务器（推荐 Ubuntu&#x2F;Debian），可以直接通过 Docker 几行命令跑起来：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /opt</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/Billionmail/BillionMail.git</span><br><span class="line"><span class="built_in">cd</span> BillionMail</span><br><span class="line"><span class="comment"># 初始化环境变量文件</span></span><br><span class="line"><span class="built_in">cp</span> env_init .<span class="built_in">env</span></span><br><span class="line"><span class="comment"># 启动容器</span></span><br><span class="line">docker compose up -d</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="部署环境要求"><a href="#部署环境要求" class="headerlink" title="部署环境要求"></a>部署环境要求</h2><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>最低配置</th>
+<th>推荐配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>服务器</strong></td>
+<td>1 核 CPU &#x2F; 1GB 内存</td>
+<td>2 核 &#x2F; 4GB 内存</td>
+</tr>
+<tr>
+<td><strong>操作系统</strong></td>
+<td>Ubuntu 20.04+ &#x2F; Debian 11+</td>
+<td>Ubuntu 22.04 LTS</td>
+</tr>
+<tr>
+<td><strong>Docker</strong></td>
+<td>20.10+</td>
+<td>24.0+</td>
+</tr>
+<tr>
+<td><strong>域名</strong></td>
+<td>一个用于发信的域名</td>
+<td>单独的子域名（如 mail.yourdomain.com）</td>
+</tr>
+<tr>
+<td><strong>开放端口</strong></td>
+<td>25 &#x2F; 465 &#x2F; 587 &#x2F; 993 &#x2F; 443</td>
+<td>同上</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>⚠️ 重要提示</strong>：很多云服务商（如 AWS、阿里云）默认屏蔽 25 端口。部署前请确认你的服务器提供商允许发信，否则邮件会被直接丢弃。</p>
+</blockquote>
+<hr>
+<h2 id="完整部署步骤"><a href="#完整部署步骤" class="headerlink" title="完整部署步骤"></a>完整部署步骤</h2><h3 id="第一步：准备服务器"><a href="#第一步：准备服务器" class="headerlink" title="第一步：准备服务器"></a>第一步：准备服务器</h3><p>SSH 登录到你的 Linux 服务器：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@your-server-ip</span><br></pre></td></tr></table></figure>
 
-<p><strong>总结：</strong> 如果你平时有批量发送 Newsletter、给客户发推广邮件、或者做跨境电商营销的需求，但又觉得国外的邮件群发服务太贵，BillionMail 是目前非常优秀的开源自建替代方案。<br><img src="/images/image-1778894594317.png" alt="image"></p>
+<p>更新系统包：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt update &amp;&amp; apt upgrade -y</span><br></pre></td></tr></table></figure>
+
+<p>安装 Docker 和 Docker Compose（如果尚未安装）：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装 Docker</span></span><br><span class="line">curl -fsSL https://get.docker.com | bash</span><br><span class="line"></span><br><span class="line"><span class="comment"># 安装 Docker Compose</span></span><br><span class="line">curl -L <span class="string">&quot;https://github.com/docker/compose/releases/latest/download/docker-compose-<span class="subst">$(uname -s)</span>-<span class="subst">$(uname -m)</span>&quot;</span> -o /usr/local/bin/docker-compose</span><br><span class="line"><span class="built_in">chmod</span> +x /usr/local/bin/docker-compose</span><br><span class="line"></span><br><span class="line"><span class="comment"># 验证安装</span></span><br><span class="line">docker --version</span><br><span class="line">docker-compose --version</span><br></pre></td></tr></table></figure>
+
+<h3 id="第二步：下载-BillionMail"><a href="#第二步：下载-BillionMail" class="headerlink" title="第二步：下载 BillionMail"></a>第二步：下载 BillionMail</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /opt</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/Billionmail/BillionMail.git</span><br><span class="line"><span class="built_in">cd</span> BillionMail</span><br></pre></td></tr></table></figure>
+
+<h3 id="第三步：配置环境变量"><a href="#第三步：配置环境变量" class="headerlink" title="第三步：配置环境变量"></a>第三步：配置环境变量</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cp</span> env_init .<span class="built_in">env</span></span><br></pre></td></tr></table></figure>
+
+<p>编辑 <code>.env</code> 文件，填写关键参数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nano .<span class="built_in">env</span></span><br></pre></td></tr></table></figure>
+
+<p>重点修改以下配置：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 域名设置（替换为你的实际域名）</span><br><span class="line">DOMAIN=mail.yourdomain.com</span><br><span class="line"></span><br><span class="line"># 管理员邮箱</span><br><span class="line">ADMIN_EMAIL=admin@yourdomain.com</span><br><span class="line"></span><br><span class="line"># 数据库密码（改为复杂密码）</span><br><span class="line">DB_PASSWORD=your-strong-password-here</span><br></pre></td></tr></table></figure>
+
+<h3 id="第四步：启动服务"><a href="#第四步：启动服务" class="headerlink" title="第四步：启动服务"></a>第四步：启动服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure>
+
+<p>查看启动日志：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose logs -f</span><br></pre></td></tr></table></figure>
+
+<p>看到以下输出说明启动成功：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[INF] BillionMail started successfully</span><br><span class="line">[INF] Web UI: https://mail.yourdomain.com</span><br></pre></td></tr></table></figure>
+
+<h3 id="第五步：配置-DNS-记录"><a href="#第五步：配置-DNS-记录" class="headerlink" title="第五步：配置 DNS 记录"></a>第五步：配置 DNS 记录</h3><p>这是最关键的一步——DNS 配置决定你的邮件会不会进垃圾箱。</p>
+<p>登录你的域名 DNS 管理面板（Cloudflare &#x2F; 阿里云 DNS &#x2F; 其他），添加以下记录：</p>
+<table>
+<thead>
+<tr>
+<th>记录类型</th>
+<th>主机记录</th>
+<th>值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>mail</td>
+<td>你的服务器 IP</td>
+<td>指向邮件服务器</td>
+</tr>
+<tr>
+<td>MX</td>
+<td>@</td>
+<td>mail.yourdomain.com</td>
+<td>邮件交换记录，优先级 10</td>
+</tr>
+<tr>
+<td>TXT</td>
+<td>@</td>
+<td>v&#x3D;spf1 mx ~all</td>
+<td>SPF，声明哪些服务器可以发信</td>
+</tr>
+<tr>
+<td>TXT</td>
+<td>mail._domainkey</td>
+<td>（由 BillionMail 生成）</td>
+<td>DKIM，邮件签名密钥</td>
+</tr>
+<tr>
+<td>TXT</td>
+<td>_dmarc</td>
+<td>v&#x3D;DMARC1; p&#x3D;none; rua&#x3D;mailto:<a href="mailto:&#97;&#100;&#x6d;&#105;&#110;&#64;&#x79;&#x6f;&#x75;&#x72;&#x64;&#111;&#x6d;&#x61;&#x69;&#x6e;&#46;&#x63;&#x6f;&#109;">admin@yourdomain.com</a></td>
+<td>DMARC 策略</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>SPF、DKIM、DMARC</strong> 这三条记录缺一不可。没有它们，你的邮件会被 Gmail、Outlook 等邮箱直接标记为垃圾邮件或直接拒收。</p>
+</blockquote>
+<h3 id="第六步：完成初始化"><a href="#第六步：完成初始化" class="headerlink" title="第六步：完成初始化"></a>第六步：完成初始化</h3><ol>
+<li>浏览器访问 <code>https://mail.yourdomain.com</code></li>
+<li>使用 <code>.env</code> 中设置的管理员邮箱和初始密码登录</li>
+<li>系统会引导你完成 DKIM 密钥配置</li>
+<li>进入后台 → 系统设置 → 邮件测试，给自己发一封测试邮件</li>
+</ol>
+<hr>
+<h2 id="发送第一封营销邮件"><a href="#发送第一封营销邮件" class="headerlink" title="发送第一封营销邮件"></a>发送第一封营销邮件</h2><h3 id="创建邮件列表"><a href="#创建邮件列表" class="headerlink" title="创建邮件列表"></a>创建邮件列表</h3><ol>
+<li>进入后台 → 联系人管理 → 创建列表</li>
+<li>可以手动导入 CSV，也可以通过 API 接入</li>
+<li>对联系人进行标签分类（如：新用户、活跃用户、沉睡用户）</li>
+</ol>
+<h3 id="设计邮件模板"><a href="#设计邮件模板" class="headerlink" title="设计邮件模板"></a>设计邮件模板</h3><ol>
+<li>进入营销 → 邮件模板 → 新建</li>
+<li>使用内置可视化编辑器拖拽设计</li>
+<li>也可以粘贴 HTML 代码</li>
+</ol>
+<h3 id="发送-Campaign"><a href="#发送-Campaign" class="headerlink" title="发送 Campaign"></a>发送 Campaign</h3><ol>
+<li>选择目标联系人列表</li>
+<li>选择邮件模板</li>
+<li>设置发送时间（立即发送 &#x2F; 定时发送）</li>
+<li>确认发送</li>
+</ol>
+<hr>
+<h2 id="常见问题排查"><a href="#常见问题排查" class="headerlink" title="常见问题排查"></a>常见问题排查</h2><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>可能原因</th>
+<th>解决方法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>发信后收不到</strong></td>
+<td>25 端口被屏蔽</td>
+<td>联系服务器商开通或换服务商</td>
+</tr>
+<tr>
+<td><strong>进垃圾箱</strong></td>
+<td>SPF&#x2F;DKIM&#x2F;DMARC 缺失</td>
+<td>检查 DNS 配置是否正确</td>
+</tr>
+<tr>
+<td><strong>Docker 启动失败</strong></td>
+<td>端口冲突</td>
+<td><code>lsof -i :25</code> 检查端口占用</td>
+</tr>
+<tr>
+<td><strong>SSL 证书错误</strong></td>
+<td>域名未正确解析</td>
+<td><code>dig mail.yourdomain.com</code> 验证 A 记录</td>
+</tr>
+<tr>
+<td><strong>发送队列卡住</strong></td>
+<td>服务器 IP 被拉黑</td>
+<td>检查 <code>mxtoolbox.com/blacklists</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="安全与运维建议"><a href="#安全与运维建议" class="headerlink" title="安全与运维建议"></a>安全与运维建议</h2><ol>
+<li><strong>IP 信誉管理</strong>：发信前先”暖 IP”——从小量开始逐渐增加，突然大量发信会被封</li>
+<li><strong>退信处理</strong>：自动处理硬退信（hard bounce），避免继续发送给无效地址</li>
+<li><strong>投诉监控</strong>：如果用户点击”举报垃圾邮件”的比例超过 0.1%，Gmail 会限制你的发信</li>
+<li><strong>定期备份</strong>：备份 <code>/opt/BillionMail</code> 目录和数据库</li>
+<li><strong>监控日志</strong>：定期检查 <code>/opt/BillionMail/logs/</code> 下的发送日志</li>
+</ol>
+<hr>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>BillionMail 是目前开源邮件营销领域最完善的选择之一。相比 Mailchimp（月费 $20+ 起）或 SendGrid（免费 100 封&#x2F;天），自建方案在长期成本和大规模发送场景下有明显优势。</p>
+<p>但请注意——<strong>自建邮件服务器的门槛不在安装，而在运维</strong>。IP 信誉管理、反垃圾邮件策略、DNS 配置，这些才是决定你的邮件能否顺利到达用户收件箱的关键。</p>
+<p><img src="/images/image-1778894594317.png" alt="BillionMail 后台管理界面截图"></p>
 
       </div>
 
@@ -216,7 +395,7 @@
   <div class="sidebar-section toc-wrapper" id="toc-wrapper">
     <h3>目录</h3>
     <nav class="toc" id="toc">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8-%E8%90%A5%E9%94%80%E7%B3%BB%E7%BB%9F%E4%B8%80%E4%BD%93%E5%8C%96%EF%BC%88All-in-One%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">1. 邮件服务器 + 营销系统一体化（All-in-One）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%85%AB%E5%88%86%E9%92%9F%E6%9E%81%E9%80%9F%E9%83%A8%E7%BD%B2"><span class="toc-number">2.</span> <span class="toc-text">2. 八分钟极速部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%97%A0%E9%99%90%E5%88%B6%E5%8F%91%E9%80%81%EF%BC%88Unlimited-Emails%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">3. 无限制发送（Unlimited Emails）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86"><span class="toc-number">4.</span> <span class="toc-text">4. 高级数据分析与客户管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%F0%9F%9A%80-%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95"><span class="toc-number">5.</span> <span class="toc-text">🚀 快速安装方法</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-BillionMail%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">什么是 BillionMail？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD%E4%B8%80%E8%A7%88"><span class="toc-number">2.</span> <span class="toc-text">核心功能一览</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8-%E8%90%A5%E9%94%80%E7%B3%BB%E7%BB%9F%E4%B8%80%E4%BD%93%E5%8C%96"><span class="toc-number">2.1.</span> <span class="toc-text">1. 邮件服务器 + 营销系统一体化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%85%AB%E5%88%86%E9%92%9F%E6%9E%81%E9%80%9F%E9%83%A8%E7%BD%B2"><span class="toc-number">2.2.</span> <span class="toc-text">2. 八分钟极速部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%97%A0%E9%99%90%E5%88%B6%E5%8F%91%E9%80%81"><span class="toc-number">2.3.</span> <span class="toc-text">3. 无限制发送</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%B8%93%E4%B8%9A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%90%8E%E5%8F%B0"><span class="toc-number">2.4.</span> <span class="toc-text">4. 专业数据分析后台</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E7%8E%AF%E5%A2%83%E8%A6%81%E6%B1%82"><span class="toc-number">3.</span> <span class="toc-text">部署环境要求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%8C%E6%95%B4%E9%83%A8%E7%BD%B2%E6%AD%A5%E9%AA%A4"><span class="toc-number">4.</span> <span class="toc-text">完整部署步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E5%87%86%E5%A4%87%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">4.1.</span> <span class="toc-text">第一步：准备服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E4%B8%8B%E8%BD%BD-BillionMail"><span class="toc-number">4.2.</span> <span class="toc-text">第二步：下载 BillionMail</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F"><span class="toc-number">4.3.</span> <span class="toc-text">第三步：配置环境变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5%EF%BC%9A%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1"><span class="toc-number">4.4.</span> <span class="toc-text">第四步：启动服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5%EF%BC%9A%E9%85%8D%E7%BD%AE-DNS-%E8%AE%B0%E5%BD%95"><span class="toc-number">4.5.</span> <span class="toc-text">第五步：配置 DNS 记录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E6%AD%A5%EF%BC%9A%E5%AE%8C%E6%88%90%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">4.6.</span> <span class="toc-text">第六步：完成初始化</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%91%E9%80%81%E7%AC%AC%E4%B8%80%E5%B0%81%E8%90%A5%E9%94%80%E9%82%AE%E4%BB%B6"><span class="toc-number">5.</span> <span class="toc-text">发送第一封营销邮件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E9%82%AE%E4%BB%B6%E5%88%97%E8%A1%A8"><span class="toc-number">5.1.</span> <span class="toc-text">创建邮件列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E9%82%AE%E4%BB%B6%E6%A8%A1%E6%9D%BF"><span class="toc-number">5.2.</span> <span class="toc-text">设计邮件模板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%91%E9%80%81-Campaign"><span class="toc-number">5.3.</span> <span class="toc-text">发送 Campaign</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5"><span class="toc-number">6.</span> <span class="toc-text">常见问题排查</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E4%B8%8E%E8%BF%90%E7%BB%B4%E5%BB%BA%E8%AE%AE"><span class="toc-number">7.</span> <span class="toc-text">安全与运维建议</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">8.</span> <span class="toc-text">总结</span></a></li></ol>
     </nav>
   </div>
   
@@ -232,11 +411,15 @@
       </li>
       
       <li>
+        <a href="/categories/%E5%BC%80%E5%8F%91/" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发 <span class="count">(5)</span></a>
+      </li>
+      
+      <li>
         <a href="/categories/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" title="开发部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署 <span class="count">(1)</span></a>
       </li>
       
       <li>
-        <a href="/categories/%E5%BC%80%E5%8F%91/" title="开发 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发 <span class="count">(5)</span></a>
+        <a href="/categories/%E5%BC%80%E5%8F%91/%E9%83%A8%E7%BD%B2/" title="部署 分类 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署 <span class="count">(1)</span></a>
       </li>
       
       <li>
@@ -259,23 +442,35 @@
       
       <a href="/tags/JavaScript/" class="tag-item" title="JavaScript 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">JavaScript</a>
       
-      <a href="/tags/Markdown/" class="tag-item" title="Markdown 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Markdown</a>
-      
-      <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-item" title="博客 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">博客</a>
-      
       <a href="/tags/Python/" class="tag-item" title="Python 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Python</a>
       
       <a href="/tags/%E5%85%A5%E9%97%A8/" class="tag-item" title="入门 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">入门</a>
       
-      <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+      <a href="/tags/Markdown/" class="tag-item" title="Markdown 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Markdown</a>
+      
+      <a href="/tags/%E5%8D%9A%E5%AE%A2/" class="tag-item" title="博客 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">博客</a>
       
       <a href="/tags/%E5%BC%80%E5%8F%91%E9%83%A8%E7%BD%B2/" class="tag-item" title="开发部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发部署</a>
       
+      <a href="/tags/%E5%BC%80%E5%8F%91/" class="tag-item" title="开发 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">开发</a>
+      
+      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+      
+      <a href="/tags/GitHub-Pages/" class="tag-item" title="GitHub Pages 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">GitHub Pages</a>
+      
+      <a href="/tags/Cloudflare/" class="tag-item" title="Cloudflare 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">Cloudflare</a>
+      
       <a href="/tags/%E6%95%99%E7%A8%8B/" class="tag-item" title="教程 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">教程</a>
+      
+      <a href="/tags/AdSense/" class="tag-item" title="AdSense 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">AdSense</a>
+      
+      <a href="/tags/SEO/" class="tag-item" title="SEO 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">SEO</a>
       
       <a href="/tags/%E6%8F%90%E7%A4%BA%E8%AF%8D/" class="tag-item" title="提示词 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">提示词</a>
       
-      <a href="/tags/%E9%83%A8%E7%BD%B2/" class="tag-item" title="部署 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">部署</a>
+      <a href="/tags/%E9%82%AE%E4%BB%B6%E6%9C%8D%E5%8A%A1%E5%99%A8/" class="tag-item" title="邮件服务器 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">邮件服务器</a>
+      
+      <a href="/tags/English/" class="tag-item" title="English 标签 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">English</a>
       
     </div>
   </div>
@@ -289,17 +484,17 @@
       
       
       <li>
-        <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" title="免费博客搭建GitHub - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">免费博客搭建GitHub</a>
-        <time>2026-05-07</time>
-      </li>
-      
-      <li>
         <a href="/2026/05/07/2026-05-07-%E4%B8%80%E4%BD%93%E5%8C%96%E6%8E%A8%E8%AE%AD%E5%B9%B3%E5%8F%B0/" title="一体化推训平台 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">一体化推训平台</a>
         <time>2026-05-07</time>
       </li>
       
       <li>
-        <a href="/2026/05/07/2026-05-07-%E5%AE%8C%E6%95%B4-5s-%E8%A7%84%E5%88%99%E4%BB%A5%E5%8F%8A6a/" title="完整 5S 规则以及6A - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">完整 5S 规则以及6A</a>
+        <a href="/2026/05/07/2026-05-07-%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BAgithub/" title="免费博客搭建GitHub - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">免费博客搭建GitHub</a>
+        <time>2026-05-07</time>
+      </li>
+      
+      <li>
+        <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" title="总有适合你的服务器推荐 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">总有适合你的服务器推荐</a>
         <time>2026-05-07</time>
       </li>
       
@@ -309,8 +504,8 @@
       </li>
       
       <li>
-        <a href="/2026/05/07/2026-05-07-%E6%80%BB%E6%9C%89%E9%80%82%E5%90%88%E4%BD%A0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%8E%A8%E8%8D%90/" title="总有适合你的服务器推荐 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">总有适合你的服务器推荐</a>
-        <time>2026-05-07</time>
+        <a href="/2026/05/08/2026-05-08-%E6%95%B4%E4%B8%AA-github-pages-cloudflare-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D-https-%E6%B5%81%E7%A8%8B%E6%80%BB%E7%BB%93/" title="GitHub Pages + Cloudflare + 自定义域名 + HTTPS 完整流程总结 🚀 - AI工具教程 + Vercel部署 + Markdown知识库 | SKYCONFIG Blog">GitHub Pages + Cloudflare + 自定义域名 + HTTPS 完整流程总结 🚀</a>
+        <time>2026-05-08</time>
       </li>
       
     </ul>
