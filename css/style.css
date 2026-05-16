@@ -1877,12 +1877,12 @@ img {
   }
 
   .post-content {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .post-content pre {
     padding: 16px 18px;
-    font-size: 13px;
+    font-size: 14px;
     border-radius: 8px;
   }
 
@@ -1896,6 +1896,105 @@ img {
   .category-page-title {
     font-size: 24px;
   }
+
+  /* Table horizontal scroll for mobile */
+  .post-content table,
+  .page-content table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+  .post-content th,
+  .post-content td,
+  .page-content th,
+  .page-content td {
+    white-space: normal;
+  }
+}
+
+/* Narrow phone (iPhone SE, etc.) */
+@media (max-width: 374px) {
+  .post-title {
+    font-size: 20px;
+  }
+
+  .post-content {
+    font-size: 15px;
+  }
+
+  .post-content pre {
+    font-size: 13px;
+    padding: 12px 14px;
+  }
+
+  .container {
+    padding: var(--space-sm);
+  }
+
+  .post-article,
+  .page-article {
+    padding: var(--space-md);
+  }
+
+  .post-card {
+    padding: var(--space-md) var(--space-md) var(--space-md) var(--space-sm);
+  }
+}
+
+/* ================================
+   Cookie Consent Banner
+   ================================ */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-md) var(--space-lg);
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+  z-index: 1000;
+  transform: translateY(100%);
+  transition: transform 0.35s var(--ease-out-expo);
+}
+.cookie-banner.show {
+  transform: translateY(0);
+}
+.cookie-banner-inner {
+  max-width: var(--content-width, 820px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+.cookie-banner p {
+  flex: 1;
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+.cookie-banner a {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+.cookie-accept-btn {
+  flex-shrink: 0;
+  padding: 8px 24px;
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+.cookie-accept-btn:hover {
+  background: var(--color-accent-hover);
 }
 
 /* ================================
