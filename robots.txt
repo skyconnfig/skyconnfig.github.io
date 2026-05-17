@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.lxs.best/sitemap.xml
+Sitemap: https://blog.lxs.best/sitemap.xml
